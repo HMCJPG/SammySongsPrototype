@@ -1,0 +1,16 @@
+[
+    {
+        "id": "hello-hello",
+        "title": "Hello, Hello, Hello",
+        "thumbnail": "/assets/images/hello.png",
+        "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "description": "Who is Sammy Rabbit? Listen to a song called Hello, hello, hello and sing along."
+    },
+    {
+        "id": "saving-money",
+        "title": "Saving Money with Sammy",
+        "thumbnail": "/assets/sammy_headphones.png",
+        "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "description": "Learn how saving money can be fun and exciting for your future goals!"
+    }
+]
