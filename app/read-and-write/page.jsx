@@ -13,7 +13,7 @@ export default function ReadAndWritePage() {
                     <p style={{ color: '#666', marginBottom: '30px', fontSize: '1.1rem' }}>
                         We've included a blank placeholder PDF here to demonstrate where the downloadable activity documents will be listed!
                     </p>
-                    <a href="/assets/sample-activity.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-pill" style={{ display: 'inline-block', textDecoration: 'none' }}>
+                    <a href="/assets/pdfs/sample-activity.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-pill" style={{ display: 'inline-block', textDecoration: 'none' }}>
                         Download PDF
                     </a>
                 </div>
