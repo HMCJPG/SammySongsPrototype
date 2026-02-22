@@ -44,7 +44,7 @@ export default function Home() {
             <section className="body-content">
                 <div className="container" style={{ padding: '60px 20px', textAlign: 'center' }}>
                     <h3 style={{ color: 'var(--text-dark)', fontSize: '2rem', marginBottom: '20px' }}>
-                        Explore Sammy Rabbit Songs
+                        Explore Songs
                     </h3>
                     <p style={{ color: '#666', fontSize: '1.2rem' }}>
                         More educational content coming soon below the fold!
