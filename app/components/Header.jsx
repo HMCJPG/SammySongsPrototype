@@ -51,11 +51,12 @@ export default function Header() {
                 <div className="container">
                     <ul className={`nav-list ${navOpen ? 'show' : ''}`}>
                         <li><Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link></li>
-                        <li><Link href="/listen-and-watch" className={`nav-link ${pathname === '/listen-and-watch' ? 'active' : ''}`}>Listen and watch</Link></li>
-                        <li><Link href="/read-and-write" className={`nav-link ${pathname === '/read-and-write' ? 'active' : ''}`}>Read and write</Link></li>
-                        <li><Link href="/speak-and-spell" className={`nav-link ${pathname === '/speak-and-spell' ? 'active' : ''}`}>Speak and spell</Link></li>
-                        <li><Link href="/grammar-and-vocabulary" className={`nav-link ${pathname === '/grammar-and-vocabulary' ? 'active' : ''}`}>Grammar and vocabulary</Link></li>
-                        <li><Link href="/fun-and-games" className={`nav-link ${pathname === '/fun-and-games' ? 'active' : ''}`}>Fun and games</Link></li>
+                        <li><Link href="/listen-and-watch" className={`nav-link ${pathname === '/listen-and-watch' ? 'active' : ''}`}>Songs</Link></li>
+                        <li><Link href="/read-and-write" className={`nav-link ${pathname === '/read-and-write' ? 'active' : ''}`}>Stories</Link></li>
+                        <li><Link href="/speak-and-spell" className={`nav-link ${pathname === '/speak-and-spell' ? 'active' : ''}`}>Weekly Kit</Link></li>
+                        <li><Link href="/fun-and-games" className={`nav-link ${pathname === '/fun-and-games' ? 'active' : ''}`}>Family Activity Guide</Link></li>
+                        {/* <li><Link href="/grammar-and-vocabulary" className={`nav-link ${pathname === '/grammar-and-vocabulary' ? 'active' : ''}`}>Grammar and vocabulary</Link></li> */}
+                        {/* <li><Link href="/fun-and-games" className={`nav-link ${pathname === '/fun-and-games' ? 'active' : ''}`}>Fun and games</Link></li> */}
                         <li><Link href="/parents" className={`nav-link ${pathname === '/parents' ? 'active' : ''}`}>Parents</Link></li>
                     </ul>
                 </div>
