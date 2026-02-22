@@ -54,7 +54,7 @@ export default function Header() {
                         <li><Link href="/listen-and-watch" className={`nav-link ${pathname === '/listen-and-watch' ? 'active' : ''}`}>Songs</Link></li>
                         <li><Link href="/read-and-write" className={`nav-link ${pathname === '/read-and-write' ? 'active' : ''}`}>Stories</Link></li>
                         <li><Link href="/speak-and-spell" className={`nav-link ${pathname === '/speak-and-spell' ? 'active' : ''}`}>Weekly Kit</Link></li>
-                        <li><a href="/assets/pdfs/MoneyRules_Parent_Guide%20(1).pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Family Activity Guide</a></li>
+                        <li><a href="/assets/pdfs/MoneyRules_Parent_Guide%20(1).pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Parent Guide</a></li>
                         {/* <li><Link href="/grammar-and-vocabulary" className={`nav-link ${pathname === '/grammar-and-vocabulary' ? 'active' : ''}`}>Grammar and vocabulary</Link></li> */}
                         {/* <li><Link href="/fun-and-games" className={`nav-link ${pathname === '/fun-and-games' ? 'active' : ''}`}>Fun and games</Link></li> */}
                         <li><Link href="/parents" className={`nav-link ${pathname === '/parents' ? 'active' : ''}`}>Parents</Link></li>
