@@ -23,7 +23,7 @@ export default function Header() {
                         </Link>
                         <div className="separator"></div>
                         <Link href="/" style={{ textDecoration: 'none' }}>
-                            <h1 className="brand-title">Sammy Rabbit Songs</h1>
+                            <h1 className="brand-title">Bedtime Songs and Stories That Build Great Money Habits</h1>
                         </Link>
                     </div>
 
