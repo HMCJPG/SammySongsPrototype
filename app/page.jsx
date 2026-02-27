@@ -12,7 +12,7 @@ export default function Home() {
                         Bedtime Songs & Stories that Build Great Money Habits
                     </h1>
                     <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--accent-color)', marginBottom: '20px' }}>
-                        presented by Sam X Renick, Award Winning Financial Educator & Author
+                        Presented by Sam X Renick, Award-Winning Financial Educator & Author
                     </h2>
                 </div>
             </section>
