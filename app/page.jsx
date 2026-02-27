@@ -47,7 +47,7 @@ export default function Home() {
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Story Flipbook</h4>
                                 <p>Read the interactive story of Follow the Money Rules.</p>
-                                <button className="btn btn-sharp" style={{ background: 'white', color: 'var(--accent-color)', marginTop: '15px' }}>Open Flipbook</button>
+                                <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-sharp" style={{ display: 'inline-block', background: 'white', color: 'var(--accent-color)', marginTop: '15px', textDecoration: 'none' }}>Open Flipbook</a>
                             </div>
 
                             {/* Song Kit (Button) */}
