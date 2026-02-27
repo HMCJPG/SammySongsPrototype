@@ -15,10 +15,10 @@ export default function Header() {
                     <div className="header-left">
                         <Link href="/">
                             <img
-                                src="/assets/logo_placeholder.png"
-                                alt="Sammy Rabbit Logo"
+                                src="/assets/images/pig_logo.png"
+                                alt="Bedtime Songs and Stories Logo"
                                 className="logo-placeholder"
-                                onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/50x50?text=SR'; }}
+                                onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/50x50?text=BSS'; }}
                             />
                         </Link>
                         <div className="separator"></div>
@@ -31,9 +31,8 @@ export default function Header() {
                         <button className="search-icon" aria-label="Search">
                             <i className="fas fa-search"></i>
                         </button>
-                        <div className="auth-buttons">
-                            <button className="btn btn-sharp">Log in</button>
-                            <button className="btn btn-sharp">Register</button>
+                        <div className="auth-buttons" style={{ display: 'none' }}>
+                            {/* Buttons removed per request */}
                         </div>
                         <button
                             className="hamburger-menu"
@@ -51,13 +50,10 @@ export default function Header() {
                 <div className="container">
                     <ul className={`nav-list ${navOpen ? 'show' : ''}`}>
                         <li><Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link></li>
-                        <li><Link href="/listen-and-watch" className={`nav-link ${pathname === '/listen-and-watch' ? 'active' : ''}`}>Songs</Link></li>
-                        <li><Link href="/read-and-write" className={`nav-link ${pathname === '/read-and-write' ? 'active' : ''}`}>Stories</Link></li>
-                        <li><Link href="/speak-and-spell" className={`nav-link ${pathname === '/speak-and-spell' ? 'active' : ''}`}>Weekly Kit</Link></li>
-                        <li><a href="/assets/pdfs/MoneyRules_Parent_Guide%20(1).pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Parent Guide</a></li>
-                        {/* <li><Link href="/grammar-and-vocabulary" className={`nav-link ${pathname === '/grammar-and-vocabulary' ? 'active' : ''}`}>Grammar and vocabulary</Link></li> */}
-                        {/* <li><Link href="/fun-and-games" className={`nav-link ${pathname === '/fun-and-games' ? 'active' : ''}`}>Fun and games</Link></li> */}
                         <li><Link href="/parents" className={`nav-link ${pathname === '/parents' ? 'active' : ''}`}>Parents</Link></li>
+                        <li><Link href="/teachers" className={`nav-link ${pathname === '/teachers' ? 'active' : ''}`}>Teachers</Link></li>
+                        <li><Link href="/pricing" className={`nav-link ${pathname === '/pricing' ? 'active' : ''}`}>How to Join (Pricing)</Link></li>
+                        <li><Link href="/free-trial" className={`nav-link ${pathname === '/free-trial' ? 'active' : ''}`} style={{ fontWeight: 'bold', color: 'var(--accent-color)' }}>Free Trial (Coming Soon)</Link></li>
                     </ul>
                 </div>
             </nav>

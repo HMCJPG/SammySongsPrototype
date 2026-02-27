@@ -2,15 +2,22 @@
     {
         "id": "hello-hello",
         "title": "Hello, Hello, Hello",
-        "thumbnail": "/assets/images/hello.png",
+        "thumbnail": "/assets/images/pig_hello.png",
         "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "description": "Who is Sammy Rabbit? Listen to a song called Hello, hello, hello and sing along."
+        "description": "What are Bedtime Songs and Stories? Listen to a song called Hello, hello, hello and sing along."
     },
     {
         "id": "saving-money",
-        "title": "Saving Money with Sammy",
-        "thumbnail": "/assets/sammy_headphones.png",
+        "title": "Saving Money with Piggy",
+        "thumbnail": "/assets/images/pig_headphones.png",
         "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
         "description": "Learn how saving money can be fun and exciting for your future goals!"
+    },
+    {
+        "id": "money-rules",
+        "title": "Money Rules Lyric Video",
+        "thumbnail": "/assets/images/pig_book.png",
+        "videoUrl": "/assets/videos/moneyrules.mp4",
+        "description": "Learn the Bedtime Songs and Stories Money Rules by singing along to this lyric video!"
     }
 ]

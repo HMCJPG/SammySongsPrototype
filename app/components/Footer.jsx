@@ -49,6 +49,10 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
+
+            <div style={{ textAlign: 'center', padding: '20px', borderTop: '1px solid #ddd', marginTop: '40px', color: '#666' }}>
+                <p>&copy; Sam X Renick | All rights reserved.</p>
+            </div>
         </footer>
     );
 }

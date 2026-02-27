@@ -3,8 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 export const metadata = {
-    title: 'Sammy Rabbit Songs',
-    description: 'Who is Sammy Rabbit? Listen to a song called Hello, hello, hello and sing along.',
+    title: 'Bedtime Songs and Stories',
+    description: 'What are Bedtime Songs and Stories? Listen to a song called Hello, hello, hello and sing along.',
 };
 
 export default function RootLayout({ children }) {

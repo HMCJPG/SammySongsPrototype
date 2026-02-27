@@ -4,7 +4,7 @@ export default function ParentsPage() {
             <div className="container" style={{ maxWidth: '800px' }}>
                 <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Parents</h2>
                 <p style={{ fontSize: '1.25rem', color: '#666', marginBottom: '50px', lineHeight: '1.6' }}>
-                    This sub-section of Sammy Rabbit Songs is coming soon! Check back later for more exciting activities and learning materials.
+                    This sub-section of Bedtime Songs and Stories is coming soon! Check back later for more exciting activities and learning materials.
                 </p>
 
                 <div style={{ background: 'white', padding: '50px', borderRadius: '24px', border: '4px dashed var(--accent-color)', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
