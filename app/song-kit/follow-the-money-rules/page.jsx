@@ -51,7 +51,7 @@ export default function SongKitPage() {
                     </a>
 
                     {/* Parent Guide */}
-                    <a href="/assets/pdfs/MoneyRules_Parent_Guide%20(1).pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
+                    <a href="/assets/pdfs/Bedtime%20_%20Parent%20Guide%20_%20Follow%20the%20Money%20Rules!.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
                         <i className="fas fa-users" style={{ fontSize: '2rem', color: '#ffb74d' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Parent Guide</h4>
@@ -60,11 +60,20 @@ export default function SongKitPage() {
                     </a>
 
                     {/* Family Activity Guide */}
-                    <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
+                    <a href="/assets/pdfs/Bedtime%20_%20Family%20Activity%20Guide%20_%20Follow%20the%20Money%20Rules!.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
                         <i className="fas fa-puzzle-piece" style={{ fontSize: '2rem', color: '#ba68c8' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Family Activity Guide</h4>
                             <span style={{ color: '#888', fontSize: '0.9rem' }}>Fun offline games</span>
+                        </div>
+                    </a>
+
+                    {/* Teacher Guide */}
+                    <a href="/assets/pdfs/Bedtime%20_%20Teacher%20Lesson%20Plan%20_%20Follow%20the%20Money%20Rules!.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
+                        <i className="fas fa-chalkboard-teacher" style={{ fontSize: '2rem', color: '#4db6ac' }}></i>
+                        <div>
+                            <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Teacher Guide</h4>
+                            <span style={{ color: '#888', fontSize: '0.9rem' }}>Comprehensive lesson plan</span>
                         </div>
                     </a>
 

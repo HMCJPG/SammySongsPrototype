@@ -4,18 +4,18 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 
-export default function FreeTrialGate() {
+export default function LoginPage() {
     const [submitted, setSubmitted] = useState(false);
 
     return (
-        <main className="free-trial-page" style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+        <main className="login-page" style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
             <div className="container" style={{ maxWidth: '600px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', textAlign: 'center', borderTop: '8px solid var(--accent-color)' }}>
 
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>
-                    Unlock Your Free Trial
+                    Welcome Back!
                 </h1>
                 <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '30px' }}>
-                    Join Sam X Renick and give your children the gift of financial literacy. Get instant access to premium Bedtime Songs & Stories!
+                    Log in to continue your child's financial literacy journey with Sammy Rabbit.
                 </p>
 
                 {!submitted ? (
@@ -33,7 +33,7 @@ export default function FreeTrialGate() {
                             style={{ width: '100%', fontSize: '1.2rem', padding: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', color: '#444', border: '2px solid #ddd' }}
                         >
                             <img src="https://authjs.dev/img/providers/google.svg" alt="Google Logo" style={{ width: '24px', height: '24px', marginRight: '10px' }} />
-                            Continue with Google
+                            Log in with Google
                         </button>
 
                         <div style={{ margin: '10px 0', display: 'flex', alignItems: 'center' }}>
@@ -48,15 +48,21 @@ export default function FreeTrialGate() {
                             placeholder="Enter your email address"
                             style={{ padding: '15px 20px', borderRadius: '12px', border: '2px solid #ddd', fontSize: '1.1rem', width: '100%' }}
                         />
+                        <input
+                            type="password"
+                            required
+                            placeholder="Enter your password"
+                            style={{ padding: '15px 20px', borderRadius: '12px', border: '2px solid #ddd', fontSize: '1.1rem', width: '100%' }}
+                        />
                         <button type="submit" className="btn btn-pill" style={{ width: '100%', fontSize: '1.2rem', padding: '15px' }}>
-                            Start My Free Trial
+                            Log In
                         </button>
                     </form>
                 ) : (
                     <div style={{ padding: '30px', background: '#e8f5e9', borderRadius: '16px', color: '#2e7d32' }}>
                         <i className="fas fa-check-circle" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
-                        <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>You're on the list!</h3>
-                        <p>Keep an eye on your inbox. We'll send you your access link shortly.</p>
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Logged in successfully!</h3>
+                        <p>Redirecting you to the dashboard...</p>
                         <br />
                         <Link href="/" className="btn btn-sharp" style={{ background: 'white', color: '#2e7d32', border: '2px solid #2e7d32' }}>
                             Return Home
@@ -65,7 +71,7 @@ export default function FreeTrialGate() {
                 )}
 
                 <div style={{ marginTop: '30px', color: '#888', fontSize: '0.9rem' }}>
-                    <p>Already have an account? <Link href="/login" style={{ color: 'var(--accent-color)', fontWeight: 'bold' }}>Log In</Link></p>
+                    <p>Don't have an account? <Link href="/free-trial" style={{ color: 'var(--accent-color)', fontWeight: 'bold' }}>Sign Up for a Free Trial</Link></p>
                 </div>
             </div>
         </main>

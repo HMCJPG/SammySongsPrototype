@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useSession, signOut } from 'next-auth/react';
 
 export default function Header() {
     const [navOpen, setNavOpen] = useState(false);
     const pathname = usePathname();
+    const { data: session } = useSession();
 
     return (
         <>
@@ -31,8 +33,15 @@ export default function Header() {
                         <button className="search-icon" aria-label="Search">
                             <i className="fas fa-search"></i>
                         </button>
-                        <div className="auth-buttons" style={{ display: 'none' }}>
-                            {/* Buttons removed per request */}
+                        <div className="auth-buttons" style={{ display: 'flex', gap: '10px', alignItems: 'center', marginLeft: '15px' }}>
+                            {session ? (
+                                <>
+                                    <span style={{ fontSize: '0.9rem', fontWeight: 'bold', display: 'none' }} className="user-name-display">{session.user?.name}</span>
+                                    <button onClick={() => signOut()} className="btn btn-sharp" style={{ padding: '8px 15px', fontSize: '0.9rem', background: 'white', color: 'var(--accent-color)', border: '2px solid var(--accent-color)' }}>Sign Out</button>
+                                </>
+                            ) : (
+                                <Link href="/login" className="btn btn-sharp" style={{ padding: '8px 15px', fontSize: '0.9rem', background: 'white', color: 'var(--accent-color)', border: '2px solid var(--accent-color)' }}>Log In</Link>
+                            )}
                         </div>
                         <button
                             className="hamburger-menu"
