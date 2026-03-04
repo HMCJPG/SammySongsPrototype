@@ -20,7 +20,7 @@ export default function Footer() {
                     <h4 className="footer-title">Support</h4>
                     <ul className="footer-links">
                         <li><Link href="#">Help center</Link></li>
-                        <li><Link href="#">Pricing</Link></li>
+                        <li><Link href="/early-access">Get Free Early Access</Link></li>
                         <li><Link href="#">Education.com For Schools</Link></li>
                         <li><Link href="#">Get a Quote</Link></li>
                         <li><Link href="#">Give Gift</Link></li>

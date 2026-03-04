@@ -8,11 +8,11 @@ export default function Home() {
             {/* Page 1: The Home Page (The "Hook") */}
             <section className="hero-section" style={{ textAlign: 'center', padding: '80px 20px 40px 20px', backgroundColor: 'var(--light-bg)' }}>
                 <div className="container">
-                    <h1 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '20px', color: 'var(--text-dark)' }}>
-                        Bedtime Songs & Stories that Build Great Money Habits
+                    <h1 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '10px', color: 'var(--text-dark)' }}>
+                        Bedtime Songs & Stories
                     </h1>
-                    <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--accent-color)', marginBottom: '20px' }}>
-                        Presented by Sam X Renick, Award-Winning Financial Educator & Author
+                    <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-dark)', marginBottom: '20px' }}>
+                        that Build Great Money Habits
                     </h2>
                 </div>
             </section>
