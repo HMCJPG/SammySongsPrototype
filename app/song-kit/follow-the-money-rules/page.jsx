@@ -79,6 +79,29 @@ export default function SongKitPage() {
 
                 </div>
 
+                {/* Games Hub Button */}
+                <div style={{ marginTop: '40px', textAlign: 'center' }}>
+                    <Link href="/games" style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '20px',
+                        padding: '25px 50px',
+                        backgroundColor: '#ffb74d',
+                        color: 'white',
+                        borderRadius: '30px',
+                        textDecoration: 'none',
+                        boxShadow: '0 8px 20px rgba(255, 183, 77, 0.4)',
+                        fontWeight: 'bold',
+                        fontSize: '1.8rem'
+                    }}>
+                        <i className="fas fa-gamepad" style={{ fontSize: '2.5rem' }}></i>
+                        <div style={{ fontWeight: 'bold' }}>
+                            Play Our Games!
+                        </div>
+                    </Link>
+                </div>
+
                 <div style={{ marginTop: '40px', textAlign: 'center' }}>
                     <Link href="/" className="btn btn-sharp">
                         <i className="fas fa-arrow-left"></i> Back to Home

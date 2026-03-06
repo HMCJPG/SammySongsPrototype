@@ -1,0 +1,185 @@
+:root {
+    --card-front-bg: #ffffff;
+    --card-back-bg: #4a90e2;
+    --match-color: #4ecdc4;
+    --primary-text: #2d3436;
+}
+
+.memory-match-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.game-header h2 {
+    color: #2d3436;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Grid Layout */
+.memory-grid {
+    display: grid;
+    gap: 15px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Card Container */
+.memory-card {
+    position: relative;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.memory-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.memory-card.matched {
+    animation: celebrate 0.5s ease-out forwards;
+}
+
+/* Front & Back Faces */
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+}
+
+/* Back face (Hidden) */
+.card-face.back {
+    background: var(--card-back-bg);
+    background-image: radial-gradient(circle, #ffffff33 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: white;
+}
+
+.card-face.back::after {
+    content: "?";
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+/* Front face (Revealed) */
+.card-face.front {
+    background: var(--card-front-bg);
+    transform: rotateY(180deg);
+    padding: 10px;
+    text-align: center;
+}
+
+.card-face.front img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.card-face.front .card-word {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+/* Celebratory animation */
+@keyframes celebrate {
+    0% {
+        transform: rotateY(180deg) scale(1);
+    }
+
+    50% {
+        transform: rotateY(180deg) scale(1.15);
+    }
+
+    100% {
+        transform: rotateY(180deg) scale(1);
+        border-color: var(--match-color);
+    }
+}
+
+/* Completion Overlay */
+.completion-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: white;
+}
+
+.completion-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #2d3436;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.btn-new-game {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.btn-new-game:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive constraints */
+@media (max-width: 480px) {
+    .memory-grid {
+        gap: 8px;
+    }
+
+    .card-face.back::after {
+        font-size: 2rem;
+    }
+}
