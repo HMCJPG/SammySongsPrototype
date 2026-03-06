@@ -15,15 +15,6 @@ export default function Header() {
             <header className="header-area">
                 <div className="container header-top">
                     <div className="header-left">
-                        <Link href="/">
-                            <img
-                                src="/assets/images/pig_logo.png"
-                                alt="Bedtime Songs and Stories Logo"
-                                className="logo-placeholder"
-                                onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/50x50?text=BSS'; }}
-                            />
-                        </Link>
-                        <div className="separator"></div>
                         <Link href="/" style={{ textDecoration: 'none' }}>
                             <h1 className="brand-title">Bedtime Songs and Stories That Build Great Money Habits</h1>
                         </Link>
@@ -59,6 +50,7 @@ export default function Header() {
                 <div className="container">
                     <ul className={`nav-list ${navOpen ? 'show' : ''}`}>
                         <li><Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link></li>
+                        <li><Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link></li>
                         <li><Link href="/parents" className={`nav-link ${pathname === '/parents' ? 'active' : ''}`}>Parents</Link></li>
                         <li><Link href="/teachers" className={`nav-link ${pathname === '/teachers' ? 'active' : ''}`}>Teachers</Link></li>
                         <li><Link href="/early-access" className={`nav-link ${pathname === '/early-access' ? 'active' : ''}`}>Get Free Early Access</Link></li>
