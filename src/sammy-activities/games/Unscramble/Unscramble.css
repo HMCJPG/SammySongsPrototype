@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;700&display=swap');
 
-:root {
+.unscramble-container {
     --primary-green: #2ecc71;
     --primary-blue: #3498db;
     --bg-cream: #f9fbfd;

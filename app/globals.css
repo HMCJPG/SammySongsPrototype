@@ -1,10 +1,10 @@
 :root {
-  --primary-bg: #FDF8F0;
-  --accent-color: #A00032;
-  --text-dark: #2B1E4A;
+  --primary-bg: #e8f5e1;
+  --accent-color: #559182;
+  --text-dark: #1F3A33;
   --text-light: #FFFFFF;
   --font-main: 'Nunito', sans-serif;
-  --hero-gradient: linear-gradient(90deg, #FF5733 0%, #FFC300 100%);
+  --hero-gradient: linear-gradient(90deg, #cde8c5 0%, #c2c977 100%);
   --border-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -63,7 +63,7 @@ body {
 .brand-title {
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--accent-color);
   margin: 0;
   letter-spacing: -0.5px;
 }

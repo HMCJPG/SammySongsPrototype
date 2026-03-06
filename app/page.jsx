@@ -5,16 +5,13 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <main>
-            {/* Page 1: The Home Page (The "Hook") */}
-            <section className="hero-section" style={{ textAlign: 'center', padding: '80px 20px 40px 20px', backgroundColor: 'var(--light-bg)' }}>
-                <div className="container">
-                    <h1 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '10px', color: 'var(--text-dark)' }}>
-                        Bedtime Songs & Stories
-                    </h1>
-                    <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-dark)', marginBottom: '20px' }}>
-                        that Build Great Money Habits
-                    </h2>
-                </div>
+            {/* Page 1: The Home Page Banner */}
+            <section style={{ width: '100%' }}>
+                <img
+                    src="/assets/images/bed.web.Sec1.header.png"
+                    alt="Bedtime Songs and Stories that Build Great Money Habits"
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                />
             </section>
 
             {/* Featured Content (H3) - Moved up! */}
@@ -24,20 +21,21 @@ export default function Home() {
                         Featured Song & Story
                     </h3>
 
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', justifyItems: 'center', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', justifyItems: 'center', alignItems: 'flex-start' }}>
 
                         {/* Featured Karaoke Video */}
-                        <div style={{ flex: '1 1 400px', background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
+                        <div style={{ flex: '1 1 400px', background: 'white', borderRadius: '24px', padding: '30px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
+                            <i className="fas fa-music" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '15px' }}></i>
+                            <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '20px', marginTop: 0 }}>Karaoke Song</h4>
                             <video
                                 src="/assets/videos/moneyrules.mp4"
                                 poster="/assets/images/pig_book.png"
                                 controls
-                                style={{ width: '100%', display: 'block' }}
+                                style={{ width: '100%', display: 'block', borderRadius: '12px' }}
                                 aria-label="Follow the Money Rules Karaoke Video"
                             ></video>
-                            <div style={{ padding: '20px' }}>
-                                <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Karaoke Video: Follow the Money Rules</h4>
-                                <p style={{ color: '#666' }}>Sing along and learn the golden rules of saving!</p>
+                            <div style={{ marginTop: '20px' }}>
+                                <p style={{ color: '#666', margin: 0 }}>Sing along and learn the golden rules of saving!</p>
                             </div>
                         </div>
 
@@ -46,13 +44,13 @@ export default function Home() {
                             <div style={{ background: 'var(--accent-color)', color: 'white', padding: '30px', borderRadius: '24px', textAlign: 'center' }}>
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Story Flipbook</h4>
-                                <p>Read the interactive story of Follow the Money Rules.</p>
-                                <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-sharp" style={{ display: 'inline-block', background: 'white', color: 'var(--accent-color)', marginTop: '15px', textDecoration: 'none' }}>Open Flipbook</a>
+                                <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-sharp" style={{ display: 'inline-block', background: 'white', color: 'var(--accent-color)', marginBottom: '15px', textDecoration: 'none' }}>Open Flipbook</a>
+                                <img src="/assets/images/shortstoryimage.png" alt="Story Flipbook" style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.2)' }} />
                             </div>
 
                             {/* Song Kit (Button) */}
                             <div style={{ background: '#f5f5f5', padding: '30px', borderRadius: '24px', textAlign: 'center', border: '2px dashed #ccc' }}>
-                                <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Educator & Parent Resources</h4>
+                                <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Teacher and Parent Guides</h4>
                                 <p style={{ marginBottom: '15px', color: '#666' }}>Unlock the full resource pack for this song.</p>
                                 <Link href="/song-kit/follow-the-money-rules" className="btn btn-pill" style={{ textDecoration: 'none', display: 'inline-block' }}>
                                     Access Song Kit
