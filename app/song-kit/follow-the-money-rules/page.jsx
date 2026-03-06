@@ -33,7 +33,7 @@ export default function SongKitPage() {
                     </a>
 
                     {/* Lyrics */}
-                    <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
+                    <a href="/assets/pdfs/Song%20Lyrics_%20Follow%20the%20Money%20Rules.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
                         <i className="fas fa-file-alt" style={{ fontSize: '2rem', color: '#81c784' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Lyrics Sheet</h4>
@@ -42,7 +42,7 @@ export default function SongKitPage() {
                     </a>
 
                     {/* Story PDF */}
-                    <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
+                    <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
                         <i className="fas fa-book" style={{ fontSize: '2rem', color: '#64b5f6' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Story PDF</h4>

@@ -26,7 +26,7 @@ export default function Home() {
                         {/* Featured Karaoke Video */}
                         <div style={{ flex: '1 1 400px', background: 'white', borderRadius: '24px', padding: '30px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
                             <i className="fas fa-music" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '15px' }}></i>
-                            <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '20px', marginTop: 0 }}>Karaoke Song</h4>
+                            <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '20px', marginTop: 0 }}>Song</h4>
                             <video
                                 src="/assets/videos/moneyrules.mp4"
                                 poster="/assets/images/pig_book.png"
@@ -35,7 +35,7 @@ export default function Home() {
                                 aria-label="Follow the Money Rules Karaoke Video"
                             ></video>
                             <div style={{ marginTop: '20px' }}>
-                                <p style={{ color: '#666', margin: 0 }}>Sing along and learn the golden rules of saving!</p>
+                                <p style={{ color: '#666', margin: 0 }}>Sing along and learn the golden rules of money!</p>
                             </div>
                         </div>
 
@@ -58,6 +58,17 @@ export default function Home() {
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* The Only Children's Program Blurb */}
+            <section style={{ padding: '0px 20px 80px 20px', backgroundColor: 'var(--light-bg)' }}>
+                <div className="container">
+                    <div style={{ background: 'var(--primary-bg)', padding: '40px 30px', borderRadius: '16px', textAlign: 'center', border: '2px dashed var(--accent-color)' }}>
+                        <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-color)', margin: 0, fontWeight: 900, lineHeight: '1.4' }}>
+                            The Only Children's Program That Teaches Money Habits Through Songs, Stories, and Conversations!
+                        </h3>
                     </div>
                 </div>
             </section>
@@ -91,10 +102,10 @@ export default function Home() {
                         {/* Song 2 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#e0f7fa', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/assets/images/pig_hello.png" alt="Hello Hello Hello" style={{ maxHeight: '80%' }} />
+                                <img src="/assets/images/pig_hello.png" alt="It's a Joy to Save!" style={{ maxHeight: '80%' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
-                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Hello, Hello, Hello</h4>
+                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's a Joy to Save!</h4>
                                 <button className="btn btn-sharp" style={{ width: '100%' }}><i className="fas fa-play"></i> Watch Video</button>
                             </div>
                         </div>
@@ -102,10 +113,10 @@ export default function Home() {
                         {/* Song 3 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#fff9c4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/assets/images/pig_headphones.png" alt="Saving Money is Fun" style={{ maxHeight: '80%' }} />
+                                <img src="/assets/images/pig_headphones.png" alt="It's Good to Earn a Dollar!" style={{ maxHeight: '80%' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
-                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Saving Money is Fun</h4>
+                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's Good to Earn a Dollar!</h4>
                                 <button className="btn btn-sharp" style={{ width: '100%' }}><i className="fas fa-play"></i> Watch Video</button>
                             </div>
                         </div>
@@ -116,7 +127,7 @@ export default function Home() {
                                 <i className="fas fa-music" style={{ fontSize: '5rem', color: '#f48fb1' }}></i>
                             </div>
                             <div style={{ padding: '20px' }}>
-                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Dream Big (Coming Soon)</h4>
+                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Spend Smart!</h4>
                                 <button className="btn btn-sharp" style={{ width: '100%', background: '#ccc', borderColor: '#ccc', cursor: 'not-allowed' }}>Watch Video</button>
                             </div>
                         </div>
