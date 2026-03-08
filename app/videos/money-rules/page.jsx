@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function EarnADollarPage() {
+export default function MoneyRulesPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
             <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -10,15 +10,15 @@ export default function EarnADollarPage() {
                     <i className="fas fa-arrow-left"></i> Back to Home
                 </Link>
 
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '30px', color: 'var(--text-dark)' }}>It's Good to Earn a Dollar!</h2>
+                <h2 style={{ fontSize: '2.5rem', marginBottom: '30px', color: 'var(--text-dark)' }}>Follow the Money Rules!</h2>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
                     {/* Video Player (takes up most of the page) */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
                         <video
-                            src="/assets/videos/Good to Earn a Dollar.mp4"
+                            src="/assets/videos/moneyrules.mp4"
                             controls
-                            poster="/assets/images/earn_a_dollar_thumb_bear.png"
+                            poster="/assets/images/pig_book.png"
                             style={{ width: '100%', borderRadius: '12px', display: 'block' }}
                         >
                             Your browser does not support the video tag.
@@ -42,8 +42,9 @@ export default function EarnADollarPage() {
                 <div style={{ width: '100%', marginTop: '40px', background: 'white', padding: '30px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
                     <h3 style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--text-dark)' }}>More Songs to Enjoy</h3>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
-                        <Link href="/videos/money-rules" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Follow the Money Rules!</Link>
+                        {/* We omit Money Rules from its own page, optionally, but the user said "to all the other songs" so we only show the *other* songs */}
                         <Link href="/videos/joy-to-save" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's a Joy to Save!</Link>
+                        <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
                         <Link href="/videos/spend-smart" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Spend Smart!</Link>
                     </div>
                 </div>

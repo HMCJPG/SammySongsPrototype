@@ -18,7 +18,7 @@ export default function JoyToSavePage() {
                         <video
                             src="/assets/videos/It's a Joy to Save!.mp4"
                             controls
-                            poster="/assets/images/pig_hello.png"
+                            poster="/assets/images/joy_to_save_thumb_squirrel.png"
                             style={{ width: '100%', borderRadius: '12px', display: 'block' }}
                         >
                             Your browser does not support the video tag.
@@ -35,6 +35,16 @@ export default function JoyToSavePage() {
                                 Access Song Resources
                             </Link>
                         </div>
+                    </div>
+                </div>
+
+                {/* Other Songs Links */}
+                <div style={{ width: '100%', marginTop: '40px', background: 'white', padding: '30px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
+                    <h3 style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--text-dark)' }}>More Songs to Enjoy</h3>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+                        <Link href="/videos/money-rules" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Follow the Money Rules!</Link>
+                        <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
+                        <Link href="/videos/spend-smart" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Spend Smart!</Link>
                     </div>
                 </div>
             </div>

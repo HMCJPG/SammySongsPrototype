@@ -102,7 +102,7 @@ export default function Home() {
                         {/* Song 2 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#e0f7fa', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/assets/images/pig_hello.png" alt="It's a Joy to Save!" style={{ maxHeight: '80%' }} />
+                                <img src="/assets/images/joy_to_save_thumb_squirrel.png" alt="It's a Joy to Save!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's a Joy to Save!</h4>
@@ -113,7 +113,7 @@ export default function Home() {
                         {/* Song 3 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#fff9c4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/assets/images/pig_headphones.png" alt="It's Good to Earn a Dollar!" style={{ maxHeight: '80%' }} />
+                                <img src="/assets/images/earn_a_dollar_thumb_bear.png" alt="It's Good to Earn a Dollar!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's Good to Earn a Dollar!</h4>
@@ -124,7 +124,7 @@ export default function Home() {
                         {/* Song 4 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#fce4ec', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <i className="fas fa-music" style={{ fontSize: '5rem', color: '#f48fb1' }}></i>
+                                <img src="/assets/images/spend_smart_thumb_owl.png" alt="Spend Smart!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Spend Smart!</h4>
