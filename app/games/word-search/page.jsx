@@ -4,8 +4,12 @@ import { WordSearch } from '../../../src/sammy-activities';
 import Link from 'next/link';
 
 export default function WordSearchPage() {
-    // Default words for testing
-    const defaultWords = ['SAVINGS', 'BUDGET', 'INCOME', 'INVEST', 'MONEY', 'SAMMY', 'RABBIT'];
+    const defaultWords = [
+        'MONEY', 'RULES', 'HABIT', 'SAVING', 'EARNING',
+        'WANT', 'NEED', 'SUCCESS', 'INVEST', 'GOALS',
+        'PLAN', 'TRACKING', 'MANAGE', 'COUNTING', 'BORROW',
+        'LEARNING', 'BUDGET'
+    ];
 
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

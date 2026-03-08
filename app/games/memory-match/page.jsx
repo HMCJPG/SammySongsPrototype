@@ -6,12 +6,14 @@ import Link from 'next/link';
 export default function MemoryMatchPage() {
     // Default pairs for testing
     const defaultPairs = [
-        { id: 1, word: 'Savings' },
-        { id: 2, word: 'Budget' },
-        { id: 3, word: 'Income' },
-        { id: 4, word: 'Money' },
-        { id: 5, word: 'Invest' },
-        { id: 6, word: 'Bank' }
+        { id: 1, word: 'Money' },
+        { id: 2, word: 'Rules' },
+        { id: 3, word: 'Habit' },
+        { id: 4, word: 'Follow' },
+        { id: 5, word: 'Save' },
+        { id: 6, word: 'Earn' },
+        { id: 7, word: 'Spend Smart' },
+        { id: 8, word: 'Give Wisely' }
     ];
 
     return (
@@ -22,7 +24,7 @@ export default function MemoryMatchPage() {
                         <i className="fas fa-arrow-left"></i> Back to Games
                     </Link>
                 </div>
-                <MemoryMatch pairs={defaultPairs} rows={3} columns={4} />
+                <MemoryMatch pairs={defaultPairs} rows={4} columns={4} />
             </div>
         </main>
     );

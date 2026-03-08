@@ -4,7 +4,7 @@ import { Unscramble } from '../../../src/sammy-activities';
 import Link from 'next/link';
 
 export default function UnscramblePage() {
-    const defaultWords = ['Rabbit', 'Savings', 'Budget', 'Income', 'Invest', 'Money'];
+    const defaultWords = ['Money', 'Rules', 'Habit', 'Saving', 'Earning', 'Invest', 'Budget'];
 
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

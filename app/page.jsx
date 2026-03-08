@@ -106,7 +106,7 @@ export default function Home() {
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's a Joy to Save!</h4>
-                                <button className="btn btn-sharp" style={{ width: '100%' }}><i className="fas fa-play"></i> Watch Video</button>
+                                <Link href="/videos/joy-to-save" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@ export default function Home() {
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's Good to Earn a Dollar!</h4>
-                                <button className="btn btn-sharp" style={{ width: '100%' }}><i className="fas fa-play"></i> Watch Video</button>
+                                <Link href="/videos/earn-a-dollar" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                             </div>
                         </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Spend Smart!</h4>
-                                <button className="btn btn-sharp" style={{ width: '100%', background: '#ccc', borderColor: '#ccc', cursor: 'not-allowed' }}>Watch Video</button>
+                                <Link href="/videos/spend-smart" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                             </div>
                         </div>
                     </div>
