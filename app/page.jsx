@@ -77,15 +77,18 @@ export default function Home() {
             <section className="lead-capture" style={{ padding: '80px 20px', backgroundColor: 'white' }}>
                 <div className="container">
                     <div style={{ background: '#fce4ec', padding: '40px', borderRadius: '24px', maxWidth: '600px', margin: '0 auto', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
-                        <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Start Building Great Habits Today</h3>
-                        <p style={{ marginBottom: '20px', color: '#666' }}>Enter your email to unlock your free trial and access exclusive content.</p>
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Join the FREE Beta Today!</h3>
+                        <p style={{ marginBottom: '20px', color: '#666' }}>
+                            Be one of the first families and teachers to experience our new songs, stories, and activities that build lifelong money habits.<br /><br />
+                            Enter your email to get early access.
+                        </p>
                         <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <input
                                 type="email"
                                 placeholder="Email address..."
                                 style={{ padding: '15px 20px', borderRadius: '50px', border: '2px solid #ccc', fontSize: '1.1rem', flex: '1', minWidth: '250px' }}
                             />
-                            <button type="submit" className="btn btn-pill" style={{ margin: 0 }}>Get Free Trial</button>
+                            <button type="submit" className="btn btn-pill" style={{ margin: 0 }}>Join Now!</button>
                         </form>
                     </div>
                 </div>
