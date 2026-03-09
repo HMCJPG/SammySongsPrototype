@@ -113,7 +113,8 @@ body {
 }
 
 .btn-sharp:hover {
-  background-color: #7A0026;
+  background-color: #FFCA28;
+  color: var(--text-dark);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -184,7 +185,8 @@ body {
 }
 
 .nav-link:not(.active):hover {
-  background-color: #7A0026;
+  background-color: #FFCA28;
+  color: var(--text-dark);
 }
 
 /* Hero Section */
@@ -259,13 +261,14 @@ body {
   color: #FFDF00;
   font-size: 1.2rem;
   font-weight: 900;
-  box-shadow: 0 8px 20px rgba(160, 0, 50, 0.3);
+  box-shadow: 0 8px 20px rgba(255, 202, 40, 0.4);
 }
 
 .btn-pill:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 25px rgba(160, 0, 50, 0.4);
-  background-color: #7A0026;
+  box-shadow: 0 12px 25px rgba(255, 202, 40, 0.5);
+  background-color: #FFCA28;
+  color: var(--text-dark);
 }
 
 .hero-right {

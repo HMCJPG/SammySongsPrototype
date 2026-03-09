@@ -51,7 +51,7 @@ export default function Home() {
                             {/* Song Kit (Button) */}
                             <div style={{ background: '#f5f5f5', padding: '30px', borderRadius: '24px', textAlign: 'center', border: '2px dashed #ccc' }}>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Teacher and Parent Guides</h4>
-                                <p style={{ marginBottom: '15px', color: '#666' }}>Unlock the full resource pack for this song.</p>
+                                <p style={{ marginBottom: '15px', color: '#666' }}>Unlock all the resources for this song.</p>
                                 <Link href="/song-kit/follow-the-money-rules" className="btn btn-pill" style={{ textDecoration: 'none', display: 'inline-block' }}>
                                     Access Song Kit
                                 </Link>
@@ -132,6 +132,28 @@ export default function Home() {
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Spend Smart!</h4>
                                 <Link href="/videos/spend-smart" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                            </div>
+                        </div>
+
+                        {/* Song 5 */}
+                        <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
+                            <div style={{ height: '200px', background: '#e8f5e9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img src="/assets/images/great_habits_thumbnail.png" alt="Great Habits Make a Great You" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
+                            <div style={{ padding: '20px' }}>
+                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Great Habits Make a Great You</h4>
+                                <Link href="/videos/great-habits" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                            </div>
+                        </div>
+
+                        {/* Song 6 */}
+                        <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
+                            <div style={{ height: '200px', background: '#e3f2fd', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img src="/assets/images/rule_of_72_thumbnail.png" alt="The Rule of 72!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
+                            <div style={{ padding: '20px' }}>
+                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>The Rule of 72!</h4>
+                                <Link href="/videos/rule-of-72" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                             </div>
                         </div>
                     </div>

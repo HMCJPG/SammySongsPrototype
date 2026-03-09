@@ -16,7 +16,7 @@ export default function SpendSmartPage() {
                     {/* Video Player (takes up most of the page) */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
                         <video
-                            src="/assets/videos/Spending Smart.mp4"
+                            src="/assets/videos/SpendSmart.mp4"
                             controls
                             poster="/assets/images/spend_smart_thumb_owl.png"
                             style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'var(--primary-bg)' }}
@@ -45,6 +45,8 @@ export default function SpendSmartPage() {
                         <Link href="/videos/money-rules" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Follow the Money Rules!</Link>
                         <Link href="/videos/joy-to-save" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's a Joy to Save!</Link>
                         <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
+                        <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
+                        <Link href="/videos/rule-of-72" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>The Rule of 72!</Link>
                     </div>
                 </div>
             </div>

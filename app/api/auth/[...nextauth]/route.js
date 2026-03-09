@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import CredentialsProvider from "next-auth/providers/credentials";
 
 const authOptions = {
     providers: [
@@ -7,6 +8,41 @@ const authOptions = {
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         }),
+        CredentialsProvider({
+            name: "Email and Password",
+            credentials: {
+                email: { label: "Email", type: "email" },
+                password: { label: "Password", type: "password" },
+            },
+            async authorize(credentials, req) {
+                if (!credentials?.email || !credentials?.password) {
+                    return null;
+                }
+                try {
+                    const res = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.NEXT_PUBLIC_FIREBASE_API_KEY}`, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            email: credentials.email,
+                            password: credentials.password,
+                            returnSecureToken: true
+                        }),
+                        headers: { "Content-Type": "application/json" }
+                    });
+
+                    const data = await res.json();
+
+                    if (res.ok && data.idToken) {
+                        return { id: data.localId, email: data.email };
+                    }
+
+                    console.error("Firebase auth error:", data?.error?.message);
+                    return null;
+                } catch (error) {
+                    console.error("Credentials error:", error);
+                    return null;
+                }
+            }
+        })
     ],
     secret: process.env.NEXTAUTH_SECRET,
     pages: {

@@ -3,9 +3,30 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
+import { db } from '../lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 export default function FreeTrialGate() {
     const [submitted, setSubmitted] = useState(false);
+    const [email, setEmail] = useState('');
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            await addDoc(collection(db, 'free_trials'), {
+                email,
+                timestamp: serverTimestamp(),
+            });
+            setSubmitted(true);
+        } catch (error) {
+            console.error("Error adding email: ", error);
+            alert("There was an error submitting your email. Please try again.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <main className="free-trial-page" style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
@@ -20,10 +41,7 @@ export default function FreeTrialGate() {
 
                 {!submitted ? (
                     <form
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            setSubmitted(true);
-                        }}
+                        onSubmit={handleSubmit}
                         style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
                     >
                         <button
@@ -46,10 +64,12 @@ export default function FreeTrialGate() {
                             type="email"
                             required
                             placeholder="Enter your email address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             style={{ padding: '15px 20px', borderRadius: '12px', border: '2px solid #ddd', fontSize: '1.1rem', width: '100%' }}
                         />
-                        <button type="submit" className="btn btn-pill" style={{ width: '100%', fontSize: '1.2rem', padding: '15px' }}>
-                            Start My Free Trial
+                        <button disabled={loading} type="submit" className="btn btn-pill" style={{ width: '100%', fontSize: '1.2rem', padding: '15px', opacity: loading ? 0.7 : 1 }}>
+                            {loading ? 'Submitting...' : 'Start My Free Trial'}
                         </button>
                     </form>
                 ) : (
