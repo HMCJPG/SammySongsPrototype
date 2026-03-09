@@ -12,9 +12,15 @@ const firebaseConfig = {
     measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase only if it hasn't been initialized yet
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-const auth = getAuth(app);
-const db = getFirestore(app);
+// Only initialize Firebase when the API key is available (prevents build crashes on Vercel)
+let app = null;
+let auth = null;
+let db = null;
+
+if (process.env.NEXT_PUBLIC_FIREBASE_API_KEY) {
+    app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+    auth = getAuth(app);
+    db = getFirestore(app);
+}
 
 export { app, auth, db };
