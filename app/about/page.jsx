@@ -2,8 +2,12 @@ export default function AboutPage() {
     return (
         <main style={{ padding: '80px 20px', minHeight: '100vh', backgroundColor: 'var(--primary-bg)' }}>
             <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'left', fontSize: '1.25rem', color: '#666', lineHeight: '1.8' }}>
-                <h1 style={{ fontSize: '4rem', color: 'var(--accent-color)', marginBottom: '10px', fontWeight: 900, textAlign: 'center' }}>Bedtime Songs and Stories</h1>
-                <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>About Us</h2>
+                <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>About Us</h2>
+
+                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Bedtime Songs and Stories</h3>
+                <p style={{ marginBottom: '20px' }}>
+                    Designed for parents, teachers, and community organizations who want simple, engaging resources to help children ages 3 and up build strong money habits. Through songs, stories, and conversations, kids begin developing the habits and mindsets that support lifelong financial well-being, self-sufficiency, and the ability to turn dreams and goals into reality.
+                </p>
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Mission</h3>
                 <p style={{ marginBottom: '20px' }}>
