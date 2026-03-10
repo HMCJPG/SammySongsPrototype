@@ -10,26 +10,40 @@ export default function AboutPage() {
                 </p>
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Meet the Creator: Sam X Renick</h3>
-                <p style={{ marginBottom: '20px' }}>
-                    Sam X Renick is the co-creator of Bedtime Songs and Stories and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    His programs weave together storybooks, music, dream-big journaling, games, live events, and more — and they've been embraced by families and organizations worldwide, including the Department of Defense, United Way, the University of Texas at Tyler, Girl Scouts of America, the Wisconsin Bankers Association, Citi, banks, credit unions, and schools across the country.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Sam's insights have been featured in the New York Times, Washington Post, NPR, Kiplinger, Forbes, KNX, and beyond. His sustained impact in the field has earned him numerous honors, including the New Jersey Financial Education Coalition Lifetime Achievement Award, the National Financial Educators Council Educator of the Year Award, and the California Jump$tart Coalition Leaders in Financial Literacy Award.
-                </p>
+                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
+                    <div style={{ flex: '1 1 400px' }}>
+                        <p style={{ marginBottom: '20px' }}>
+                            Sam X Renick is the co-creator of Bedtime Songs and Stories and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
+                        </p>
+                        <p style={{ marginBottom: '20px' }}>
+                            His programs weave together storybooks, music, dream-big journaling, games, live events, and more — and they've been embraced by families and organizations worldwide, including the Department of Defense, United Way, the University of Texas at Tyler, Girl Scouts of America, the Wisconsin Bankers Association, Citi, banks, credit unions, and schools across the country.
+                        </p>
+                        <p style={{ marginBottom: '20px' }}>
+                            Sam's insights have been featured in the New York Times, Washington Post, NPR, Kiplinger, Forbes, KNX, and beyond. His sustained impact in the field has earned him numerous honors, including the New Jersey Financial Education Coalition Lifetime Achievement Award, the National Financial Educators Council Educator of the Year Award, and the California Jump$tart Coalition Leaders in Financial Literacy Award.
+                        </p>
+                    </div>
+                    <div style={{ flex: '0 0 auto', textAlign: 'center', alignSelf: 'flex-start' }}>
+                        <img src="/assets/images/samxrenick.award.jpg" alt="Sam X Renick" style={{ maxWidth: '200px', height: 'auto', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }} />
+                    </div>
+                </div>
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Friend and Partner: Sammy Rabbit</h3>
-                <p style={{ marginBottom: '20px' }}>
-                    Although we are a separate enterprise, we share a close relationship — and a common heart — with Sammy Rabbit, a long-standing leader in early childhood financial education. Our missions are deeply aligned: helping children build strong money habits that support lifelong financial well-being.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    For decades, Sammy Rabbit has been inspiring families, schools, and communities through engaging songs, stories, lesson plans, and standards-aligned resources that make financial education simple, positive, and habit-focused.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    We warmly encourage you to explore the additional resources available at SammyRabbit.com, where you'll find expanded programs, classroom materials, books, activities, and tools to deepen your child's financial learning journey.
-                </p>
+                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
+                    <div style={{ flex: '1 1 400px' }}>
+                        <p style={{ marginBottom: '20px' }}>
+                            Although we are a separate enterprise, we share a close relationship — and a common heart — with Sammy Rabbit, a long-standing leader in early childhood financial education. Our missions are deeply aligned: helping children build strong money habits that support lifelong financial well-being.
+                        </p>
+                        <p style={{ marginBottom: '20px' }}>
+                            For decades, Sammy Rabbit has been inspiring families, schools, and communities through engaging songs, stories, lesson plans, and standards-aligned resources that make financial education simple, positive, and habit-focused.
+                        </p>
+                        <p style={{ marginBottom: '20px' }}>
+                            We warmly encourage you to explore the additional resources available at SammyRabbit.com, where you'll find expanded programs, classroom materials, books, activities, and tools to deepen your child's financial learning journey.
+                        </p>
+                    </div>
+                    <div style={{ flex: '0 0 auto', textAlign: 'center', alignSelf: 'center' }}>
+                        <img src="/assets/images/sammy-logo.png" alt="Sammy Rabbit Logo" style={{ maxWidth: '200px', height: 'auto' }} />
+                    </div>
+                </div>
 
                 <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginTop: '60px', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>Frequently Asked Questions</h2>
 

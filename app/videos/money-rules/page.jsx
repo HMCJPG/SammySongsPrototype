@@ -42,13 +42,13 @@ export default function MoneyRulesPage() {
                 <div style={{ width: '100%', marginTop: '40px', background: 'white', padding: '30px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
                     <h3 style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--text-dark)' }}>More Songs to Enjoy</h3>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
-                        {/* We omit Money Rules from its own page, optionally, but the user said "to all the other songs" so we only show the *other* songs */}
                         <Link href="/videos/joy-to-save" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's a Joy to Save!</Link>
                         <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
                         <Link href="/videos/spend-smart" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Spend Smart!</Link>
-                        <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
                         <Link href="/videos/rule-of-72" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>The Rule of 72!</Link>
-                    </div>
+                        <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
+                        <Link href="/videos/give-wisely" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Give Wisely!</Link>
+</div>
                 </div>
             </div>
         </main>

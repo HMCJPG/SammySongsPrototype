@@ -18,7 +18,7 @@ export default function RuleOf72Page() {
                         <video
                             src="/assets/videos/ruleof72.mp4"
                             controls
-                            poster="/assets/images/rule_of_72_thumbnail.png"
+                            poster="/assets/images/rule_of_72_3d_thumbnail.png"
                             style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'var(--primary-bg)' }}
                         >
                             Your browser does not support the video tag.
@@ -47,7 +47,8 @@ export default function RuleOf72Page() {
                         <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
                         <Link href="/videos/spend-smart" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Spend Smart!</Link>
                         <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
-                    </div>
+                        <Link href="/videos/give-wisely" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Give Wisely!</Link>
+</div>
                 </div>
             </div>
         </main>

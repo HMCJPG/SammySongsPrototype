@@ -45,9 +45,10 @@ export default function SpendSmartPage() {
                         <Link href="/videos/money-rules" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Follow the Money Rules!</Link>
                         <Link href="/videos/joy-to-save" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's a Joy to Save!</Link>
                         <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
-                        <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
                         <Link href="/videos/rule-of-72" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>The Rule of 72!</Link>
-                    </div>
+                        <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
+                        <Link href="/videos/give-wisely" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Give Wisely!</Link>
+</div>
                 </div>
             </div>
         </main>

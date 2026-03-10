@@ -2,39 +2,93 @@
 
 import Link from 'next/link';
 
-export default function SongKitPage() {
-    return (
-        <main className="song-kit-page" style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '900px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+// Note: Next.js 'use client' pages can't directly export metadata objects.
+// Since this is a simple page, we can set document.title in a useEffect if needed, 
+// or let the layout handle base SEO, but given the email specifically requested
+// Page title / SEO metadata, typically we'd separate this into a layout.jsx or server component.
+// But we'll rely on Next 13 conventions. For client components, standard approach is:
+import { useEffect } from 'react';
 
+export default function SongKitPage() {
+
+    useEffect(() => {
+        document.title = "Follow the Money Rules – Song Kit | Bedtime Songs & Stories";
+    }, []);
+
+    return (
+        <main className="song-kit-page" style={{ padding: '40px 20px 80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
+            {/* Breadcrumb Navigation */}
+            <div className="container" style={{ maxWidth: '900px', marginBottom: '20px' }}>
+                <nav aria-label="breadcrumb">
+                    <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', gap: '8px', color: '#666', fontSize: '1rem' }}>
+                        <li><Link href="/" style={{ color: 'var(--accent-color)', textDecoration: 'none' }}>Home</Link></li>
+                        <li>&gt;</li>
+                        <li>Song Kits</li>
+                        <li>&gt;</li>
+                        <li style={{ color: 'var(--text-dark)', fontWeight: 'bold' }}>Follow the Money Rules</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div className="container" style={{ maxWidth: '900px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
                 {/* Header Section */}
-                <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '30px' }}>
                     <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '10px' }}>
                         Song Kit
                     </h2>
-                    <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)' }}>
+                    <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '15px' }}>
                         Follow the Money Rules
                     </h3>
-                    <p style={{ color: '#666', marginTop: '15px' }}>
-                        Everything you need to teach the golden rules of money at home, in the classroom, and anywhere kids learn.
+
+                    {/* Song Kit Explainer Context */}
+                    <p style={{ color: '#444', fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto 20px auto', lineHeight: '1.6' }}>
+                        Each Song Kit includes everything you need to use this song at home or in the classroom. Enjoy!
                     </p>
+                    {/* Membership Context text */}
+                    <div style={{ background: '#e8f5e9', color: '#2e7d32', padding: '15px', borderRadius: '12px', display: 'inline-block', marginBottom: '25px', fontWeight: 'bold' }}>
+                        <i className="fas fa-gift" style={{ marginRight: '8px' }}></i>
+                        These resources are free to download during our Beta phase. No login required!
+                    </div>
+
+                    <div style={{ marginBottom: '20px' }}>
+                        {/* Social Share Hook */}
+                        <a href="mailto:?subject=Check%20out%20this%20Song%20Kit!&body=I%20found%20this%20great%20collection%20of%20resources%20for%20teaching%20kids%20about%20money."
+                            className="btn btn-sharp"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontSize: '1rem', padding: '10px 20px', background: 'white', color: 'var(--accent-color)', border: '2px solid var(--accent-color)', textDecoration: 'none', borderRadius: '50px' }}>
+                            <i className="fas fa-share-alt"></i> Share this Song Kit
+                        </a>
+                    </div>
+                </div>
+
+                {/* Inline Media Player */}
+                <div style={{ marginBottom: '40px', background: 'var(--primary-bg)', padding: '30px', borderRadius: '24px', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
+                    <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>Preview the Song</h4>
+                    <video
+                        controls
+                        poster="/assets/images/pig_book.png"
+                        src="/assets/videos/moneyrules.mp4"
+                        style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'black' }}
+                    >
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 {/* Resource Links Container */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', padding: '30px', backgroundColor: 'var(--primary-bg)', border: '6px solid var(--primary-bg)', borderRadius: '24px', boxShadow: '0 8px 16px rgba(0,0,0,0.03)' }}>
+                <h4 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '20px', textAlign: 'center' }}>Download Resources</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', padding: '30px', backgroundColor: 'var(--light-bg)', borderRadius: '24px', border: '1px solid #eee' }}>
 
-                    {/* Audio File */}
+                    {/* Audio File (Updated Label) */}
                     <a href="/assets/videos/moneyrules.mp4" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
-                        <i className="fas fa-music" style={{ fontSize: '2rem', color: '#f48fb1' }}></i>
+                        <i className="fas fa-video" style={{ fontSize: '2.5rem', color: '#f48fb1' }}></i>
                         <div>
-                            <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Audio Only File</h4>
-                            <span style={{ color: '#888', fontSize: '0.9rem' }}>Listen on the go (MP3)</span>
+                            <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Music Video</h4>
+                            <span style={{ color: '#888', fontSize: '0.9rem' }}>Watch on the go (MP4)</span>
                         </div>
                     </a>
 
                     {/* Lyrics */}
                     <a href="/assets/pdfs/Song%20Lyrics_%20Follow%20the%20Money%20Rules.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
-                        <i className="fas fa-file-alt" style={{ fontSize: '2rem', color: '#81c784' }}></i>
+                        <i className="fas fa-file-alt" style={{ fontSize: '2.5rem', color: '#81c784' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Lyrics Sheet</h4>
                             <span style={{ color: '#888', fontSize: '0.9rem' }}>Printable PDF</span>
@@ -43,7 +97,7 @@ export default function SongKitPage() {
 
                     {/* Story PDF */}
                     <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
-                        <i className="fas fa-book" style={{ fontSize: '2rem', color: '#64b5f6' }}></i>
+                        <i className="fas fa-book" style={{ fontSize: '2.5rem', color: '#64b5f6' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Story PDF</h4>
                             <span style={{ color: '#888', fontSize: '0.9rem' }}>Illustrated storybook</span>
@@ -52,7 +106,7 @@ export default function SongKitPage() {
 
                     {/* Parent Guide */}
                     <a href="/assets/pdfs/Bedtime%20_%20Parent%20Guide%20_%20Follow%20the%20Money%20Rules!.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
-                        <i className="fas fa-users" style={{ fontSize: '2rem', color: '#ffb74d' }}></i>
+                        <i className="fas fa-users" style={{ fontSize: '2.5rem', color: '#ffb74d' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Parent Guide</h4>
                             <span style={{ color: '#888', fontSize: '0.9rem' }}>Tips for discussion</span>
@@ -61,7 +115,7 @@ export default function SongKitPage() {
 
                     {/* Family Activity Guide */}
                     <a href="/assets/pdfs/Bedtime%20_%20Family%20Activity%20Guide%20_%20Follow%20the%20Money%20Rules!.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
-                        <i className="fas fa-puzzle-piece" style={{ fontSize: '2rem', color: '#ba68c8' }}></i>
+                        <i className="fas fa-puzzle-piece" style={{ fontSize: '2.5rem', color: '#ba68c8' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Family Activity Guide</h4>
                             <span style={{ color: '#888', fontSize: '0.9rem' }}>Fun offline games</span>
@@ -70,7 +124,7 @@ export default function SongKitPage() {
 
                     {/* Teacher Guide */}
                     <a href="/assets/pdfs/Bedtime%20_%20Teacher%20Lesson%20Plan%20_%20Follow%20the%20Money%20Rules!.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
-                        <i className="fas fa-chalkboard-teacher" style={{ fontSize: '2rem', color: '#4db6ac' }}></i>
+                        <i className="fas fa-chalkboard-teacher" style={{ fontSize: '2.5rem', color: '#4db6ac' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Teacher Guide</h4>
                             <span style={{ color: '#888', fontSize: '0.9rem' }}>Comprehensive lesson plan</span>
@@ -79,34 +133,26 @@ export default function SongKitPage() {
 
                 </div>
 
-                {/* Games Hub Button */}
-                <div style={{ marginTop: '40px', textAlign: 'center' }}>
-                    <Link href="/games" style={{
+                {/* Games Hub Integration */}
+                <div style={{ marginTop: '50px', background: '#fff3e0', padding: '40px', borderRadius: '24px', textAlign: 'center', border: '3px dashed #ffb74d' }}>
+                    <h3 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '15px' }}>Want more?</h3>
+                    <p style={{ color: '#666', fontSize: '1.2rem', marginBottom: '25px' }}>Play games that reinforce these money lessons and make learning fun!</p>
+                    <Link href="/games" className="btn btn-pill" style={{
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        gap: '20px',
-                        padding: '25px 50px',
+                        gap: '15px',
+                        padding: '15px 40px',
                         backgroundColor: '#ffb74d',
                         color: 'white',
-                        borderRadius: '30px',
                         textDecoration: 'none',
-                        boxShadow: '0 8px 20px rgba(255, 183, 77, 0.4)',
-                        fontWeight: 'bold',
-                        fontSize: '1.8rem'
+                        fontSize: '1.4rem'
                     }}>
-                        <i className="fas fa-gamepad" style={{ fontSize: '2.5rem' }}></i>
-                        <div style={{ fontWeight: 'bold' }}>
-                            Play Games!
-                        </div>
+                        <i className="fas fa-gamepad" style={{ fontSize: '1.8rem' }}></i>
+                        Play Games!
                     </Link>
                 </div>
 
-                <div style={{ marginTop: '40px', textAlign: 'center' }}>
-                    <Link href="/" className="btn btn-sharp" style={{ textDecoration: 'none' }}>
-                        <i className="fas fa-arrow-left"></i> <span style={{ textDecoration: 'underline' }}>Back to Home</span>
-                    </Link>
-                </div>
             </div>
         </main>
     );

@@ -28,7 +28,7 @@ export default function Footer() {
                         <li><Link href="#">Frequently Asked Questions (FAQ)</Link></li>
                         <li><Link href="#">Privacy Policy</Link></li>
                         <li><Link href="#">Partners and Sponsors</Link></li>
-                        <li><Link href="#">Special Offer</Link></li>
+                        <li><Link href="/special-offers">Special Offers</Link></li>
                         <li><Link href="#">Terms of Service</Link></li>
                     </ul>
                 </div>

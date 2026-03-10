@@ -138,7 +138,7 @@ export default function Home() {
                         {/* Song 5 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#e8f5e9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/assets/images/great_habits_thumbnail.png" alt="Great Habits Make a Great You" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src="/assets/images/great_habits_3d_thumbnail.png" alt="Great Habits Make a Great You" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Great Habits Make a Great You</h4>
@@ -149,11 +149,22 @@ export default function Home() {
                         {/* Song 6 */}
                         <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
                             <div style={{ height: '200px', background: '#e3f2fd', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <img src="/assets/images/rule_of_72_thumbnail.png" alt="The Rule of 72!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src="/assets/images/rule_of_72_3d_thumbnail.png" alt="The Rule of 72!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <div style={{ padding: '20px' }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>The Rule of 72!</h4>
                                 <Link href="/videos/rule-of-72" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                            </div>
+                        </div>
+
+                        {/* Song 7 */}
+                        <div style={{ background: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', textAlign: 'center' }}>
+                            <div style={{ height: '200px', background: '#f3e5f5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img src="/assets/images/give_wisely_thumbnail.png" alt="Give Wisely!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
+                            <div style={{ padding: '20px' }}>
+                                <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Give Wisely!</h4>
+                                <Link href="/videos/give-wisely" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                             </div>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ export default function GreatHabitsPage() {
                         <video
                             src="/assets/videos/GreatHabits.mp4"
                             controls
-                            poster="/assets/images/great_habits_thumbnail.png"
+                            poster="/assets/images/great_habits_3d_thumbnail.png"
                             style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'var(--primary-bg)' }}
                         >
                             Your browser does not support the video tag.
@@ -47,7 +47,8 @@ export default function GreatHabitsPage() {
                         <Link href="/videos/earn-a-dollar" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>It's Good to Earn a Dollar!</Link>
                         <Link href="/videos/spend-smart" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Spend Smart!</Link>
                         <Link href="/videos/rule-of-72" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>The Rule of 72!</Link>
-                    </div>
+                        <Link href="/videos/give-wisely" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Give Wisely!</Link>
+</div>
                 </div>
             </div>
         </main>

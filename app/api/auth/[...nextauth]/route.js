@@ -3,6 +3,7 @@ import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 const authOptions = {
+    debug: process.env.NODE_ENV === 'development',
     providers: [
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
@@ -47,6 +48,18 @@ const authOptions = {
     secret: process.env.NEXTAUTH_SECRET,
     pages: {
         signIn: '/login',
+    },
+    callbacks: {
+        async signIn({ user, account }) {
+            console.log('Sign-in attempt:', { provider: account?.provider, email: user?.email });
+            return true;
+        },
+        async redirect({ url, baseUrl }) {
+            // Ensure redirects stay on your domain (prevents open redirect attacks)
+            if (url.startsWith('/')) return `${baseUrl}${url}`;
+            if (new URL(url).origin === baseUrl) return url;
+            return baseUrl;
+        },
     },
 };
 
