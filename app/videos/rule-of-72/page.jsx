@@ -25,8 +25,8 @@ export default function RuleOf72Page() {
                             <i className="fas fa-music" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '20px' }}></i>
                             <h3 style={{ marginBottom: '20px', color: 'var(--accent-color)' }}>Keep Learning!</h3>
                             <p style={{ marginBottom: '30px', color: '#666', fontSize: '1.1rem' }}>Get the complete resource pack to help teach and reinforce the lessons from this song.</p>
-                            <Link href="/song-kit" className="btn btn-pill" style={{ textDecoration: 'none', width: '100%', fontSize: '1.2rem' }}>
-                                Access Song Resources
+                            <Link href="/song-kit-coming-soon" className="btn btn-pill" style={{ textDecoration: 'none', width: '100%', fontSize: '1.2rem' }}>
+                                Access Song Kit
                             </Link>
                         </div>
                     </div>
