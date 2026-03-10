@@ -7,16 +7,16 @@ export default function Footer() {
                 <div className="footer-col">
                     <h4 className="footer-title">Partner Resources</h4>
                     <ul className="footer-links">
-                        <li><Link href="https://sammyrabbit.com/blog/index-of-standards-aligned-sammy-rabbit-financial-education-lesson-plans" target="_blank" rel="noopener noreferrer">Sammy Rabbit Classroom Lesson Plans</Link></li>
-                        <li><Link href="#">Sammy Rabbit Kid Friendly Dictionary</Link></li>
+                        <li><Link href="https://sammyrabbit.com/categories/lesson-plans-standard-aligned-financial-literacy" target="_blank" rel="noopener noreferrer">Sammy Rabbit Classroom Lesson Plans</Link></li>
+                        <li><Link href="https://sammyrabbit.com/blog/kids-money-dictionary-a-z-alphabetical-list-of-money-terms-1" target="_blank" rel="noopener noreferrer">Sammy Rabbit Kid Friendly Dictionary</Link></li>
                     </ul>
                 </div>
                 <div className="footer-col">
                     <h4 className="footer-title">Connect</h4>
                     <ul className="footer-links">
-                        <li><Link href="#">Inquiries</Link></li>
-                        <li><Link href="#">Tell Us What You Think</Link></li>
-                        <li><Link href="#">Press / Media</Link></li>
+                        <li><Link href="/inquiries">Inquiries</Link></li>
+                        <li><Link href="/write-a-review">Write a Review</Link></li>
+                        <li><Link href="/press">Press & Media Inquiries</Link></li>
                     </ul>
                 </div>
                 <div className="footer-col" style={{ flex: 1, minWidth: '200px' }}>
