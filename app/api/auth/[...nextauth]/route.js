@@ -55,16 +55,16 @@ const authOptions = {
         async signIn({ user, account }) {
             console.log('Sign-in attempt:', { provider: account?.provider, email: user?.email });
 
-            // Save every successful login to Firestore "users" collection
+            // Save every successful login to Firestore "Users" collection
             // Fire-and-forget: don't await so login is never blocked
             if (db && user?.email) {
-                const userRef = doc(db, "users", user.email);
+                const userRef = doc(db, "Users", user.email);
                 setDoc(userRef, {
-                    email: user.email,
-                    name: user.name || null,
-                    image: user.image || null,
-                    provider: account?.provider || "unknown",
-                    lastSignIn: new Date().toISOString(),
+                    Email: user.email,
+                    Name: user.name || null,
+                    Image: user.image || null,
+                    Provider: account?.provider || "unknown",
+                    LastSignIn: new Date().toISOString(),
                 }, { merge: true })
                     .then(() => console.log("User saved to Firestore:", user.email))
                     .catch((error) => console.error("Error saving user to Firestore:", error));
