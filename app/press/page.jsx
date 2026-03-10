@@ -1,10 +1,9 @@
 export default function PressPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid #4CAF50' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '20px' }}>Press & Media Inquiries</h1>
 
-                <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '30px' }}>We welcome inquiries from journalists, bloggers, podcasters, and media organizations...</h3>
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '25px' }}>
                     We welcome inquiries from journalists, bloggers, podcasters, and media organizations interested in covering Bedtime Songs and Stories, the Sam X Renick financial education initiative, and our mission to help children build strong money habits early in life.
