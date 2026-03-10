@@ -5,10 +5,10 @@ import Link from 'next/link';
 export default function GamesMenuPage() {
     return (
         <main className="games-menu-page" style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '900px', margin: '0 auto', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '900px', margin: '0 auto', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid #4CAF50' }}>
                 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
                     <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '10px' }}>
-                        Sammy's Games Hub
+                        Games
                     </h2>
                     <p style={{ color: '#666', marginTop: '15px' }}>
                         Pick a game below and start playing!
