@@ -16,7 +16,7 @@ export default function GiveWiselyPage() {
                     {/* Video Player */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
                         <video
-                            src="/assets/videos/givewisely.mp4"
+                            src="/assets/videos/GiveWisely.mp4"
                             controls
                             poster="/assets/images/give_wisely_thumbnail.png"
                             style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'var(--primary-bg)' }}
@@ -48,7 +48,7 @@ export default function GiveWiselyPage() {
                         <Link href="/videos/spend-smart" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Spend Smart!</Link>
                         <Link href="/videos/rule-of-72" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>The Rule of 72!</Link>
                         <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
-</div>
+                    </div>
                 </div>
             </div>
         </main>

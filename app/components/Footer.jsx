@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="footer-col">
                     <h4 className="footer-title">Partner Resources</h4>
                     <ul className="footer-links">
-                        <li><Link href="#">Sammy Rabbit Classroom Lesson Plans</Link></li>
+                        <li><Link href="https://sammyrabbit.com/blog/index-of-standards-aligned-sammy-rabbit-financial-education-lesson-plans" target="_blank" rel="noopener noreferrer">Sammy Rabbit Classroom Lesson Plans</Link></li>
                         <li><Link href="#">Sammy Rabbit Kid Friendly Dictionary</Link></li>
                     </ul>
                 </div>
