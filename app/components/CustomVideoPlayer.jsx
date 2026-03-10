@@ -1,20 +1,38 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function CustomVideoPlayer({ src, poster }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const videoRef = useRef(null);
+    const containerRef = useRef(null);
+
+    // Scroll to center the video on the screen automatically when the page loads
+    useEffect(() => {
+        if (containerRef.current) {
+            // A slight delay ensures the page layout is fully rendered before scrolling
+            const timer = setTimeout(() => {
+                containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 300);
+            return () => clearTimeout(timer);
+        }
+    }, []);
 
     const handlePlay = () => {
         if (videoRef.current) {
-            videoRef.current.play();
             setIsPlaying(true);
+            const playPromise = videoRef.current.play();
+            // Silence any play() promise rejections to prevent unhandled runtime errors
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.error("Video play failed:", error);
+                });
+            }
         }
     };
 
     return (
-        <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', backgroundColor: 'black', borderRadius: '12px', overflow: 'hidden' }}>
+        <div ref={containerRef} style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', backgroundColor: 'black', borderRadius: '12px', overflow: 'hidden' }}>
             {!isPlaying && (
                 <div
                     onClick={handlePlay}
@@ -60,7 +78,7 @@ export default function CustomVideoPlayer({ src, poster }) {
             <video
                 ref={videoRef}
                 src={src}
-                controls={isPlaying} // only show controls once playing starts
+                controls={true} // Setting this to always true prevents a DOMException "interrupted by load request" when toggling React props
                 style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
