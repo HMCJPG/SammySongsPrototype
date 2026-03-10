@@ -50,7 +50,7 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginTop: '60px', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>Frequently Asked Questions</h2>
+                <h2 id="faq" style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginTop: '60px', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>Frequently Asked Questions</h2>
 
                 <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Who are these resources for?</h4>
                 <p style={{ marginBottom: '20px' }}>

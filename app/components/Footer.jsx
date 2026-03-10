@@ -22,9 +22,10 @@ export default function Footer() {
                 <div className="footer-col" style={{ flex: 1, minWidth: '200px' }}>
                     <h4 className="footer-title">About</h4>
                     <ul className="footer-links">
+                        <li><Link href="/about">Bedtime Songs and Stories</Link></li>
                         <li><Link href="/beta">Beta</Link></li>
                         <li><Link href="/copyright">Copyright and Educational Use Policy</Link></li>
-                        <li><Link href="#">Frequently Asked Questions (FAQ)</Link></li>
+                        <li><Link href="/about#faq">Frequently Asked Questions (FAQ)</Link></li>
                         <li><Link href="/privacy">Privacy Policy</Link></li>
                         <li><Link href="/affiliates">Affiliate Partners</Link></li>
                         <li><Link href="/partners">Partners and Sponsors</Link></li>
