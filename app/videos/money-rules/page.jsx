@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import CustomVideoPlayer from '../../components/CustomVideoPlayer';
 
 export default function MoneyRulesPage() {
     return (
@@ -15,14 +16,7 @@ export default function MoneyRulesPage() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
                     {/* Video Player (takes up most of the page) */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
-                        <video
-                            src="/assets/videos/moneyrules.mp4"
-                            controls
-                            poster="/assets/images/pig_book.png"
-                            style={{ width: '100%', borderRadius: '12px', display: 'block' }}
-                        >
-                            Your browser does not support the video tag.
-                        </video>
+                        <CustomVideoPlayer src="/assets/videos/moneyrules.mp4" poster="/assets/images/pig_book.png" />
                     </div>
 
                     {/* Right Column */}

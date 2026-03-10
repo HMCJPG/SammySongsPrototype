@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import CustomVideoPlayer from '../../components/CustomVideoPlayer';
 
 export default function GreatHabitsPage() {
     return (
@@ -15,14 +16,7 @@ export default function GreatHabitsPage() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
                     {/* Video Player */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
-                        <video
-                            src="/assets/videos/GreatHabits.mp4"
-                            controls
-                            poster="/assets/images/great_habits_3d_thumbnail.png"
-                            style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'var(--primary-bg)' }}
-                        >
-                            Your browser does not support the video tag.
-                        </video>
+                        <CustomVideoPlayer src="/assets/videos/GreatHabits.mp4" poster="/assets/images/great_habits_3d_thumbnail.png" />
                     </div>
 
                     {/* Right Column */}

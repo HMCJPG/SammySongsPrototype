@@ -8,6 +8,7 @@ import Link from 'next/link';
 // Page title / SEO metadata, typically we'd separate this into a layout.jsx or server component.
 // But we'll rely on Next 13 conventions. For client components, standard approach is:
 import { useEffect } from 'react';
+import CustomVideoPlayer from '../../components/CustomVideoPlayer';
 
 export default function SongKitPage() {
 
@@ -63,14 +64,7 @@ export default function SongKitPage() {
                 {/* Inline Media Player */}
                 <div style={{ marginBottom: '40px', background: 'var(--primary-bg)', padding: '30px', borderRadius: '24px', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
                     <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>Preview the Song</h4>
-                    <video
-                        controls
-                        poster="/assets/images/pig_book.png"
-                        src="/assets/videos/moneyrules.mp4"
-                        style={{ width: '100%', borderRadius: '12px', display: 'block', backgroundColor: 'black' }}
-                    >
-                        Your browser does not support the video tag.
-                    </video>
+                    <CustomVideoPlayer src="/assets/videos/moneyrules.mp4" poster="/assets/images/pig_book.png" />
                 </div>
 
                 {/* Resource Links Container */}

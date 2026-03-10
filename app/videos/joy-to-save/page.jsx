@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import CustomVideoPlayer from '../../components/CustomVideoPlayer';
 
 export default function JoyToSavePage() {
     return (
@@ -15,14 +16,7 @@ export default function JoyToSavePage() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
                     {/* Video Player (takes up most of the page) */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
-                        <video
-                            src="/assets/videos/It's a Joy to Save!.mp4"
-                            controls
-                            poster="/assets/images/joy_to_save_thumb_squirrel.png"
-                            style={{ width: '100%', borderRadius: '12px', display: 'block' }}
-                        >
-                            Your browser does not support the video tag.
-                        </video>
+                        <CustomVideoPlayer src="/assets/videos/It" poster="/assets/images/joy_to_save_thumb_squirrel.png" />
                     </div>
 
                     {/* Right Column */}
