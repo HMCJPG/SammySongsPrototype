@@ -16,7 +16,7 @@ export default function JoyToSavePage() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
                     {/* Video Player (takes up most of the page) */}
                     <div style={{ flex: '3 1 600px', background: 'white', padding: '20px', borderRadius: '24px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
-                        <CustomVideoPlayer src="/assets/videos/It" poster="/assets/images/joy_to_save_thumb_squirrel.png" />
+                        <CustomVideoPlayer src="/assets/videos/It's a Joy to Save!.mp4" poster="/assets/images/joy_to_save_thumb_squirrel.png" />
                     </div>
 
                     {/* Right Column */}
@@ -42,7 +42,7 @@ export default function JoyToSavePage() {
                         <Link href="/videos/rule-of-72" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>The Rule of 72!</Link>
                         <Link href="/videos/great-habits" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Great Habits Make a Great You</Link>
                         <Link href="/videos/give-wisely" className="btn btn-pill" style={{ textDecoration: 'none', background: 'var(--primary-bg)', color: 'var(--text-dark)', border: '2px solid var(--accent-color)' }}>Give Wisely!</Link>
-</div>
+                    </div>
                 </div>
             </div>
         </main>
