@@ -2,7 +2,8 @@ export default function AboutPage() {
     return (
         <main style={{ padding: '80px 20px', minHeight: '100vh', backgroundColor: 'var(--primary-bg)' }}>
             <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'left', fontSize: '1.25rem', color: '#666', lineHeight: '1.8' }}>
-                <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>About Us</h2>
+                <h1 style={{ fontSize: '4rem', color: 'var(--accent-color)', marginBottom: '10px', fontWeight: 900, textAlign: 'center' }}>Bedtime Songs and Stories</h1>
+                <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>About Us</h2>
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Mission</h3>
                 <p style={{ marginBottom: '20px' }}>
