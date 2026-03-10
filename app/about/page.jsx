@@ -26,6 +26,9 @@ export default function AboutPage() {
                         <p style={{ marginBottom: '20px' }}>
                             Sam's insights have been featured in the New York Times, Washington Post, NPR, Kiplinger, Forbes, KNX, and beyond. His sustained impact in the field has earned him numerous honors, including the New Jersey Financial Education Coalition Lifetime Achievement Award, the National Financial Educators Council Educator of the Year Award, and the California Jump$tart Coalition Leaders in Financial Literacy Award.
                         </p>
+                        <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
+                            <a href="https://samxrenick.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>See Sam's Track Record →</a>
+                        </p>
                     </div>
                     <div style={{ flex: '0 0 auto', textAlign: 'center', alignSelf: 'flex-start' }}>
                         <img src="/assets/images/samxrenick.award.jpg" alt="Sam X Renick" style={{ maxWidth: '200px', height: 'auto', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }} />
