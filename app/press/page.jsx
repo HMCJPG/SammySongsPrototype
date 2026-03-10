@@ -18,6 +18,9 @@ export default function PressPage() {
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-dark)', margin: 0, fontWeight: 'bold' }}>
                         Sam X Renick at <a href="mailto:savingsammy@gmail.com" style={{ color: 'var(--accent-color)' }}>savingsammy@gmail.com</a>
                     </p>
+                    <p style={{ marginTop: '15px', marginBottom: 0 }}>
+                        <a href="/about#meet-the-creator" style={{ color: 'var(--accent-color)', fontWeight: 'bold', textDecoration: 'underline', fontSize: '1.1rem' }}>Learn more about Sam →</a>
+                    </p>
                 </div>
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', fontWeight: 'bold', textAlign: 'center' }}>

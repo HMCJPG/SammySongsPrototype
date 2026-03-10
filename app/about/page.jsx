@@ -14,7 +14,7 @@ export default function AboutPage() {
                     Our mission is simple: make it easy, fun, and genuinely effective for parents, teachers, and community leaders to teach kids about money — starting early — so they grow up confident, capable, and ready to build bright futures.
                 </p>
 
-                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Meet the Creator: Sam X Renick</h3>
+                <h3 id="meet-the-creator" style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Meet the Creator: Sam X Renick</h3>
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1 1 400px' }}>
                         <p style={{ marginBottom: '20px' }}>
