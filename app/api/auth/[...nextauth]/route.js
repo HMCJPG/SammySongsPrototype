@@ -56,21 +56,18 @@ const authOptions = {
             console.log('Sign-in attempt:', { provider: account?.provider, email: user?.email });
 
             // Save every successful login to Firestore "users" collection
-            try {
-                if (db && user?.email) {
-                    const userRef = doc(db, "users", user.email);
-                    await setDoc(userRef, {
-                        email: user.email,
-                        name: user.name || null,
-                        image: user.image || null,
-                        provider: account?.provider || "unknown",
-                        lastSignIn: new Date().toISOString(),
-                    }, { merge: true });
-                    console.log("User saved to Firestore:", user.email);
-                }
-            } catch (error) {
-                // Log the error but don't block sign-in
-                console.error("Error saving user to Firestore:", error);
+            // Fire-and-forget: don't await so login is never blocked
+            if (db && user?.email) {
+                const userRef = doc(db, "users", user.email);
+                setDoc(userRef, {
+                    email: user.email,
+                    name: user.name || null,
+                    image: user.image || null,
+                    provider: account?.provider || "unknown",
+                    lastSignIn: new Date().toISOString(),
+                }, { merge: true })
+                    .then(() => console.log("User saved to Firestore:", user.email))
+                    .catch((error) => console.error("Error saving user to Firestore:", error));
             }
 
             return true;
