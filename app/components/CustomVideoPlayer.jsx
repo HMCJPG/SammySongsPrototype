@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 export default function CustomVideoPlayer({ src, poster }) {
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [hasStarted, setHasStarted] = useState(false);
     const videoRef = useRef(null);
     const containerRef = useRef(null);
 
@@ -20,7 +20,7 @@ export default function CustomVideoPlayer({ src, poster }) {
 
     const handlePlay = () => {
         if (videoRef.current) {
-            setIsPlaying(true);
+            setHasStarted(true);
             const playPromise = videoRef.current.play();
             // Silence any play() promise rejections to prevent unhandled runtime errors
             if (playPromise !== undefined) {
@@ -33,7 +33,7 @@ export default function CustomVideoPlayer({ src, poster }) {
 
     return (
         <div ref={containerRef} style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', backgroundColor: 'black', borderRadius: '12px', overflow: 'hidden' }}>
-            {!isPlaying && (
+            {!hasStarted && (
                 <div
                     onClick={handlePlay}
                     style={{
@@ -78,10 +78,9 @@ export default function CustomVideoPlayer({ src, poster }) {
             <video
                 ref={videoRef}
                 src={src}
-                controls={true} // Setting this to always true prevents a DOMException "interrupted by load request" when toggling React props
+                controls={hasStarted} // Only show native controls internally after started
                 style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                onPlay={() => setIsPlaying(true)}
-                onPause={() => setIsPlaying(false)}
+                onPlay={() => setHasStarted(true)}
             />
         </div>
     );
