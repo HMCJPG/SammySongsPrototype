@@ -19,17 +19,18 @@ export default function Footer() {
                         <li><Link href="#">Press / Media</Link></li>
                     </ul>
                 </div>
-                <div className="footer-col">
+                <div className="footer-col" style={{ flex: 1, minWidth: '200px' }}>
                     <h4 className="footer-title">About</h4>
                     <ul className="footer-links">
-                        <li><Link href="#">Bedtime Songs and Stories</Link></li>
-                        <li><Link href="#">Beta</Link></li>
-                        <li><Link href="#">Copyright and Educational Use Policy</Link></li>
+                        <li><Link href="/about-bedtime">Bedtime Songs and Stories</Link></li>
+                        <li><Link href="/beta">Beta</Link></li>
+                        <li><Link href="/copyright">Copyright and Educational Use Policy</Link></li>
                         <li><Link href="#">Frequently Asked Questions (FAQ)</Link></li>
-                        <li><Link href="#">Privacy Policy</Link></li>
-                        <li><Link href="#">Partners and Sponsors</Link></li>
+                        <li><Link href="/privacy">Privacy Policy</Link></li>
+                        <li><Link href="/affiliates">Affiliate Partners</Link></li>
+                        <li><Link href="/partners">Partners and Sponsors</Link></li>
                         <li><Link href="/special-offers">Special Offers</Link></li>
-                        <li><Link href="#">Terms of Service</Link></li>
+                        <li><Link href="/terms">Terms of Service</Link></li>
                     </ul>
                 </div>
             </div>
