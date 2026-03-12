@@ -28,7 +28,7 @@ body {
 
 /* Header Utilities */
 .header-area {
-  background-color: #fff;
+  background-color: #fefefe;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -121,7 +121,7 @@ body {
 
 /* Navigation */
 .main-nav {
-  background-color: #fff;
+  background-color: #fefefe;
   border-bottom: 1px solid #ddd;
 }
 
