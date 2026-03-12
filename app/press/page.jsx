@@ -6,7 +6,7 @@ export default function PressPage() {
 
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '25px' }}>
-                    We welcome inquiries from journalists, bloggers, podcasters, and media organizations interested in covering Bedtime Songs and Stories, the Sam X Renick financial education initiative, and our mission to help children build strong money habits early in life.
+                    We welcome inquiries from journalists, bloggers, podcasters, and media organizations interested in covering Bedtime Money Habits, the Sam X Renick financial education initiative, and our mission to help children build strong money habits early in life.
                 </p>
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '40px' }}>

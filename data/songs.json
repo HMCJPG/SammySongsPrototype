@@ -4,7 +4,7 @@
         "title": "Hello, Hello, Hello",
         "thumbnail": "/assets/images/pig_hello.png",
         "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "description": "What are Bedtime Songs and Stories? Listen to a song called Hello, hello, hello and sing along."
+        "description": "What are Bedtime Money Habits? Listen to a song called Hello, hello, hello and sing along."
     },
     {
         "id": "saving-money",
@@ -18,6 +18,6 @@
         "title": "Money Rules Lyric Video",
         "thumbnail": "/assets/images/pig_book.png",
         "videoUrl": "/assets/videos/moneyrules.mp4",
-        "description": "Learn the Bedtime Songs and Stories Money Rules by singing along to this lyric video!"
+        "description": "Learn the Bedtime Money Habits Money Rules by singing along to this lyric video!"
     }
 ]

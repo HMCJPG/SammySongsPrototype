@@ -11,7 +11,7 @@ export default function ParentsPage() {
                         Each song and story comes with a complete Parent & Family Guide designed to help you turn everyday moments into meaningful money conversations. Inside you’ll find Conversation Starters to spark discussion, Parent Tips to guide you, positive Affirmations to build confidence, hands-on Experiences, engaging Activities, and simple Games your family can enjoy together.
                     </p>
                     <p style={{ marginBottom: '20px' }}>
-                        And while this site is called Bedtime Songs & Stories, these resources can be used anytime, anywhere — before bed, after school, in the car, or during a quiet moment together.
+                        And while this site is called Bedtime Money Habits, these resources can be used anytime, anywhere — before bed, after school, in the car, or during a quiet moment together.
                     </p>
                     <p>
                         Whether it’s five minutes before bed or a quick moment during the day, these tools help you gently and consistently build saving, earning, smart spending, and giving habits that last a lifetime.

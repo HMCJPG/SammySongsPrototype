@@ -5,7 +5,7 @@ export default function BetaPage() {
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '20px' }}>Beta Access and Early Supporter Rewards</h1>
 
                 <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
-                    During the Beta phase, access to Bedtime Songs and Stories is free while we test, refine, and improve the platform!
+                    During the Beta phase, access to Bedtime Money Habits is free while we test, refine, and improve the platform!
                 </div>
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '20px' }}>

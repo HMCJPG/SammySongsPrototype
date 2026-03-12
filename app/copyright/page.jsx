@@ -5,7 +5,7 @@ export default function CopyrightPage() {
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '30px' }}>Copyright & Educational Use Policy</h1>
 
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
-                    All songs, stories, lesson plans, guides, graphics, and educational materials provided on Bedtime Songs and Stories are protected by copyright and intellectual property laws. These materials are created to support financial education for children and may be used within the following guidelines.
+                    All songs, stories, lesson plans, guides, graphics, and educational materials provided on Bedtime Money Habits are protected by copyright and intellectual property laws. These materials are created to support financial education for children and may be used within the following guidelines.
                 </p>
 
                 <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-color)', marginBottom: '15px' }}>Permitted Educational Use</h2>

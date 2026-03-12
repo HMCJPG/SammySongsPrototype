@@ -9,7 +9,7 @@ export default function Home() {
             <section style={{ width: '100%' }}>
                 <img
                     src="/assets/images/bed.web.Sec1.header.png"
-                    alt="Bedtime Songs and Stories that Build Great Money Habits"
+                    alt="Bedtime Money Habits"
                     style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
             </section>

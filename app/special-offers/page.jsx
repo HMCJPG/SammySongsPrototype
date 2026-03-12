@@ -5,7 +5,7 @@ export default function SpecialOffersPage() {
                 <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Special Offers</h2>
                 <div style={{ fontSize: '1.25rem', color: '#666', marginBottom: '50px', lineHeight: '1.8', textAlign: 'left' }}>
                     <p style={{ marginBottom: '20px' }}>
-                        During the Beta phase, we are offering a limited number of Early Supporter memberships for families, teachers, schools, and organizations who would like to subscribe and secure access to Bedtime Songs and Stories in advance of the official launch. This initiative, created by Sam X Renick, is designed to help young children build strong money habits through engaging songs, stories, and conversations.
+                        During the Beta phase, we are offering a limited number of Early Supporter memberships for families, teachers, schools, and organizations who would like to subscribe and secure access to Bedtime Money Habits in advance of the official launch. This initiative, created by Sam X Renick, is designed to help young children build strong money habits through engaging songs, stories, and conversations.
                     </p>
                     <p style={{ marginBottom: '20px' }}>
                         While the program complements and supports the broader financial education work of Sammy Rabbit, it is a new initiative focused on helping families and educators easily introduce these ideas to children. Early supporters help us test, refine, and improve the platform while expanding access to engaging resources that help children build lifelong financial well-being and self-sufficiency.

@@ -4,8 +4,8 @@ import Footer from './components/Footer';
 import SessionProvider from './components/SessionProvider';
 
 export const metadata = {
-    title: 'Bedtime Songs and Stories',
-    description: 'What are Bedtime Songs and Stories? Listen to a song called Hello, hello, hello and sing along.',
+    title: 'Bedtime Money Habits',
+    description: 'What are Bedtime Money Habits? Listen to a song called Hello, hello, hello and sing along.',
 };
 
 export default function RootLayout({ children }) {

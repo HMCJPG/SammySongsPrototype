@@ -16,7 +16,7 @@ export default function Header() {
                 <div className="container header-top">
                     <div className="header-left">
                         <Link href="/" style={{ textDecoration: 'none' }}>
-                            <h1 className="brand-title">Bedtime Songs and Stories That Build Great Money Habits</h1>
+                            <h1 className="brand-title">Bedtime Money Habits</h1>
                         </Link>
                     </div>
 
