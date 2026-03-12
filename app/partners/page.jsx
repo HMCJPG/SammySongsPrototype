@@ -13,7 +13,7 @@ export default function PartnersPage() {
                 </p>
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '20px' }}>
-                    If you are interested in supporting or partnering with us as we grow Bedtime Money Habits, we would love to connect.
+                    If you are interested in supporting or partnering with us as we grow BedtimeMoneyHabits.com, we would love to connect.
                 </p>
                 <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     Together we can help more children build the habits, confidence, financial well-being, and self-sufficiency they need to achieve their dreams and goals.

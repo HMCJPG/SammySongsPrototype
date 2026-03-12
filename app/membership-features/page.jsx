@@ -15,7 +15,7 @@ export default function EarlyAccessPage() {
                     What You Receive Each Week
                 </h2>
                 <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '15px', lineHeight: '1.7' }}>
-                    A complete Bedtime Money Habits experience designed to help children build lifelong money habits through music, stories, and simple conversations.
+                    A complete BedtimeMoneyHabits.com experience designed to help children build lifelong money habits through music, stories, and simple conversations.
                 </p>
                 <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '40px', lineHeight: '1.7' }}>
                     Every week members receive a new set of engaging resources that make learning about money easy and fun for kids — and simple for parents and teachers to use.
@@ -71,7 +71,7 @@ export default function EarlyAccessPage() {
 
                 <h3 style={{ fontSize: '1.6rem', color: 'var(--text-dark)', marginBottom: '15px', fontWeight: 800 }}>Designed for Families, Classrooms, and Anytime Learning</h3>
                 <p style={{ fontSize: '1.15rem', color: '#666', marginBottom: '15px', lineHeight: '1.7' }}>
-                    Although the program is called Bedtime Money Habits, the resources can be used anytime — at home, in the classroom, or on the go.
+                    Although the program is called BedtimeMoneyHabits.com, the resources can be used anytime — at home, in the classroom, or on the go.
                 </p>
                 <p style={{ fontSize: '1.15rem', color: '#666', marginBottom: '50px', lineHeight: '1.7' }}>
                     Just a few minutes a day listening, reading, talking, and doing activities can help children build confident money habits that last a lifetime.

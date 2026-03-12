@@ -13,7 +13,7 @@ import CustomVideoPlayer from '../../components/CustomVideoPlayer';
 export default function SongKitPage() {
 
     useEffect(() => {
-        document.title = "Follow the Money Rules – Song Kit | Bedtime Money Habits";
+        document.title = "Follow the Money Rules – Song Kit | BedtimeMoneyHabits.com";
     }, []);
 
     return (

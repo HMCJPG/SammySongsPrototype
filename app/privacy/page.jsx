@@ -6,7 +6,7 @@ export default function PrivacyPage() {
                 <p style={{ fontSize: '1rem', color: '#888', marginBottom: '30px' }}>Effective Date: March 2026</p>
 
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
-                    Bedtime Money Habits respects your privacy and is committed to protecting the personal information of our users. This Privacy Policy explains how information is collected, used, and protected when you use our website and platform.
+                    BedtimeMoneyHabits.com respects your privacy and is committed to protecting the personal information of our users. This Privacy Policy explains how information is collected, used, and protected when you use our website and platform.
                 </p>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>1. Information We Collect</h3>
@@ -46,12 +46,12 @@ export default function PrivacyPage() {
                 <ul style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px', paddingLeft: '20px' }}>
                     <li>platform updates</li>
                     <li>educational resources</li>
-                    <li>announcements related to Bedtime Money Habits or Sammy Rabbit</li>
+                    <li>announcements related to BedtimeMoneyHabits.com or Sammy Rabbit</li>
                 </ul>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>You may unsubscribe from emails at any time.</p>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>4. Children's Privacy</h3>
-                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px' }}>Bedtime Money Habits is designed for parents, teachers, and caregivers to use with children. We do not knowingly collect personal information directly from children under the age of 13.</p>
+                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px' }}>BedtimeMoneyHabits.com is designed for parents, teachers, and caregivers to use with children. We do not knowingly collect personal information directly from children under the age of 13.</p>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>If we become aware that personal information has been collected from a child without parental consent, we will delete that information.</p>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>5. Cookies and Analytics</h3>

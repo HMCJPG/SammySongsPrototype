@@ -5,7 +5,7 @@ export default function SongGallery() {
     return (
         <main className="gallery-page">
             <div className="container">
-                <h2 className="gallery-title">Bedtime Money Habits Video Gallery</h2>
+                <h2 className="gallery-title">BedtimeMoneyHabits.com Video Gallery</h2>
                 <div className="gallery-grid">
                     {songs.map((song) => (
                         <Link href={`/watch/${song.id}`} key={song.id} className="thumb-card">

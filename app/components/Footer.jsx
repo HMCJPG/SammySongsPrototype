@@ -22,7 +22,7 @@ export default function Footer() {
                 <div className="footer-col" style={{ flex: 1, minWidth: '200px' }}>
                     <h4 className="footer-title">About</h4>
                     <ul className="footer-links">
-                        <li><Link href="/about">Bedtime Money Habits</Link></li>
+                        <li><Link href="/about">BedtimeMoneyHabits.com</Link></li>
                         <li><Link href="/beta">Beta</Link></li>
                         <li><Link href="/copyright">Copyright and Educational Use Policy</Link></li>
                         <li><Link href="/about#faq">Frequently Asked Questions (FAQ)</Link></li>
@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
 
             <div style={{ textAlign: 'center', padding: '20px', borderTop: '1px solid #777', marginTop: '40px', color: '#eee', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                <p style={{ marginBottom: '10px' }}>Bedtime Money Habits is a new initiative created by Sam X Renick, founder of the Sammy Rabbit financial education programs.</p>
+                <p style={{ marginBottom: '10px' }}>BedtimeMoneyHabits.com is a new initiative created by Sam X Renick, founder of the Sammy Rabbit financial education programs.</p>
                 <p>Copyright &copy; 2026 | Sam X Renick | All Rights Reserved</p>
             </div>
         </footer>

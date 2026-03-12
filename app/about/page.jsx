@@ -4,7 +4,7 @@ export default function AboutPage() {
             <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'left', fontSize: '1.25rem', color: '#666', lineHeight: '1.8' }}>
                 <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>About Us</h2>
 
-                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Bedtime Money Habits</h3>
+                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>BedtimeMoneyHabits.com</h3>
                 <p style={{ marginBottom: '20px' }}>
                     Designed for parents, teachers, and community organizations who want simple, engaging resources to help children ages 3 and up build strong money habits. Through songs, stories, and conversations, kids begin developing the habits and mindsets that support lifelong financial well-being, self-sufficiency, and the ability to turn dreams and goals into reality.
                 </p>
@@ -18,7 +18,7 @@ export default function AboutPage() {
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1 1 400px' }}>
                         <p style={{ marginBottom: '20px' }}>
-                            Sam X Renick is the co-creator of Bedtime Money Habits and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
+                            Sam X Renick is the co-creator of BedtimeMoneyHabits.com and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
                         </p>
                         <p style={{ marginBottom: '20px' }}>
                             His programs weave together storybooks, music, dream-big journaling, games, live events, and more — and they've been embraced by families and organizations worldwide, including the Department of Defense, United Way, the University of Texas at Tyler, Girl Scouts of America, the Wisconsin Bankers Association, Citi, banks, credit unions, and schools across the country.
@@ -66,7 +66,7 @@ export default function AboutPage() {
                     The resources are especially well-suited for children in grades K–3, when foundational habits are forming and repetition has its greatest impact.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    And while the collection is called Bedtime Money Habits, these resources are made to be used anytime, anywhere — at home, in the classroom, in after-school programs, or during family conversations. Wherever children are learning, strong money habits can take root.
+                    And while the collection is called BedtimeMoneyHabits.com, these resources are made to be used anytime, anywhere — at home, in the classroom, in after-school programs, or during family conversations. Wherever children are learning, strong money habits can take root.
                 </p>
 
                 <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Why does teaching financial literacy early matter?</h4>

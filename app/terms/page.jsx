@@ -6,12 +6,12 @@ export default function TermsPage() {
                 <p style={{ fontSize: '1rem', color: '#888', marginBottom: '30px' }}>Effective Date: March 2026</p>
 
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
-                    Welcome to Bedtime Money Habits. By accessing or using this website and platform, you agree to the following Terms of Service. If you do not agree with these terms, please do not use the platform.
+                    Welcome to BedtimeMoneyHabits.com. By accessing or using this website and platform, you agree to the following Terms of Service. If you do not agree with these terms, please do not use the platform.
                 </p>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>1. Beta Platform Notice</h3>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px' }}>
-                    Bedtime Money Habits is currently offered in a Beta phase. This means the platform is still being tested and improved. During the Beta phase:
+                    BedtimeMoneyHabits.com is currently offered in a Beta phase. This means the platform is still being tested and improved. During the Beta phase:
                 </p>
                 <ul style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px', paddingLeft: '20px' }}>
                     <li>Features, content, and services may change without notice</li>
@@ -25,7 +25,7 @@ export default function TermsPage() {
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>2. Purpose of the Platform</h3>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
-                    Bedtime Money Habits provides songs, stories, lesson plans, guides, and related materials designed to help parents, teachers, and community leaders introduce young children to healthy money habits and financial education concepts. The materials are intended for educational and personal use.
+                    BedtimeMoneyHabits.com provides songs, stories, lesson plans, guides, and related materials designed to help parents, teachers, and community leaders introduce young children to healthy money habits and financial education concepts. The materials are intended for educational and personal use.
                 </p>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>3. Intellectual Property</h3>
@@ -71,7 +71,7 @@ export default function TermsPage() {
                 </ul>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>8. Limitation of Liability</h3>
-                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>To the fullest extent permitted by law, Bedtime Money Habits, Sammy Rabbit, and its creators are not liable for any damages resulting from use of the platform, inability to access the platform, or errors or interruptions in service.</p>
+                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>To the fullest extent permitted by law, BedtimeMoneyHabits.com, Sammy Rabbit, and its creators are not liable for any damages resulting from use of the platform, inability to access the platform, or errors or interruptions in service.</p>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>9. Changes to These Terms</h3>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>We may update these Terms of Service from time to time. Updated versions will be posted on this page with a revised effective date. Continued use of the platform indicates acceptance of any updates.</p>

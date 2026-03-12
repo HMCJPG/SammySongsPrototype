@@ -11,7 +11,7 @@ export default function ListenAndWatch() {
                     <div className="split-graphic scoop-bottom-left">
                         <img
                             src="/assets/images/pig_headphones.png"
-                            alt="Bedtime Money Habits"
+                            alt="BedtimeMoneyHabits.com"
                             className="split-img"
                             onError={(e) => { e.currentTarget.style.display = 'none'; }}
                         />
@@ -19,7 +19,7 @@ export default function ListenAndWatch() {
                     <div className="split-text">
                         <h2>Songs</h2>
                         <p>
-                            Do you like listening to Bedtime Money Habits? Singing songs is a great way to learn about money and habits! Listen to songs, print activities, and post comments!
+                            Do you like listening to BedtimeMoneyHabits.com? Singing songs is a great way to learn about money and habits! Listen to songs, print activities, and post comments!
                         </p>
                         <Link href="/watch" className="btn btn-pill" style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>Learn more.</Link>
                     </div>
@@ -37,7 +37,7 @@ export default function ListenAndWatch() {
                     <div className="split-graphic scoop-top-left">
                         <img
                             src="/assets/images/pig_book.png"
-                            alt="Bedtime Money Habits Short Stories"
+                            alt="BedtimeMoneyHabits.com Short Stories"
                             className="split-img"
                             onError={(e) => { e.currentTarget.style.display = 'none'; }}
                         />

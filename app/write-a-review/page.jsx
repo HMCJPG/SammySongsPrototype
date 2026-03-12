@@ -7,7 +7,7 @@ export default function ReviewPage() {
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '30px' }}>Tell us what you and your kids think!</h3>
 
                 <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '30px' }}>
-                    Your feedback helps us improve Bedtime Money Habits and create even better resources for families, teachers, and communities. If you and your children have listened to a song, read a story, or used one of the activities, we would love to hear about your experience.
+                    Your feedback helps us improve BedtimeMoneyHabits.com and create even better resources for families, teachers, and communities. If you and your children have listened to a song, read a story, or used one of the activities, we would love to hear about your experience.
                 </p>
 
                 <div style={{ background: 'var(--primary-bg)', padding: '30px', borderRadius: '16px', border: '2px solid var(--accent-color)', marginBottom: '30px' }}>

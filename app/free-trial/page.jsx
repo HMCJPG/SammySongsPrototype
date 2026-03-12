@@ -36,7 +36,7 @@ export default function FreeTrialGate() {
                     Unlock Your Free Trial
                 </h1>
                 <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '30px' }}>
-                    Join Sam X Renick and give your children the gift of financial literacy. Get instant access to premium Bedtime Money Habits!
+                    Join Sam X Renick and give your children the gift of financial literacy. Get instant access to premium BedtimeMoneyHabits.com!
                 </p>
 
                 {!submitted ? (
