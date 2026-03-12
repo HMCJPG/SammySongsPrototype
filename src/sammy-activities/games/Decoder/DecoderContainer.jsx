@@ -75,7 +75,7 @@ const DecoderContainer = ({
                 <div className="win-overlay">
                     <div className="win-content">
                         <h1>🏆 CODE BROKEN! 🏆</h1>
-                        <p>Excellent spy work! You decoded the message!</p>
+                        <p>Excellent detective work! You decoded the message!</p>
                         <p><strong>{solution}</strong></p>
                         <button
                             className="check-btn"

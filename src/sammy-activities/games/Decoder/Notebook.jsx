@@ -3,7 +3,7 @@ import React from 'react';
 const Notebook = ({ encodedMessage, userInput, onUserInputChange, correctnessMap, puzzleHint }) => {
     return (
         <div className="notebook-panel">
-            <h2>Decode Sammy's Secret Message!</h2>
+            <h2>Decode the Secret Message!</h2>
 
             {puzzleHint && (
                 <div className="puzzle-hint-text">

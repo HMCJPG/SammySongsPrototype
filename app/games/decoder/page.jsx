@@ -14,8 +14,8 @@ const SENTENCES = [
 
 const TUTORIAL_STEPS = [
     {
-        title: "🌟 How to Play: Decode Sammy’s Secret Message! 🌟",
-        content: <><p style={{ marginBottom: '10px' }}>Welcome, Code Breaker! Sammy needs your help to crack a secret message.</p><p>Don’t worry — decoding is easy once you know the steps!</p></>
+        title: "🌟 How to Play 🌟",
+        content: <><p style={{ marginBottom: '10px' }}>Welcome, Code Breaker! Your help is needed to crack a secret message.</p><p>Don’t worry — decoding is easy once you know the steps!</p></>
     },
     {
         title: "🔐 Step 1: Look at the Secret Key",
@@ -27,7 +27,7 @@ const TUTORIAL_STEPS = [
     },
     {
         title: "🕵️ Step 3: Decode the Numbers",
-        content: <><p style={{ marginBottom: '10px' }}>You’ll see something like: <br /><strong style={{ letterSpacing: '2px', background: '#f5f5f5', padding: '5px' }}>25 7 2 11 . / 19 7 17 11 / ...</strong></p><p style={{ marginBottom: '10px' }}>Just look at each number and find the matching letter on the wheel.</p><p>Write down the letters you discover — together, they form Sammy’s secret message!</p></>
+        content: <><p style={{ marginBottom: '10px' }}>You’ll see something like: <br /><strong style={{ letterSpacing: '2px', background: '#f5f5f5', padding: '5px' }}>25 7 2 11 . / 19 7 17 11 / ...</strong></p><p style={{ marginBottom: '10px' }}>Just look at each number and find the matching letter on the wheel.</p><p>Write down the letters you discover — together, they form the secret message!</p></>
     },
     {
         title: "✍️ Step 4: Type the Secret Phrase",
@@ -35,11 +35,11 @@ const TUTORIAL_STEPS = [
     },
     {
         title: "✅ Step 5: Check Your Code!",
-        content: <><p style={{ marginBottom: '10px' }}>Click the <strong>Check Code!</strong> button.</p><p>If you cracked the message correctly, you win! If not, no worries — try again and keep decoding like a real spy.</p></>
+        content: <><p style={{ marginBottom: '10px' }}>Click the <strong>Check Code!</strong> button.</p><p>If you cracked the message correctly, you win! If not, no worries — try again and keep decoding like a real detective.</p></>
     },
     {
-        title: "⭐ Tips for Super Spies",
-        content: <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}><li>A slash ( <strong>/</strong> ) stands for a space between words</li><li>A period ( <strong>.</strong> ) or exclamation mark (<strong>!</strong>) stays exactly the same</li><li>Work slowly — even real spies double-check their codes!</li></ul>
+        title: "⭐ Tips for Super Detectives",
+        content: <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}><li>A slash ( <strong>/</strong> ) stands for a space between words</li><li>A period ( <strong>.</strong> ) or exclamation mark (<strong>!</strong>) stays exactly the same</li><li>Work slowly — even real detectives double-check their codes!</li></ul>
     }
 ];
 
@@ -82,8 +82,25 @@ export default function DecoderPage() {
                         boxShadow: '0 10px 40px rgba(0,0,0,0.4)',
                         textAlign: 'center',
                         border: '4px solid var(--accent-color)',
-                        animation: 'fadeIn 0.3s ease-out'
+                        animation: 'fadeIn 0.3s ease-out',
+                        position: 'relative'
                     }}>
+                        <button 
+                            onClick={() => setShowTutorial(false)} 
+                            style={{ 
+                                position: 'absolute', 
+                                top: '15px', 
+                                right: '15px', 
+                                background: 'none', 
+                                border: 'none', 
+                                fontSize: '1.5rem', 
+                                cursor: 'pointer', 
+                                color: '#888' 
+                            }}
+                            aria-label="Close Instructions"
+                        >
+                            <i className="fas fa-times"></i>
+                        </button>
                         <h2 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '25px' }}>
                             {TUTORIAL_STEPS[tutorialStep].title}
                         </h2>
