@@ -29,6 +29,9 @@ export default function AboutPage() {
                         <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
                             <a href="https://samxrenick.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>See Sam's Track Record →</a>
                         </p>
+                        <div style={{ textAlign: 'center', marginTop: '30px' }}>
+                            <img src="/assets/images/pr.kiplinger.png" alt="Featured in Kiplinger, Forbes, NYT, NPR, Washington Post" style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px' }} />
+                        </div>
                     </div>
                     <div style={{ flex: '0 0 auto', textAlign: 'center', alignSelf: 'flex-start' }}>
                         <img src="/assets/images/samxrenick.award.jpg" alt="Sam X Renick" style={{ maxWidth: '200px', height: 'auto', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }} />
