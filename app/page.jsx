@@ -188,6 +188,16 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {/* "Just the Beginning" Blurb */}
+            <section style={{ padding: '0px 20px 80px 20px', backgroundColor: 'var(--light-bg)' }}>
+                <div className="container">
+                    <div style={{ background: 'var(--primary-bg)', padding: '40px 30px', borderRadius: '16px', textAlign: 'center', border: '2px dashed var(--accent-color)' }}>
+                        <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-color)', margin: 0, fontWeight: 900, lineHeight: '1.4' }}>
+                            This is just the beginning: 50+ more music videos and song kits are coming!
+                        </h3>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
