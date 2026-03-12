@@ -35,7 +35,7 @@ export default function Home() {
                                 aria-label="Follow the Money Rules Karaoke Video"
                             ></video>
                             <div style={{ marginTop: '20px' }}>
-                                <p style={{ color: '#666', margin: 0 }}>Sing along and learn the golden rules of money!</p>
+                                <p style={{ color: '#666', margin: 0, fontSize: '1.05rem', lineHeight: '1.5' }}>Kids learn that following the basic money rules—save, earn, spend smart, give wisely, and invest—helps them reach their goals and make their dreams come true.</p>
                             </div>
                         </div>
 
@@ -107,9 +107,12 @@ export default function Home() {
                             <div style={{ height: '200px', background: '#e0f7fa', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <img src="/assets/images/joy_to_save_thumb_squirrel.png" alt="It's a Joy to Save!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's a Joy to Save!</h4>
-                                <Link href="/videos/joy-to-save" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                <div style={{ marginBottom: '15px' }}>
+                                    <Link href="/videos/joy-to-save" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                </div>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that saving money feels good, and that making it a habit helps their savings grow and their future shine bright.</p>
                             </div>
                         </div>
 
@@ -118,9 +121,12 @@ export default function Home() {
                             <div style={{ height: '200px', background: '#fff9c4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <img src="/assets/images/earn_a_dollar_thumb_bear.png" alt="It's Good to Earn a Dollar!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>It's Good to Earn a Dollar!</h4>
-                                <Link href="/videos/earn-a-dollar" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                <div style={{ marginBottom: '15px' }}>
+                                    <Link href="/videos/earn-a-dollar" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                </div>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that working and earning money feels great—and that spending it wisely means not using it all up before the next payday.</p>
                             </div>
                         </div>
 
@@ -129,9 +135,12 @@ export default function Home() {
                             <div style={{ height: '200px', background: '#fce4ec', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <img src="/assets/images/spend_smart_thumb_owl.png" alt="Spend Smart!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Spend Smart!</h4>
-                                <Link href="/videos/spend-smart" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                <div style={{ marginBottom: '15px' }}>
+                                    <Link href="/videos/spend-smart" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                </div>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that spending smart means planning ahead: making a list, comparing prices, checking quality, and choosing carefully before they buy.</p>
                             </div>
                         </div>
 
@@ -140,9 +149,12 @@ export default function Home() {
                             <div style={{ height: '200px', background: '#f3e5f5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <img src="/assets/images/give_wisely_thumbnail.png" alt="Give Wisely!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Give Wisely!</h4>
-                                <Link href="/videos/give-wisely" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                <div style={{ marginBottom: '15px' }}>
+                                    <Link href="/videos/give-wisely" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                </div>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that giving is good and most meaningful when it’s done thoughtfully and from the heart.</p>
                             </div>
                         </div>
 
@@ -151,9 +163,12 @@ export default function Home() {
                             <div style={{ height: '200px', background: '#e8f5e9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <img src="/assets/images/great_habits_3d_thumbnail.png" alt="Great Habits Make a Great You" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>Great Habits Make a Great You</h4>
-                                <Link href="/videos/great-habits" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                <div style={{ marginBottom: '15px' }}>
+                                    <Link href="/videos/great-habits" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                </div>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that choosing great habits is powerful and that the habits they choose and build today help shape into a great person.</p>
                             </div>
                         </div>
 
@@ -162,9 +177,12 @@ export default function Home() {
                             <div style={{ height: '200px', background: '#e3f2fd', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <img src="/assets/images/rule_of_72_3d_thumbnail.png" alt="The Rule of 72!" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
-                            <div style={{ padding: '20px' }}>
+                            <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                                 <h4 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>The Rule of 72!</h4>
-                                <Link href="/videos/rule-of-72" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                <div style={{ marginBottom: '15px' }}>
+                                    <Link href="/videos/rule-of-72" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
+                                </div>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn a simple formula that helps them figure out how long it will take their savings and investments to double.</p>
                             </div>
                         </div>
                     </div>
