@@ -79,8 +79,7 @@ export default function Home() {
                     <div style={{ background: '#fce4ec', padding: '40px', borderRadius: '24px', maxWidth: '600px', margin: '0 auto', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
                         <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Join the FREE Beta Today!</h3>
                         <p style={{ marginBottom: '20px', color: '#666' }}>
-                            Be one of the first families and teachers to experience our new songs, stories, and activities that build lifelong money habits.<br /><br />
-                            Enter your email to get early access.
+                            Join our early supporters: enter your email for free beta access, unlock additional content, and stay informed about new developments, including our official launch.
                         </p>
                         <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <input
