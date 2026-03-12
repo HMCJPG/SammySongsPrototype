@@ -1,7 +1,7 @@
 export default function InquiriesPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid var(--accent-color)' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '20px' }}>Inquiries</h1>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>How can we help?</h3>
@@ -16,9 +16,9 @@ export default function InquiriesPage() {
                     </p>
                 </div>
 
-                <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8' }}>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     We do our best to respond as quickly as possible.
-                </p>
+                </div>
             </div>
         </main>
     );

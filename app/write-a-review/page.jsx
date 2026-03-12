@@ -1,7 +1,7 @@
 export default function ReviewPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid var(--accent-color)' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '20px' }}>Write a Review</h1>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '30px' }}>Tell us what you and your kids think!</h3>
@@ -18,9 +18,9 @@ export default function ReviewPage() {
                     </ul>
                 </div>
 
-                <p style={{ fontSize: '1.2rem', color: '#555', lineHeight: '1.8', marginBottom: '40px' }}>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     Your review helps us make the platform more engaging, effective, and helpful for children everywhere as they begin building strong money habits and financial confidence.
-                </p>
+                </div>
 
                 <div style={{ textAlign: 'center' }}>
                     <a href="mailto:savingsammy@gmail.com?subject=Review%20of%20Bedtime%20Songs%20and%20Stories" className="btn btn-sharp" style={{ fontSize: '1.2rem', display: 'inline-block', textDecoration: 'none', padding: '15px 30px' }}>

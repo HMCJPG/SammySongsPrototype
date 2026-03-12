@@ -1,7 +1,7 @@
 export default function PrivacyPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid var(--accent-color)' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '10px' }}>Privacy Policy</h1>
                 <p style={{ fontSize: '1rem', color: '#888', marginBottom: '30px' }}>Effective Date: March 2026</p>
 
@@ -37,7 +37,9 @@ export default function PrivacyPage() {
                     <li>improve our educational content and services</li>
                     <li>administer affiliate or partner programs</li>
                 </ul>
-                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}><strong>We do not sell personal information to third parties.</strong></p>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
+                    We do not sell personal information to third parties.
+                </div>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>3. Email Communications</h3>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px' }}>If you provide your email address, we may send:</p>

@@ -105,9 +105,9 @@ export default function AboutPage() {
                 <p style={{ marginBottom: '20px' }}>
                     That's the goal — not a child who knows about money, but a child who practices strong money habits without needing constant reminders.
                 </p>
-                <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     Knowledge informs. Habits transform.
-                </p>
+                </div>
 
                 <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Why start teaching money habits so early?</h4>
                 <p style={{ marginBottom: '20px' }}>
@@ -149,7 +149,7 @@ export default function AboutPage() {
                     We follow a simple, proven four-step cycle: Sing. Read. Discuss. Reinforce.
                 </p>
 
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px' }}>
+                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px', border: '4px solid var(--accent-color)' }}>
                     <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 1 — Sing: A Sticky Start</h4>
                     <p style={{ marginBottom: '15px' }}>
                         Music is a habit-building superpower. Unlike a lecture, a song can be repeated dozens of times without losing its magic.
@@ -162,7 +162,7 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px' }}>
+                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px', border: '4px solid var(--accent-color)' }}>
                     <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 2 — Read: Context and Character</h4>
                     <p style={{ marginBottom: '15px' }}>
                         Stories take abstract ideas and make them human. Through the short stories that accompany each song, children see money as a tool for solving problems, achieving goals, and chasing dreams.
@@ -175,7 +175,7 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px' }}>
+                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px', border: '4px solid var(--accent-color)' }}>
                     <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 3 — Discuss: Making Money a Safe Topic</h4>
                     <p style={{ marginBottom: '15px' }}>
                         Money is often a taboo topic at home, which can create anxiety that lasts well into adulthood. We give parents and teachers simple prompts and conversation starters to break the ice.
@@ -188,7 +188,7 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '40px' }}>
+                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '40px', border: '4px solid var(--accent-color)' }}>
                     <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 4 — Reinforce: Learning by Doing</h4>
                     <p style={{ marginBottom: '15px' }}>
                         This is where transformation happens. Our resources are habit-centered by design.

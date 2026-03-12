@@ -1,7 +1,7 @@
 export default function CopyrightPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid var(--accent-color)' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '30px' }}>Copyright & Educational Use Policy</h1>
 
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
@@ -29,11 +29,11 @@ export default function CopyrightPage() {
                 </ul>
 
                 <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-color)', marginBottom: '15px' }}>Sharing Materials</h2>
-                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     We encourage sharing the ideas and lessons presented in our resources.<br />
                     However, when referencing our materials, please credit:<br />
                     <strong>SammyRabbit.com</strong>
-                </p>
+                </div>
 
                 <h2 style={{ fontSize: '1.8rem', color: 'var(--accent-color)', marginBottom: '15px' }}>Licensing and Partnerships</h2>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '15px' }}>Organizations interested in:</p>

@@ -1,7 +1,7 @@
 export default function TermsPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
+            <div className="container" style={{ maxWidth: '800px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', border: '4px solid var(--accent-color)' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '10px' }}>Terms of Service (Beta Platform)</h1>
                 <p style={{ fontSize: '1rem', color: '#888', marginBottom: '30px' }}>Effective Date: March 2026</p>
 
@@ -19,9 +19,9 @@ export default function TermsPage() {
                     <li>Access may be modified, interrupted, or discontinued</li>
                     <li>Content may be added, removed, or updated</li>
                 </ul>
-                <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     Your participation helps us improve the platform and develop better educational resources for families, teachers, and communities.
-                </p>
+                </div>
 
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px' }}>2. Purpose of the Platform</h3>
                 <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.7', marginBottom: '30px' }}>
