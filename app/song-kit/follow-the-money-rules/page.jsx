@@ -68,7 +68,7 @@ export default function SongKitPage() {
                 </div>
 
                 {/* Resource Links Container */}
-                <h4 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '20px', textAlign: 'center' }}>Download Resources</h4>
+                <h4 id="download-resources" style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '20px', textAlign: 'center' }}>Download Resources</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', padding: '30px', backgroundColor: 'var(--light-bg)', borderRadius: '24px', border: '1px solid #eee' }}>
 
                     {/* Audio File (Updated Label) */}

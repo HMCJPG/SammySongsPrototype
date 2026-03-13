@@ -10,14 +10,9 @@ export default function TeachersPage() {
                     </p>
                 </div>
 
-                <div style={{ background: 'white', padding: '50px', borderRadius: '24px', border: '4px dashed var(--accent-color)', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
-                    <i className="fas fa-chalkboard-teacher" style={{ fontSize: '5rem', color: 'var(--accent-color)', marginBottom: '20px' }}></i>
-                    <h3 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '15px', fontWeight: 800 }}>Sample Lesson Plan PDF</h3>
-                    <p style={{ color: '#666', marginBottom: '30px', fontSize: '1.1rem' }}>
-                        We've included a blank placeholder PDF here to demonstrate where the downloadable lesson plans will be listed!
-                    </p>
-                    <a href="/assets/pdfs/sample-activity.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-pill" style={{ display: 'inline-block', textDecoration: 'none' }}>
-                        Download PDF
+                <div style={{ textAlign: 'center', marginTop: '40px' }}>
+                    <a href="/song-kit/follow-the-money-rules#download-resources" className="btn btn-pill" style={{ display: 'inline-block', fontSize: '1.5rem', padding: '15px 40px', textDecoration: 'none' }}>
+                        See Guides
                     </a>
                 </div>
             </div>
