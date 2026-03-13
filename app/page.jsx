@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import CustomVideoPlayer from './components/CustomVideoPlayer';
 
 export default function Home() {
     const [email, setEmail] = useState('');
@@ -58,13 +59,10 @@ export default function Home() {
                         <div style={{ flex: '1 1 400px', background: 'white', borderRadius: '24px', padding: '30px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
                             <i className="fas fa-music" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '15px' }}></i>
                             <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '20px', marginTop: 0 }}>Song</h4>
-                            <video
-                                src="/assets/videos/moneyrules.mp4"
-                                poster="/assets/images/pig_book.png"
-                                controls
-                                style={{ width: '100%', display: 'block', borderRadius: '12px' }}
-                                aria-label="Follow the Money Rules Karaoke Video"
-                            ></video>
+                            <CustomVideoPlayer 
+                                src="/assets/videos/moneyrules.mp4" 
+                                poster="/assets/images/pig_book.png" 
+                            />
                             <div style={{ marginTop: '20px' }}>
                                 <p style={{ color: '#666', margin: 0, fontSize: '1.05rem', lineHeight: '1.5' }}>Kids learn that following the basic money rules (save, earn, spend smart, give wisely, and invest) helps them reach their goals and make their dreams come true.</p>
                             </div>
