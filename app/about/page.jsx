@@ -1,3 +1,5 @@
+import FAQAccordion from '../components/FAQAccordion';
+
 export default function AboutPage() {
     return (
         <main style={{ padding: '80px 20px', minHeight: '100vh', backgroundColor: 'var(--primary-bg)' }}>
@@ -6,19 +8,19 @@ export default function AboutPage() {
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>BedtimeMoneyHabits.com</h3>
                 <p style={{ marginBottom: '20px' }}>
-                    Designed for parents, teachers, and community organizations who want simple, engaging resources to help children ages 3 and up build strong money habits. Through songs, stories, and conversations, kids begin developing the habits and mindsets that support lifelong financial well-being, self-sufficiency, and the ability to turn dreams and goals into reality.
+                    Financial literacy is a gift that lasts a lifetime. We provide families and organizations with heartwarming songs, stories, and conversation starters that make teaching money habits feel natural. By helping children ages 3 and up discover the joy of saving, we lay the groundwork for a future of independence and success.
                 </p>
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Mission</h3>
                 <p style={{ marginBottom: '20px' }}>
-                    Our mission is simple: make it easy, fun, and genuinely effective for parents, teachers, and community leaders to teach kids about money — starting early — so they grow up confident, capable, and ready to build bright futures.
+                    BedtimeMoneyHabits.com was created to empower parents, teachers, and community leaders with the tools to make financial education simple and engaging at home, in the classroom, in a car, anywhere and anytime there is a moment in the day to share a meaningful thought about money. We believe that by starting early, we can transform 'money talk' into a fun experience, a regular habit that prepares every child to grow up confident, capable, and ready for the world.
                 </p>
 
                 <h3 id="meet-the-creator" style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Meet the Creator: Sam X Renick</h3>
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1 1 400px' }}>
                         <p style={{ marginBottom: '20px' }}>
-                            Sam X Renick is the co-creator of BedtimeMoneyHabits.com and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
+                            Sam X Renick is the creator of BedtimeMoneyHabits.com and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
                         </p>
                         <p style={{ marginBottom: '20px' }}>
                             His programs weave together storybooks, music, dream-big journaling, games, live events, and more — and they've been embraced by families and organizations worldwide, including the Department of Defense, United Way, the University of Texas at Tyler, Girl Scouts of America, the Wisconsin Bankers Association, Citi, banks, credit unions, and schools across the country.
@@ -38,17 +40,14 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Friend and Partner: Sammy Rabbit</h3>
+                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Inspiration and Partner: Sammy Rabbit</h3>
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1 1 400px' }}>
                         <p style={{ marginBottom: '20px' }}>
-                            Although we are a separate enterprise, we share a close relationship — and a common heart — with Sammy Rabbit, a long-standing leader in early childhood financial education. Our missions are deeply aligned: helping children build strong money habits that support lifelong financial well-being.
+                            Our work is deeply inspired by—and closely aligned with—Sammy Rabbit, a global leader in early-age financial education. While we are a distinct enterprise, we share a heart for helping children develop the self-sufficiency and habits that lead to a bright financial future.
                         </p>
                         <p style={{ marginBottom: '20px' }}>
-                            For decades, Sammy Rabbit has been inspiring families, schools, and communities through engaging songs, stories, lesson plans, and standards-aligned resources that make financial education simple, positive, and habit-focused.
-                        </p>
-                        <p style={{ marginBottom: '20px' }}>
-                            We warmly encourage you to explore the additional resources available at SammyRabbit.com, where you'll find expanded programs, classroom materials, books, activities, and tools to deepen your child's financial learning journey.
+                            Sammy Rabbit’s decades of experience in creating positive, habit-focused songs and stories provide a powerful foundation for families and educators everywhere. We encourage you to visit SammyRabbit.com to explore their extensive collection of books, activities, and standards-based resources.
                         </p>
                     </div>
                     <div style={{ flex: '0 0 auto', textAlign: 'center', alignSelf: 'center' }}>
@@ -58,91 +57,7 @@ export default function AboutPage() {
 
                 <h2 id="faq" style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginTop: '60px', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>Frequently Asked Questions</h2>
 
-                <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Who are these resources for?</h4>
-                <p style={{ marginBottom: '20px' }}>
-                    These resources are designed for parents, teachers, caregivers, and anyone who wants to help children build life-changing money habits early. Our goal is simple: put kids on a path toward lifelong financial well-being — security, stability, independence, and opportunity — and position them to pursue their dreams and help others do the same.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    The resources are especially well-suited for children in grades K–3, when foundational habits are forming and repetition has its greatest impact.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    And while the collection is called BedtimeMoneyHabits.com, these resources are made to be used anytime, anywhere — at home, in the classroom, in after-school programs, or during family conversations. Wherever children are learning, strong money habits can take root.
-                </p>
-
-                <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Why does teaching financial literacy early matter?</h4>
-                <p style={{ marginBottom: '20px' }}>
-                    Teaching children about money matters more than most parents realize — because money habits start forming as early as age seven. In today's consumer-driven world, kids are constantly surrounded by messages that encourage spending, impulsiveness, and instant gratification, often long before they've learned about saving, budgeting, or waiting for something they really want.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    When parents intentionally build healthy money habits early, they give their children far more than financial knowledge. They give them confidence, independence, less stress, the ability to handle unexpected setbacks, freedom from living paycheck to paycheck, and the capacity to be generous with others.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Financial literacy isn't about raising little accountants. It's about building lifelong habits — understanding wants versus needs, saving consistently, spending intentionally, and preparing for the unexpected. Because most schools still offer limited financial education, these conversations often fall to parents.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    The good news? You don't need to be a financial expert. Simply starting open, consistent conversations about money helps shape a healthier, more confident future for your child.
-                </p>
-
-                <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Why focus on habits rather than knowledge?</h4>
-                <p style={{ marginBottom: '20px' }}>
-                    Most adults already know what they should do with money — save, avoid debt, spend less than they earn. Yet many still struggle. The gap isn't knowledge. It's habits.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Research and real-life experience show that lasting behavior change doesn't come from information alone. It comes from repetition, emotion, and early exposure. Habits form when actions are practiced consistently, tied to positive feelings, and built during the years when the brain is still developing. Once a habit is formed, it runs on autopilot — no willpower required.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    That's why our approach is different.
-                </p>
-                <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
-                    We don't just teach money facts. We help children build money habits.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Through songs and stories, children experience repeated, emotionally positive messages about saving first, spending smart, waiting before buying, planning for the unexpected, and knowing where money goes. Music is especially powerful here — rhythm and melody strengthen memory pathways in the brain, and studies show that information paired with music is retained longer and recalled more easily. Stories add emotional meaning, and emotion is what truly locks habits into place.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    When a child sings about saving, hears stories about waiting, and talks about money regularly with the people they love, they aren't just learning concepts. They're wiring patterns.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Over time, saving becomes automatic. Waiting becomes normal. Planning becomes second nature.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    That's the goal — not a child who knows about money, but a child who practices strong money habits without needing constant reminders.
-                </p>
-                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
-                    Knowledge informs. Habits transform.
-                </div>
-
-                <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>Why start teaching money habits so early?</h4>
-                <p style={{ marginBottom: '20px' }}>
-                    Because childhood is the most powerful window you'll ever have.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Research in behavioral science and neuroscience suggests that core money habits and attitudes are largely formed by age seven. During these early years, the brain is highly adaptable. Patterns repeated consistently — especially those tied to emotion and daily routine — become wired pathways. What children practice early begins to feel "normal." And what feels normal tends to last.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    This is why waiting until the teenage years to have serious money conversations often misses the mark. By then, spending impulses, emotional reactions, and behavioral patterns may already be well established. Early childhood, on the other hand, is still a shaping stage — habits are forming, scripts are being written, and defaults are being set.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    That's not a reason to worry. It's a reason to act with confidence.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    If you've ever thought, "Isn't my child too young to learn about money?" — the research says the opposite. Early exposure doesn't mean complex lessons about investing or credit scores. It means simple, repeated experiences: saving a little, waiting before buying, talking calmly about choices, watching money grow toward a goal.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    These small moments add up.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    When children grow up hearing consistent messages about saving, earning, giving, and spending wisely — and when they practice those behaviors in simple, everyday ways — they build automatic patterns that carry into adulthood.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Starting early isn't about pressure. It's about protection and preparation.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    The earlier strong money habits form, the more time they have to strengthen — and the less likely your child is to struggle later trying to unlearn unhealthy ones.
-                </p>
-                <p style={{ marginBottom: '20px', fontWeight: 'bold', fontStyle: 'italic' }}>
-                    It's not too early. In fact, it's exactly the right time.
-                </p>
+                <FAQAccordion />
 
                 <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginTop: '60px', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>How It Works</h2>
                 <p style={{ marginBottom: '20px' }}>
