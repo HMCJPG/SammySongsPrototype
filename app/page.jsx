@@ -1,8 +1,39 @@
 'use client';
 
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
+    const [email, setEmail] = useState('');
+    const [status, setStatus] = useState('idle'); // 'idle', 'loading', 'success', 'error'
+
+    const handleSubscribe = async (e) => {
+        e.preventDefault();
+        if (!email) return;
+        
+        setStatus('loading');
+        try {
+            // NOTE: Replace this URL with your published Google Apps Script Web App URL
+            const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || 'YOUR_WEB_APP_URL_HERE';
+            
+            await fetch(scriptUrl, {
+                method: 'POST',
+                mode: 'no-cors', // By-passes CORS block on the browser
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({ email: email })
+            });
+            
+            // With no-cors, we can't read the response properly, so we assume success if no network error
+            setStatus('success');
+            setEmail('');
+        } catch (error) {
+            console.error('Error submitting email:', error);
+            setStatus('error');
+        }
+    };
+
     return (
         <main>
             {/* Page 1: The Home Page Banner */}
@@ -81,14 +112,30 @@ export default function Home() {
                         <p style={{ marginBottom: '20px', color: '#666' }}>
                             Join our early supporters: enter your email for free beta access, unlock additional content, and stay informed about new developments, including our official launch.
                         </p>
-                        <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <input
-                                type="email"
-                                placeholder="Email address..."
-                                style={{ padding: '15px 20px', borderRadius: '50px', border: '2px solid #ccc', fontSize: '1.1rem', flex: '1', minWidth: '250px' }}
-                            />
-                            <button type="submit" className="btn btn-pill" style={{ margin: 0 }}>Join Now!</button>
-                        </form>
+                        {status === 'success' ? (
+                            <div style={{ padding: '15px', background: '#d4edda', color: '#155724', borderRadius: '12px', fontWeight: 'bold' }}>
+                                Thank you for joining! We'll be in touch soon.
+                            </div>
+                        ) : (
+                            <form onSubmit={handleSubscribe} style={{ display: 'flex', flexDirection: 'column', gap: '10px', justifyContent: 'center', alignItems: 'center' }}>
+                                <div style={{ display: 'flex', gap: '10px', width: '100%', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                    <input
+                                        type="email"
+                                        placeholder="Email address..."
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        required
+                                        style={{ padding: '15px 20px', borderRadius: '50px', border: '2px solid #ccc', fontSize: '1.1rem', flex: '1', minWidth: '250px' }}
+                                    />
+                                    <button type="submit" disabled={status === 'loading'} className="btn btn-pill" style={{ margin: 0, opacity: status === 'loading' ? 0.7 : 1 }}>
+                                        {status === 'loading' ? 'Joining...' : 'Join Now!'}
+                                    </button>
+                                </div>
+                                {status === 'error' && (
+                                    <p style={{ color: 'red', margin: '10px 0 0 0', fontSize: '0.9rem' }}>Something went wrong. Please try again.</p>
+                                )}
+                            </form>
+                        )}
                     </div>
                 </div>
             </section>
