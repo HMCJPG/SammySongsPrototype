@@ -32,7 +32,7 @@ export default function EarlyAccessPage() {
                 </div>
 
                 <h2 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '20px', fontWeight: 800 }}>
-                    What You Receive Each Week
+                    What to Expect at Launch (Post-Beta Vision): BedtimeMoneyHabits membership
                 </h2>
                 <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '15px', lineHeight: '1.7' }}>
                     A complete BedtimeMoneyHabits.com experience designed to help children build lifelong money habits through music, stories, and simple conversations.
