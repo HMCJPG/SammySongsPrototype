@@ -18,18 +18,7 @@ export default function SongKitPage() {
 
     return (
         <main className="song-kit-page" style={{ padding: '40px 20px 80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
-            {/* Breadcrumb Navigation */}
-            <div className="container" style={{ maxWidth: '900px', marginBottom: '20px' }}>
-                <nav aria-label="breadcrumb">
-                    <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', gap: '8px', color: '#666', fontSize: '1rem' }}>
-                        <li><Link href="/" style={{ color: 'var(--accent-color)', textDecoration: 'none' }}>Home</Link></li>
-                        <li>&gt;</li>
-                        <li>Song Kits</li>
-                        <li>&gt;</li>
-                        <li style={{ color: 'var(--text-dark)', fontWeight: 'bold' }}>Follow the Money Rules</li>
-                    </ol>
-                </nav>
-            </div>
+
 
             <div className="container" style={{ maxWidth: '900px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
                 {/* Header Section */}
@@ -51,7 +40,7 @@ export default function SongKitPage() {
                         These resources are free to download during our Beta phase. No login required!
                     </div>
 
-                    <div style={{ marginBottom: '20px' }}>
+                    <div style={{ marginBottom: '20px', display: 'none' }}>
                         {/* Social Share Hook */}
                         <a href="mailto:?subject=Check%20out%20this%20Song%20Kit!&body=I%20found%20this%20great%20collection%20of%20resources%20for%20teaching%20kids%20about%20money."
                             className="btn btn-sharp"
