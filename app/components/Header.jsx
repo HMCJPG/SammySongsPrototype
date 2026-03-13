@@ -53,8 +53,7 @@ export default function Header() {
                         <li><Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link></li>
                         <li><Link href="/parents" className={`nav-link ${pathname === '/parents' ? 'active' : ''}`}>Parents</Link></li>
                         <li><Link href="/teachers" className={`nav-link ${pathname === '/teachers' ? 'active' : ''}`}>Teachers</Link></li>
-                        <li><Link href="/membership-features" className={`nav-link ${pathname === '/membership-features' ? 'active' : ''}`}>Membership Features</Link></li>
-                        <li><Link href="/free-trial" className={`nav-link join-beta-link ${pathname === '/free-trial' ? 'active' : ''}`} style={{ fontWeight: 'bold' }}>Join Beta</Link></li>
+                        <li><Link href="/membership-features" className={`nav-link join-beta-link ${pathname === '/membership-features' ? 'active' : ''}`} style={{ fontWeight: 'bold' }}>Join Beta</Link></li>
                     </ul>
                 </div>
             </nav>

@@ -7,11 +7,31 @@ export default function EarlyAccessPage() {
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--primary-bg)', minHeight: '80vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center' }}>
             <div className="container" style={{ maxWidth: '900px', background: 'white', padding: '60px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', borderTop: '8px solid var(--accent-color)' }}>
 
-                <h1 style={{ fontSize: '3.5rem', color: 'var(--text-dark)', marginBottom: '10px', textAlign: 'center', fontWeight: 900 }}>
-                    Membership Features
+                <h1 style={{ fontSize: '3.5rem', color: 'var(--text-dark)', marginBottom: '20px', textAlign: 'center', fontWeight: 900 }}>
+                    Join Beta
                 </h1>
 
-                <h2 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>
+                <div style={{ marginBottom: '60px' }}>
+                    <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '25px', fontWeight: 800 }}>
+                        Beta Access and Early Supporter Rewards
+                    </h2>
+                    
+                    <div style={{ border: '4px dotted var(--accent-color)', borderRadius: '16px', padding: '25px', marginBottom: '30px', textAlign: 'center' }}>
+                        <p style={{ fontSize: '1.35rem', color: 'var(--text-dark)', fontWeight: 'bold', margin: 0, lineHeight: '1.5' }}>
+                            During the Beta phase, access to BedtimeMoneyHabits.com is free while we test, refine, and improve the platform!
+                        </p>
+                    </div>
+
+                    <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '20px', lineHeight: '1.7' }}>
+                        Beta participants receive early access to the site and the opportunity to help shape its development. As a thank you for being early supporters, Beta participants may also be eligible for special early supporter pricing when the platform officially launches.
+                    </p>
+
+                    <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '0', lineHeight: '1.7' }}>
+                        When the platform officially launches, we plan to offer simple and affordable subscription options for families, teachers, and organizations.
+                    </p>
+                </div>
+
+                <h2 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '20px', fontWeight: 800 }}>
                     What You Receive Each Week
                 </h2>
                 <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '15px', lineHeight: '1.7' }}>
