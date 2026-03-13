@@ -189,6 +189,16 @@ body {
   color: var(--text-dark);
 }
 
+.nav-link.join-beta-link {
+  background-color: #e28a55;
+  color: white;
+}
+
+.nav-link.join-beta-link:not(.active):hover {
+  background-color: #d17843;
+  color: white;
+}
+
 /* Hero Section */
 .hero-section {
   background: var(--hero-gradient);

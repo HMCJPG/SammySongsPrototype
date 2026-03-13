@@ -15,6 +15,14 @@ export default function TeachersPage() {
                         Our lesson plans are designed to help teachers introduce financial concepts in engaging, age-appropriate ways while reinforcing critical thinking, discussion, and real-world connections.
                     </p>
 
+                    <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                        <img 
+                            src="/assets/images/teachersection.png" 
+                            alt="Teacher Resources Section" 
+                            style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)' }} 
+                        />
+                    </div>
+
                     <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>
                         In addition to these classroom tools, educators have full access to our complete library of parent resources, ensuring a seamless connection between school and home habits.
                     </h4>
