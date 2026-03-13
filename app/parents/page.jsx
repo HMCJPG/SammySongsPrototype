@@ -4,17 +4,33 @@ export default function ParentsPage() {
             <div className="container" style={{ maxWidth: '800px' }}>
                 <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Parents</h2>
                 <div style={{ fontSize: '1.25rem', color: '#666', marginBottom: '50px', lineHeight: '1.8', textAlign: 'left' }}>
+                    <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 800 }}>
+                        Welcome to the Parents Section: Simple Habits, Lifelong Impact
+                    </h3>
                     <p style={{ marginBottom: '20px' }}>
-                        Welcome to the <strong>Parents section</strong> — where building great money habits becomes simple, natural, and even fun.
+                        Building essential money habits should feel natural, not like a chore. Whether you have five minutes before bed or a quick moment in the car, our resources help you turn everyday interactions into meaningful learning opportunities.
+                    </p>
+
+                    <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>
+                        What You’ll Find Inside Each Parent Guide:
+                    </h4>
+
+                    <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                        <img 
+                            src="/assets/images/bedtime.parentguide.png" 
+                            alt="Bedtime Parent Guide" 
+                            style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)' }} 
+                        />
+                    </div>
+
+                    <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginTop: '30px', marginBottom: '15px', fontWeight: 700 }}>
+                        Any Moment is a Learning Moment
+                    </h4>
+                    <p style={{ marginBottom: '20px' }}>
+                        While our name is BedtimeMoneyHabits.com, these tools are designed for your family’s unique rhythm. Use them after school, on a weekend morning, or during a quiet moment together to consistently reinforce foundational money habits like saving, investing, spending smart, and giving wisely.
                     </p>
                     <p style={{ marginBottom: '20px' }}>
-                        Each song and story comes with a complete Parent & Family Guide designed to help you turn everyday moments into meaningful money conversations. Inside you’ll find Conversation Starters to spark discussion, Parent Tips to guide you, positive Affirmations to build confidence, hands-on Experiences, engaging Activities, and simple Games your family can enjoy together.
-                    </p>
-                    <p style={{ marginBottom: '20px' }}>
-                        And while this site is called BedtimeMoneyHabits.com, these resources can be used anytime, anywhere — before bed, after school, in the car, or during a quiet moment together.
-                    </p>
-                    <p>
-                        Whether it’s five minutes before bed or a quick moment during the day, these tools help you gently and consistently build saving, earning, smart spending, and giving habits that last a lifetime.
+                        Together, we’re laying the groundwork for a future of independence, self-sufficiency, and the power to turn big dreams into reality.
                     </p>
                 </div>
 

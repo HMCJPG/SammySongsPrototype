@@ -109,8 +109,11 @@ export default function Home() {
                 <div className="container">
                     <div style={{ background: '#fce4ec', padding: '40px', borderRadius: '24px', maxWidth: '600px', margin: '0 auto', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
                         <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Join the FREE Beta Today!</h3>
+                        <p style={{ marginBottom: '15px', color: '#666' }}>
+                            Be among our early supporters and help us refine the site and program to better serve kids and families around the world.
+                        </p>
                         <p style={{ marginBottom: '20px', color: '#666' }}>
-                            Join our early supporters: enter your email for free beta access, unlock additional content, and stay informed about new developments, including our official launch.
+                            Enter your email to receive free beta access, unlock additional content, and stay informed about new updates, including our official launch.
                         </p>
                         {status === 'success' ? (
                             <div style={{ padding: '15px', background: '#d4edda', color: '#155724', borderRadius: '12px', fontWeight: 'bold' }}>
