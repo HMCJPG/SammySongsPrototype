@@ -20,39 +20,13 @@ export default function SongKitPage() {
 
 
             <div className="container" style={{ maxWidth: '900px', background: 'white', padding: '50px', borderRadius: '24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
-                {/* Header Section */}
-                <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-                    <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '10px' }}>
-                        Song Kit
-                    </h2>
-                    <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '15px' }}>
-                        Follow the Money Rules
-                    </h3>
-
-                    {/* Song Kit Explainer Context */}
-                    <p style={{ color: '#444', fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto 20px auto', lineHeight: '1.6' }}>
-                        Each Song Kit includes everything you need to use this song at home or in the classroom. Enjoy!
-                    </p>
-                    {/* Membership Context text */}
-                    <div style={{ background: '#e8f5e9', color: '#2e7d32', padding: '15px', borderRadius: '12px', display: 'inline-block', marginBottom: '25px', fontWeight: 'bold' }}>
-                        <i className="fas fa-gift" style={{ marginRight: '8px' }}></i>
-                        These resources are free to download during our Beta phase. No login required!
-                    </div>
-
-                    <div style={{ marginBottom: '20px', display: 'none' }}>
-                        {/* Social Share Hook */}
-                        <a href="mailto:?subject=Check%20out%20this%20Song%20Kit!&body=I%20found%20this%20great%20collection%20of%20resources%20for%20teaching%20kids%20about%20money."
-                            className="btn btn-sharp"
-                            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontSize: '1rem', padding: '10px 20px', background: 'white', color: 'var(--accent-color)', border: '2px solid var(--accent-color)', textDecoration: 'none', borderRadius: '50px' }}>
-                            <i className="fas fa-share-alt"></i> Share this Song Kit
-                        </a>
-                    </div>
-                </div>
-
                 {/* Inline Media */}
                 <div style={{ marginBottom: '40px', background: 'var(--primary-bg)', padding: '30px', borderRadius: '24px', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
-                    <h4 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>Song Kit</h4>
-                    <img src="/assets/images/pig_book.png" alt="Song Kit Graphic" style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', display: 'block', margin: '0 auto' }} />
+                    <h2 style={{ fontSize: '3.5rem', color: 'var(--text-dark)', marginBottom: '25px', fontWeight: 800 }}>Song Kit</h2>
+                    <img src="/assets/images/pig_book.png" alt="Song Kit Graphic" style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', display: 'block', margin: '0 auto 20px auto' }} />
+                    <p style={{ color: '#444', fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
+                        Each Song Kit includes everything you need to use this song at home or in the classroom. Enjoy!
+                    </p>
                 </div>
 
                 {/* Resource Links Container */}
