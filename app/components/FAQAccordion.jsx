@@ -55,7 +55,7 @@ const FAQItem = ({ question, children, isOpen, onClick }) => {
 };
 
 export default function FAQAccordion() {
-    const [openIndex, setOpenIndex] = useState(0); // First one open by default
+    const [openIndex, setOpenIndex] = useState(-1); // All collapsed by default
 
     const toggleAccordion = (index) => {
         setOpenIndex(openIndex === index ? -1 : index);
@@ -64,7 +64,7 @@ export default function FAQAccordion() {
     return (
         <div style={{ marginTop: '30px', marginBottom: '50px' }}>
             <FAQItem 
-                question="Who are these resources for?" 
+                question="Who Are These Resources For?" 
                 isOpen={openIndex === 0} 
                 onClick={() => toggleAccordion(0)}
             >
@@ -80,7 +80,7 @@ export default function FAQAccordion() {
             </FAQItem>
 
             <FAQItem 
-                question="Why does teaching financial literacy early matter?" 
+                question="Why Does Teaching Financial Literacy Early Matter?" 
                 isOpen={openIndex === 1} 
                 onClick={() => toggleAccordion(1)}
             >
@@ -99,43 +99,9 @@ export default function FAQAccordion() {
             </FAQItem>
 
             <FAQItem 
-                question="Why focus on habits rather than knowledge?" 
+                question="Why Start Teaching Money Habits So Early?" 
                 isOpen={openIndex === 2} 
                 onClick={() => toggleAccordion(2)}
-            >
-                <p style={{ marginBottom: '20px' }}>
-                    Most adults already know what they should do with money — save, avoid debt, spend less than they earn. Yet many still struggle. The gap isn't knowledge. It's habits.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Research and real-life experience show that lasting behavior change doesn't come from information alone. It comes from repetition, emotion, and early exposure. Habits form when actions are practiced consistently, tied to positive feelings, and built during the years when the brain is still developing. Once a habit is formed, it runs on autopilot — no willpower required.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    That's why our approach is different.
-                </p>
-                <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
-                    We don't just teach money facts. We help children build money habits.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Through songs and stories, children experience repeated, emotionally positive messages about saving first, spending smart, waiting before buying, planning for the unexpected, and knowing where money goes. Music is especially powerful here — rhythm and melody strengthen memory pathways in the brain, and studies show that information paired with music is retained longer and recalled more easily. Stories add emotional meaning, and emotion is what truly locks habits into place.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    When a child sings about saving, hears stories about waiting, and talks about money regularly with the people they love, they aren't just learning concepts. They're wiring patterns.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    Over time, saving becomes automatic. Waiting becomes normal. Planning becomes second nature.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                    That's the goal — not a child who knows about money, but a child who practices strong money habits without needing constant reminders.
-                </p>
-                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
-                    Knowledge informs. Habits transform.
-                </div>
-            </FAQItem>
-
-            <FAQItem 
-                question="Why start teaching money habits so early?" 
-                isOpen={openIndex === 3} 
-                onClick={() => toggleAccordion(3)}
             >
                 <p style={{ marginBottom: '20px' }}>
                     Because childhood is the most powerful window you'll ever have.
@@ -167,6 +133,112 @@ export default function FAQAccordion() {
                 <p style={{ marginBottom: '0', fontWeight: 'bold', fontStyle: 'italic' }}>
                     It's not too early. In fact, it's exactly the right time.
                 </p>
+            </FAQItem>
+
+            <FAQItem 
+                question="Why Focus on Habits Rather Than Knowledge?" 
+                isOpen={openIndex === 3} 
+                onClick={() => toggleAccordion(3)}
+            >
+                <p style={{ marginBottom: '20px' }}>
+                    Most adults already know what they should do with money — save, avoid debt, spend less than they earn. Yet many still struggle. The gap isn't knowledge. It's habits.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Research and real-life experience show that lasting behavior change doesn't come from information alone. It comes from repetition, emotion, and early exposure. Habits form when actions are practiced consistently, tied to positive feelings, and built during the years when the brain is still developing. Once a habit is formed, it runs on autopilot — no willpower required.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    That's why our approach is different.
+                </p>
+                <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
+                    We don't just teach money facts. We help children build money habits.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Through songs and stories, children experience repeated, emotionally positive messages about saving first, spending smart, waiting before buying, planning for the unexpected, and knowing where money goes. Music is especially powerful here — rhythm and melody strengthen memory pathways in the brain, and studies show that information paired with music is retained longer and recalled more easily. Stories add emotional meaning, and emotion is what truly locks habits into place.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    When a child sings about saving, hears stories about waiting, and talks about money regularly with the people they love, they aren't just learning concepts. They're wiring patterns.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Over time, saving becomes automatic. Waiting becomes normal. Planning becomes second nature.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    That's the goal — not a child who knows about money, but a child who practices strong money habits without needing constant reminders.
+                </p>
+                <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
+                    Knowledge informs. Habits transform.
+                </div>
+            </FAQItem>
+
+            <FAQItem 
+                question="What Will Kids Learn?" 
+                isOpen={openIndex === 4} 
+                onClick={() => toggleAccordion(4)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="A Few of the Many Money Ideas Kids Will Explore" 
+                isOpen={openIndex === 5} 
+                onClick={() => toggleAccordion(5)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="How Does Bedtime Money Habits Work?" 
+                isOpen={openIndex === 6} 
+                onClick={() => toggleAccordion(6)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="How Can Parents Use These Resources With Their Kids?" 
+                isOpen={openIndex === 7} 
+                onClick={() => toggleAccordion(7)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="What Our 25+ Years of Teaching Kids About Money Has Shown Us" 
+                isOpen={openIndex === 8} 
+                onClick={() => toggleAccordion(8)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="What Happens During the Beta Phase?" 
+                isOpen={openIndex === 9} 
+                onClick={() => toggleAccordion(9)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="What to Expect at Launch (Post-Beta Vision)" 
+                isOpen={openIndex === 10} 
+                onClick={() => toggleAccordion(10)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="Will There Be a Cost After Beta?" 
+                isOpen={openIndex === 11} 
+                onClick={() => toggleAccordion(11)}
+            >
+                {/* Content to be added later */}
+            </FAQItem>
+
+            <FAQItem 
+                question="Help Us Build Something Great" 
+                isOpen={openIndex === 12} 
+                onClick={() => toggleAccordion(12)}
+            >
+                {/* Content to be added later */}
             </FAQItem>
         </div>
     );
