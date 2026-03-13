@@ -50,7 +50,7 @@ export default function Home() {
 
                             {/* Song Kit (Button) */}
                             <div style={{ background: '#f5f5f5', padding: '30px', borderRadius: '24px', textAlign: 'center', border: '2px dashed #ccc' }}>
-                                <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Teacher and Parent Guides</h4>
+                                <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Parent and Teacher Guides</h4>
                                 <p style={{ marginBottom: '15px', color: '#666' }}>Unlock all the resources for this song.</p>
                                 <Link href="/song-kit/follow-the-money-rules" className="btn btn-pill" style={{ textDecoration: 'none', display: 'inline-block' }}>
                                     Access Song Kit
