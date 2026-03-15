@@ -12,7 +12,7 @@ const FAQItem = ({ question, children, isOpen, onClick }) => {
             overflow: 'hidden',
             boxShadow: '0 4px 10px rgba(0,0,0,0.03)'
         }}>
-            <button 
+            <button
                 onClick={onClick}
                 style={{
                     width: '100%',
@@ -30,8 +30,8 @@ const FAQItem = ({ question, children, isOpen, onClick }) => {
                 }}
             >
                 {question}
-                <span style={{ 
-                    fontSize: '1.5rem', 
+                <span style={{
+                    fontSize: '1.5rem',
                     color: 'var(--accent-color)',
                     transform: isOpen ? 'rotate(45deg)' : 'none',
                     transition: 'transform 0.3s ease'
@@ -63,9 +63,9 @@ export default function FAQAccordion() {
 
     return (
         <div style={{ marginTop: '30px', marginBottom: '50px' }}>
-            <FAQItem 
-                question="Who Are These Resources For?" 
-                isOpen={openIndex === 0} 
+            <FAQItem
+                question="Who Are These Resources For?"
+                isOpen={openIndex === 0}
                 onClick={() => toggleAccordion(0)}
             >
                 <p style={{ marginBottom: '20px' }}>
@@ -79,9 +79,9 @@ export default function FAQAccordion() {
                 </p>
             </FAQItem>
 
-            <FAQItem 
-                question="Why Does Teaching Financial Literacy Early Matter?" 
-                isOpen={openIndex === 1} 
+            <FAQItem
+                question="Why Does Teaching Financial Literacy Early Matter?"
+                isOpen={openIndex === 1}
                 onClick={() => toggleAccordion(1)}
             >
                 <p style={{ marginBottom: '20px' }}>
@@ -98,9 +98,9 @@ export default function FAQAccordion() {
                 </p>
             </FAQItem>
 
-            <FAQItem 
-                question="Why Start Teaching Money Habits So Early?" 
-                isOpen={openIndex === 2} 
+            <FAQItem
+                question="Why Start Teaching Money Habits So Early?"
+                isOpen={openIndex === 2}
                 onClick={() => toggleAccordion(2)}
             >
                 <p style={{ marginBottom: '20px' }}>
@@ -135,9 +135,9 @@ export default function FAQAccordion() {
                 </p>
             </FAQItem>
 
-            <FAQItem 
-                question="Why Focus on Habits Rather Than Knowledge?" 
-                isOpen={openIndex === 3} 
+            <FAQItem
+                question="Why Focus on Habits Rather Than Knowledge?"
+                isOpen={openIndex === 3}
                 onClick={() => toggleAccordion(3)}
             >
                 <p style={{ marginBottom: '20px' }}>
@@ -169,76 +169,153 @@ export default function FAQAccordion() {
                 </div>
             </FAQItem>
 
-            <FAQItem 
-                question="What Will Kids Learn?" 
-                isOpen={openIndex === 4} 
+            <FAQItem
+                question="What Are Some of the Ideas Kids Will Explore and Learn About?"
+                isOpen={openIndex === 4}
                 onClick={() => toggleAccordion(4)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    At Bedtime Money Habits, kids have fun being introduced to the language of money through songs, stories, and simple conversations. Along the way, they begin learning important ideas about everyday money habits—like saving, earning, spending smart, and giving wisely. These early experiences help children understand that money is something they can think about, talk about, and use in positive ways.
+                </p>
+                <p style={{ marginBottom: '0' }}>
+                    The goal isn’t for children to master every concept right away. Instead, it’s to spark curiosity, build confidence, and introduce the ideas that form the foundation of lifelong financial habits. As kids listen, sing, and talk about money with parents and teachers, they begin developing positive attitudes, healthy feelings, and strong habits that can guide them throughout life.
+                </p>
             </FAQItem>
 
-            <FAQItem 
-                question="A Few of the Many Money Ideas Kids Will Explore" 
-                isOpen={openIndex === 5} 
+            <FAQItem
+                question="How and Why Bedtimemoneyhabits Works?"
+                isOpen={openIndex === 5}
                 onClick={() => toggleAccordion(5)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    Teaching a three-year-old about money isn't about spreadsheets or interest rates — it's about building the right foundations at the right time. Research shows that core money habits are largely formed by age seven. Our strategy is designed to reach children during this "Golden Window" using the tools they naturally love: music, stories, and play.
+                </p>
+                <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
+                    We follow a simple, proven four-step cycle: Sing. Read. Discuss. Reinforce.
+                </p>
+
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 1 — Sing: A Sticky Start</strong></p>
+                <p style={{ marginBottom: '10px' }}>Music is a habit-building superpower. Unlike a lecture, a song can be repeated dozens of times without losing its magic.</p>
+                <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Plant "sticky" financial vocabulary — like Earn, Save, Spend, and Give — into a child's long-term memory.</p>
+                <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> When a child hums "Follow the Money Rules," they aren't just singing. They're internalizing a lifelong financial formula.</p>
+
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 2 — Read: Context and Character</strong></p>
+                <p style={{ marginBottom: '10px' }}>Stories take abstract ideas and make them human. Through the short stories that accompany each song, children see money as a tool for solving problems, achieving goals, and chasing dreams.</p>
+                <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Build emotional intelligence around money.</p>
+                <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> Children stop seeing money as "magic plastic" and start understanding it as the result of effort — and a path to something meaningful.</p>
+
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 3 — Discuss: Making Money a Safe Topic</strong></p>
+                <p style={{ marginBottom: '10px' }}>Money is often a taboo topic at home, which can create anxiety that lasts well into adulthood. We give parents and teachers simple prompts and conversation starters to break the ice.</p>
+                <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Make money a safe, curious, and open topic of conversation.</p>
+                <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> When a child answers a question like "What's something you'd like to save for?" they're practicing one of the most important financial skills of all: intentionality.</p>
+
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 4 — Reinforce: Learning by Doing</strong></p>
+                <p style={{ marginBottom: '10px' }}>This is where transformation happens. Our resources are habit-centered by design.</p>
+                <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Move from understanding to muscle memory.</p>
+                <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> Through small, consistent actions — like dropping a coin in a jar or choosing between two snacks — children build the "waiting muscle" (delayed gratification) that research links to long-term success.</p>
+
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Why It Works: More Than Money</strong></p>
+                <p style={{ marginBottom: '10px' }}>Our approach isn't just about financial IQ — it's about building executive function skills, feelings, attitudes, and habits that serve children for life. By working through these four steps, children naturally practice:</p>
+                <ul style={{ marginBottom: '20px', paddingLeft: '20px' }}>
+                    <li style={{ marginBottom: '10px' }}>Impulse control — pausing before acting</li>
+                    <li style={{ marginBottom: '10px' }}>Delayed gratification — valuing their future self</li>
+                    <li style={{ marginBottom: '10px' }}>Critical thinking — distinguishing between wants and needs</li>
+                </ul>
+                <p style={{ marginBottom: '0', fontWeight: 'bold' }}>You don't need to be a financial expert to give your child a head start. You just need to press play.</p>
             </FAQItem>
 
-            <FAQItem 
-                question="How Does Bedtime Money Habits Work?" 
-                isOpen={openIndex === 6} 
+            <FAQItem
+                question="How Can Parents Use These Resources With Their Kids?"
+                isOpen={openIndex === 6}
                 onClick={() => toggleAccordion(6)}
             >
                 {/* Content to be added later */}
             </FAQItem>
 
-            <FAQItem 
-                question="How Can Parents Use These Resources With Their Kids?" 
-                isOpen={openIndex === 7} 
+            <FAQItem
+                question="What Our 25+ Years of Teaching Kids About Money Has Shown Us"
+                isOpen={openIndex === 7}
                 onClick={() => toggleAccordion(7)}
             >
                 {/* Content to be added later */}
             </FAQItem>
 
-            <FAQItem 
-                question="What Our 25+ Years of Teaching Kids About Money Has Shown Us" 
-                isOpen={openIndex === 8} 
+            <FAQItem
+                question="What happens during BETA phase?"
+                isOpen={openIndex === 8}
                 onClick={() => toggleAccordion(8)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>Early Access</p>
+                <p style={{ marginBottom: '20px' }}>
+                    During our beta phase, families, teachers, and early supporters can explore everything on the site: the first Bedtime Money Habits songs, stories, and activity guides while we continue improving the platform.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Beta participants help us test features, share feedback, and shape the final experience.
+                </p>
+                <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>During Beta You Can:</p>
+                <ul style={{ marginBottom: '20px', paddingLeft: '20px' }}>
+                    <li style={{ marginBottom: '10px' }}>Explore songs and karaoke lyric videos</li>
+                    <li style={{ marginBottom: '10px' }}>Read the short bedtime story</li>
+                    <li style={{ marginBottom: '10px' }}>Use Parent &amp; Family Activity Guides</li>
+                    <li style={{ marginBottom: '10px' }}>Help us improve the experience with feedback</li>
+                </ul>
+                <p style={{ marginBottom: '0', fontWeight: 'bold' }}>Access during beta is free!</p>
             </FAQItem>
 
-            <FAQItem 
-                question="What Happens During the Beta Phase?" 
-                isOpen={openIndex === 9} 
+            <FAQItem
+                question="What Can We Expect at the Official Launch?"
+                isOpen={openIndex === 9}
                 onClick={() => toggleAccordion(9)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    After the beta phase, Bedtime Money Habits will grow into a full learning experience designed to help children build strong, positive money habits.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    At launch, we plan to release new bedtime songs, stories, and supporting learning “kits” on a regular basis—giving families and educators fresh resources each week to keep kids engaged and learning.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    We also plan to introduce simple, affordable membership options for families, teachers, and organizations that want ongoing access to the growing library of songs, stories, lesson plans, and activity guides.
+                </p>
+                <p style={{ marginBottom: '0' }}>
+                    As a thank you for helping us improve the platform, beta participants may also be eligible for special early-supporter pricing when the program officially launches.
+                </p>
             </FAQItem>
 
-            <FAQItem 
-                question="What to Expect at Launch (Post-Beta Vision)" 
-                isOpen={openIndex === 10} 
+            <FAQItem
+                question="Will There Be a Cost After Beta?"
+                isOpen={openIndex === 10}
                 onClick={() => toggleAccordion(10)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    Yes. After the beta phase, we plan to offer simple, affordable membership options for families, teachers, and organizations.
+                </p>
+                <p style={{ marginBottom: '0' }}>
+                    Our goal is to keep the program accessible while continuing to expand the library of songs, stories, lesson plans, and activity guides that help children build strong money habits and positive attitudes about money. Beta participants may also be eligible for special early-supporter pricing when the platform officially launches.
+                </p>
             </FAQItem>
 
-            <FAQItem 
-                question="Will There Be a Cost After Beta?" 
-                isOpen={openIndex === 11} 
+            <FAQItem
+                question="How Can You Help Us Build Something Great?"
+                isOpen={openIndex === 11}
                 onClick={() => toggleAccordion(11)}
             >
-                {/* Content to be added later */}
-            </FAQItem>
-
-            <FAQItem 
-                question="Help Us Build Something Great" 
-                isOpen={openIndex === 12} 
-                onClick={() => toggleAccordion(12)}
-            >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    Here are a few simple ways you can help us build something meaningful—something that can positively impact kids, families, and communities around the world.
+                </p>
+                
+                <p style={{ marginBottom: '10px' }}><strong>Join the Beta</strong><br />Be among the first to explore the platform and help us test and improve the experience.</p>
+                
+                <p style={{ marginBottom: '10px' }}><strong>Try the Resources</strong><br />Listen to the songs, enjoy the stories, and use the activities with kids at home or in the classroom.</p>
+                
+                <p style={{ marginBottom: '10px' }}><strong>Share Your Feedback</strong><br />Tell us what you and your kids think. Your ideas and suggestions help us make the program better for everyone.</p>
+                
+                <p style={{ marginBottom: '10px' }}><strong>Be Part of the Community</strong><br />Follow our progress, champion the mission, and share the site with friends, families, educators, and community leaders.</p>
+                
+                <p style={{ marginBottom: '20px' }}><strong>Take Advantage of Special Beta Offers</strong><br />Early supporters may receive special access, early supporter pricing, and opportunities to help shape what comes next.</p>
+                
+                <p style={{ marginBottom: '0' }}>
+                    Together, we can build something that inspires great habits, meaningful conversations, and brighter financial futures for kids everywhere.
+                </p>
             </FAQItem>
         </div>
     );

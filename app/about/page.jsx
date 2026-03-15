@@ -8,7 +8,13 @@ export default function AboutPage() {
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>BedtimeMoneyHabits.com</h3>
                 <p style={{ marginBottom: '20px' }}>
-                    Financial literacy is a gift that lasts a lifetime. We provide families and organizations with heartwarming songs, stories, and conversation starters that make teaching money habits feel natural. By helping children ages 3 and up discover the joy of saving, we lay the groundwork for a future of independence and success.
+                    Financial literacy is a gift that lasts a lifetime.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    BedtimeMoneyHabits.com provides families, educators, and organizations with heartwarming songs, stories, and conversation starters that make teaching money habits feel natural and enjoyable.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Through these engaging resources, children ages 3 and up begin discovering the joy of developing good money habits and making thoughtful money choices. Along the way, parents, teachers, and community leaders help lay the groundwork for a future of confidence, independence, and success.
                 </p>
 
                 <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Our Mission</h3>
@@ -59,78 +65,6 @@ export default function AboutPage() {
 
                 <FAQAccordion />
 
-                <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginTop: '60px', marginBottom: '30px', fontWeight: 900, textAlign: 'center' }}>How It Works</h2>
-                <p style={{ marginBottom: '20px' }}>
-                    Teaching a three-year-old about money isn't about spreadsheets or interest rates — it's about building the right foundations at the right time. Research shows that core money habits are largely formed by age seven. Our strategy is designed to reach children during this "Golden Window" using the tools they naturally love: music, stories, and play.
-                </p>
-                <p style={{ marginBottom: '30px', fontWeight: 'bold' }}>
-                    We follow a simple, proven four-step cycle: Sing. Read. Discuss. Reinforce.
-                </p>
-
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px', border: '4px solid var(--accent-color)' }}>
-                    <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 1 — Sing: A Sticky Start</h4>
-                    <p style={{ marginBottom: '15px' }}>
-                        Music is a habit-building superpower. Unlike a lecture, a song can be repeated dozens of times without losing its magic.
-                    </p>
-                    <p style={{ marginBottom: '10px' }}>
-                        <strong>The Goal:</strong> Plant "sticky" financial vocabulary — like Earn, Save, Spend, and Give — into a child's long-term memory.
-                    </p>
-                    <p>
-                        <strong>The Outcome:</strong> When a child hums "Follow the Money Rules," they aren't just singing. They're internalizing a lifelong financial formula.
-                    </p>
-                </div>
-
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px', border: '4px solid var(--accent-color)' }}>
-                    <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 2 — Read: Context and Character</h4>
-                    <p style={{ marginBottom: '15px' }}>
-                        Stories take abstract ideas and make them human. Through the short stories that accompany each song, children see money as a tool for solving problems, achieving goals, and chasing dreams.
-                    </p>
-                    <p style={{ marginBottom: '10px' }}>
-                        <strong>The Goal:</strong> Build emotional intelligence around money.
-                    </p>
-                    <p>
-                        <strong>The Outcome:</strong> Children stop seeing money as "magic plastic" and start understanding it as the result of effort — and a path to something meaningful.
-                    </p>
-                </div>
-
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '20px', border: '4px solid var(--accent-color)' }}>
-                    <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 3 — Discuss: Making Money a Safe Topic</h4>
-                    <p style={{ marginBottom: '15px' }}>
-                        Money is often a taboo topic at home, which can create anxiety that lasts well into adulthood. We give parents and teachers simple prompts and conversation starters to break the ice.
-                    </p>
-                    <p style={{ marginBottom: '10px' }}>
-                        <strong>The Goal:</strong> Make money a safe, curious, and open topic of conversation.
-                    </p>
-                    <p>
-                        <strong>The Outcome:</strong> When a child answers a question like "What's something you'd like to save for?" they're practicing one of the most important financial skills of all: intentionality.
-                    </p>
-                </div>
-
-                <div style={{ background: 'white', padding: '30px', borderRadius: '16px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', marginBottom: '40px', border: '4px solid var(--accent-color)' }}>
-                    <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 700 }}>Step 4 — Reinforce: Learning by Doing</h4>
-                    <p style={{ marginBottom: '15px' }}>
-                        This is where transformation happens. Our resources are habit-centered by design.
-                    </p>
-                    <p style={{ marginBottom: '10px' }}>
-                        <strong>The Goal:</strong> Move from understanding to muscle memory.
-                    </p>
-                    <p>
-                        <strong>The Outcome:</strong> Through small, consistent actions — like dropping a coin in a jar or choosing between two snacks — children build the "waiting muscle" (delayed gratification) that research links to long-term success.
-                    </p>
-                </div>
-
-                <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginTop: '40px', marginBottom: '20px', fontWeight: 800 }}>Why It Works: More Than Money</h3>
-                <p style={{ marginBottom: '20px' }}>
-                    Our approach isn't just about financial IQ — it's about building executive function skills that serve children for life. By working through these four steps, children naturally practice:
-                </p>
-                <ul style={{ marginBottom: '20px', paddingLeft: '20px' }}>
-                    <li style={{ marginBottom: '10px' }}><strong>Impulse control</strong> — pausing before acting</li>
-                    <li style={{ marginBottom: '10px' }}><strong>Delayed gratification</strong> — valuing their future self</li>
-                    <li style={{ marginBottom: '10px' }}><strong>Critical thinking</strong> — distinguishing between wants and needs</li>
-                </ul>
-                <p style={{ marginBottom: '40px', fontWeight: 'bold' }}>
-                    You don't need to be a financial expert to give your child a head start. You just need to press play.
-                </p>
             </div>
         </main>
     );
