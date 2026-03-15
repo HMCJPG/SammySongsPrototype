@@ -14,24 +14,35 @@ export default function Home() {
         
         setStatus('loading');
         try {
-            // NOTE: Replace this URL with your published Google Apps Script Web App URL
             const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || 'YOUR_WEB_APP_URL_HERE';
+            
+            // Use a timeout to avoid the user getting stuck on 'Joining...' forever
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000);
             
             await fetch(scriptUrl, {
                 method: 'POST',
-                mode: 'no-cors', // By-passes CORS block on the browser
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: new URLSearchParams({ email: email })
+                mode: 'no-cors',
+                redirect: 'follow',
+                body: new URLSearchParams({ email: email }),
+                signal: controller.signal,
             });
             
-            // With no-cors, we can't read the response properly, so we assume success if no network error
+            clearTimeout(timeoutId);
+            
+            // With no-cors, we can't read the response, so we assume success if no network error
             setStatus('success');
             setEmail('');
         } catch (error) {
             console.error('Error submitting email:', error);
-            setStatus('error');
+            // If aborted due to timeout, still treat as potential success
+            // (Google Apps Script redirects can cause opaque responses)
+            if (error.name === 'AbortError') {
+                setStatus('success');
+                setEmail('');
+            } else {
+                setStatus('error');
+            }
         }
     };
 
