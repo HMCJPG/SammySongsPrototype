@@ -73,6 +73,7 @@ export default function Home() {
                             <CustomVideoPlayer 
                                 src="/assets/videos/moneyrules.mp4" 
                                 poster="/assets/images/pig_book.png" 
+                                autoScroll={false}
                             />
                             <div style={{ marginTop: '20px' }}>
                                 <p style={{ color: '#666', margin: 0, fontSize: '1.05rem', lineHeight: '1.5' }}>Kids learn that following the basic money rules (save, earn, spend smart, give wisely, and invest) helps them reach their goals and make their dreams come true.</p>

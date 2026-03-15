@@ -2,21 +2,21 @@
 
 import { useState, useRef, useEffect } from 'react';
 
-export default function CustomVideoPlayer({ src, poster }) {
+export default function CustomVideoPlayer({ src, poster, autoScroll = true }) {
     const [hasStarted, setHasStarted] = useState(false);
     const videoRef = useRef(null);
     const containerRef = useRef(null);
 
     // Scroll to center the video on the screen automatically when the page loads
     useEffect(() => {
-        if (containerRef.current) {
+        if (autoScroll && containerRef.current) {
             // A slight delay ensures the page layout is fully rendered before scrolling
             const timer = setTimeout(() => {
                 containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 300);
             return () => clearTimeout(timer);
         }
-    }, []);
+    }, [autoScroll]);
 
     const handlePlay = () => {
         if (videoRef.current) {
