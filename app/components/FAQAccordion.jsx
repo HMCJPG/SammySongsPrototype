@@ -225,19 +225,56 @@ export default function FAQAccordion() {
             </FAQItem>
 
             <FAQItem
-                question="How Can Parents Use These Resources With Their Kids?"
+                question="How Can Parents Use These Resources with Kids?"
                 isOpen={openIndex === 6}
                 onClick={() => toggleAccordion(6)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    Parents can use the songs, stories, and activity guides in simple, natural ways that fit into everyday family life. Many families begin by listening to a song or reading a short story together—often at bedtime or at other convenient moments that work best for them. Parents can then ask a few of the conversation questions provided in the Parent Guides or any questions they feel are appropriate. These short discussions help children become comfortable hearing and using the language of money while connecting ideas like saving, earning, spending smart, and giving wisely to real life.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Parents can also use the activities as small family experiences that complement the Family Guide. For example, you might create a family “money dictionary,” start a simple saving jar for a goal, or talk about a recent purchase and whether it was a smart spending choice.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    The goal is not for children to master every concept right away, but to introduce the ideas, build a foundation, and help kids begin developing curiosity, confidence, and an interest in learning more about money as they grow.
+                </p>
+                <p style={{ marginBottom: '0' }}>
+                    Even a few minutes at a time can make a difference. Over time, these small conversations and experiences help children develop positive attitudes and lifelong money habits.
+                </p>
             </FAQItem>
 
             <FAQItem
-                question="What Our 25+ Years of Teaching Kids About Money Has Shown Us"
+                question="What Has Our 25+ Years of Teaching Kids About Money Shown Us?"
                 isOpen={openIndex === 7}
                 onClick={() => toggleAccordion(7)}
             >
-                {/* Content to be added later */}
+                <p style={{ marginBottom: '20px' }}>
+                    Over the past 25+ years of teaching children about money, we’ve learned a few simple but powerful things.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    First, kids are naturally curious about money when the subject is introduced in a fun, positive, and age-appropriate way. Songs, stories, and conversations help children feel comfortable with the language of money and open the door for meaningful learning.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    We’ve also learned that habits matter more than complicated concepts. When children are introduced early to ideas like saving, earning, spending smart, and giving wisely, they begin forming attitudes and behaviors that can last a lifetime. Small ideas—repeated often and connected to everyday experiences—have a powerful influence over time.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    Most importantly, we’ve seen that parents, teachers, and community leaders play the most important role. Children learn best when adults talk with them about money in simple ways and model positive habits. These early conversations help build a strong foundation, giving kids the confidence, curiosity, and interest to keep learning about money as they grow.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                    We’ve also discovered that after listening to songs, reading stories, having conversations, and doing activities, many children begin to:
+                </p>
+                <ul style={{ marginBottom: '20px', paddingLeft: '20px' }}>
+                    <li style={{ marginBottom: '10px' }}>Ask questions about many different aspects of money</li>
+                    <li style={{ marginBottom: '10px' }}>Feel proud of the new money habits they are developing</li>
+                    <li style={{ marginBottom: '10px' }}>Talk about their dreams and goals</li>
+                    <li style={{ marginBottom: '10px' }}>Understand that money choices matter</li>
+                    <li style={{ marginBottom: '10px' }}>Recognize the importance of good money habits</li>
+                    <li style={{ marginBottom: '10px' }}>Become curious about how money grows</li>
+                    <li style={{ marginBottom: '10px' }}>Feel confident talking about money</li>
+                </ul>
+                <p style={{ marginBottom: '0' }}>
+                    And many parents and teachers tell us they learn and discover things that help them make better money decisions in their own lives as well.
+                </p>
             </FAQItem>
 
             <FAQItem
