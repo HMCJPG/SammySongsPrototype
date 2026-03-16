@@ -11,7 +11,7 @@
 }
 
 .word-search-container {
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif !important;
   display: flex;
   flex-direction: column;
   align-items: center;

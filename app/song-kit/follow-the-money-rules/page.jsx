@@ -93,20 +93,22 @@ export default function SongKitPage() {
                 <div style={{ marginTop: '50px', background: '#fff3e0', padding: '40px', borderRadius: '24px', textAlign: 'center', border: '3px dashed #ffb74d' }}>
                     <h3 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '15px' }}>Want more?</h3>
                     <p style={{ color: '#666', fontSize: '1.2rem', marginBottom: '25px' }}>Play games that reinforce these money lessons and make learning fun!</p>
-                    <Link href="/games" className="btn btn-pill" style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '15px',
-                        padding: '15px 40px',
-                        backgroundColor: '#ffb74d',
-                        color: 'white',
-                        textDecoration: 'none',
-                        fontSize: '1.4rem'
-                    }}>
-                        <i className="fas fa-gamepad" style={{ fontSize: '1.8rem' }}></i>
-                        Play Games!
-                    </Link>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Link href="/games" className="btn btn-pill" style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '15px',
+                            padding: '15px 40px',
+                            backgroundColor: '#ffb74d',
+                            color: 'white',
+                            textDecoration: 'none',
+                            fontSize: '1.4rem'
+                        }}>
+                            <i className="fas fa-gamepad" style={{ fontSize: '1.8rem' }}></i>
+                            Play Games!
+                        </Link>
+                    </div>
                 </div>
 
             </div>
