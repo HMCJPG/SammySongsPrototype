@@ -100,6 +100,27 @@ export default function Home() {
                         </div>
 
                     </div>
+
+                    {/* How It Works Box */}
+                    <div style={{ marginTop: '40px', border: '3px dashed #4caf50', borderRadius: '16px', padding: '30px', backgroundColor: '#f1f8f1', textAlign: 'center' }}>
+                        <h4 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#2e7d32', marginTop: 0, marginBottom: '20px' }}>
+                            How It Works: Simple, Fun, Done
+                        </h4>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center' }}>
+                            {[
+                                { step: 'Step 1', text: 'Listen to a song' },
+                                { step: 'Step 2', text: 'Read a story' },
+                                { step: 'Step 3', text: 'Do activities and talk about it' },
+                                { step: 'Step 4', text: 'Make it a habit!' },
+                            ].map(({ step, text }) => (
+                                <div key={step} style={{ background: 'white', border: '2px solid #4caf50', borderRadius: '12px', padding: '16px 24px', minWidth: '160px', flex: '1 1 160px', maxWidth: '220px' }}>
+                                    <p style={{ margin: 0, fontWeight: 700, color: '#2e7d32', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{step}</p>
+                                    <p style={{ margin: '6px 0 0 0', color: '#333', fontSize: '1rem', fontWeight: 500 }}>{text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
