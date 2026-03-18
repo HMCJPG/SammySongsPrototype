@@ -57,6 +57,18 @@ export default function Home() {
                 />
             </section>
 
+            {/* Impact Strip: Positioning & Parenting Tool */}
+            <section style={{ backgroundColor: '#1b5e20', padding: '36px 20px', textAlign: 'center' }}>
+                <div className="container" style={{ maxWidth: '820px' }}>
+                    <p style={{ margin: '0 0 10px 0', fontSize: '1.1rem', fontWeight: 600, color: '#a5d6a7', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                        A must-have parenting tool that shapes a child's future
+                    </p>
+                    <h2 style={{ margin: 0, fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.3 }}>
+                        This is where financial education begins.
+                    </h2>
+                </div>
+            </section>
+
             {/* Featured Content (H3) - Moved up! */}
             <section className="featured-content" style={{ padding: '0px 20px 80px 20px', backgroundColor: 'var(--light-bg)' }}>
                 <div className="container">
@@ -66,18 +78,43 @@ export default function Home() {
 
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', justifyItems: 'center', alignItems: 'flex-start' }}>
 
-                        {/* Featured Karaoke Video */}
-                        <div style={{ flex: '1 1 400px', background: 'white', borderRadius: '24px', padding: '30px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
-                            <i className="fas fa-music" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '15px' }}></i>
-                            <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '20px', marginTop: 0 }}>Song</h4>
-                            <CustomVideoPlayer 
-                                src="/assets/videos/moneyrules.mp4" 
-                                poster="/assets/images/pig_book.png" 
-                                autoScroll={false}
-                            />
-                            <div style={{ marginTop: '20px' }}>
-                                <p style={{ color: '#666', margin: 0, fontSize: '1.05rem', lineHeight: '1.5' }}>Kids learn that following the basic money rules (save, earn, spend smart, give wisely, and invest) helps them reach their goals and make their dreams come true.</p>
+                        {/* Left Column: Song + How It Works */}
+                        <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+
+                            {/* Featured Karaoke Video */}
+                            <div style={{ background: 'white', borderRadius: '24px', padding: '30px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', border: '4px solid var(--accent-color)', textAlign: 'center' }}>
+                                <i className="fas fa-music" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '15px' }}></i>
+                                <h4 style={{ fontSize: '1.5rem', color: 'var(--accent-color)', marginBottom: '20px', marginTop: 0 }}>Song</h4>
+                                <CustomVideoPlayer 
+                                    src="/assets/videos/moneyrules.mp4" 
+                                    poster="/assets/images/pig_book.png" 
+                                    autoScroll={false}
+                                />
+                                <div style={{ marginTop: '20px' }}>
+                                    <p style={{ color: '#666', margin: 0, fontSize: '1.05rem', lineHeight: '1.5' }}>Kids learn that following the basic money rules (save, earn, spend smart, give wisely, and invest) helps them reach their goals and make their dreams come true.</p>
+                                </div>
                             </div>
+
+                            {/* How It Works — own green dashed border, outside the song card */}
+                            <div style={{ border: '3px dashed #4caf50', borderRadius: '16px', padding: '22px 18px', backgroundColor: '#f1f8f1', textAlign: 'center' }}>
+                                <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#2e7d32', marginTop: 0, marginBottom: '14px' }}>
+                                    How It Works: Simple, Fun, Done
+                                </h4>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                    {[
+                                        { step: 'Step 1', text: 'Listen to a song' },
+                                        { step: 'Step 2', text: 'Read a story' },
+                                        { step: 'Step 3', text: 'Do activities and talk about it' },
+                                        { step: 'Step 4', text: 'Make it a habit!' },
+                                    ].map(({ step, text }) => (
+                                        <div key={step} style={{ background: 'white', border: '2px solid #4caf50', borderRadius: '10px', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left' }}>
+                                            <span style={{ fontWeight: 700, color: '#2e7d32', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap', minWidth: '48px' }}>{step}</span>
+                                            <span style={{ color: '#333', fontSize: '0.92rem', fontWeight: 500 }}>{text}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
                         </div>
 
                         {/* Story/Flipbook & CTA */}
@@ -101,25 +138,6 @@ export default function Home() {
 
                     </div>
 
-                    {/* How It Works Box */}
-                    <div style={{ marginTop: '40px', border: '3px dashed #4caf50', borderRadius: '16px', padding: '30px', backgroundColor: '#f1f8f1', textAlign: 'center' }}>
-                        <h4 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#2e7d32', marginTop: 0, marginBottom: '20px' }}>
-                            How It Works: Simple, Fun, Done
-                        </h4>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center' }}>
-                            {[
-                                { step: 'Step 1', text: 'Listen to a song' },
-                                { step: 'Step 2', text: 'Read a story' },
-                                { step: 'Step 3', text: 'Do activities and talk about it' },
-                                { step: 'Step 4', text: 'Make it a habit!' },
-                            ].map(({ step, text }) => (
-                                <div key={step} style={{ background: 'white', border: '2px solid #4caf50', borderRadius: '12px', padding: '16px 24px', minWidth: '160px', flex: '1 1 160px', maxWidth: '220px' }}>
-                                    <p style={{ margin: 0, fontWeight: 700, color: '#2e7d32', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{step}</p>
-                                    <p style={{ margin: '6px 0 0 0', color: '#333', fontSize: '1rem', fontWeight: 500 }}>{text}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
 
                 </div>
             </section>
@@ -268,6 +286,61 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* Trust & Credibility Section */}
+            <section style={{ padding: '80px 20px', backgroundColor: 'white' }}>
+                <div className="container">
+
+                    {/* 25+ Years Badge */}
+                    <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '18px', background: '#e8f5e9', border: '3px solid #4caf50', borderRadius: '100px', padding: '16px 36px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                            <span style={{ fontSize: '3rem', lineHeight: 1 }}>🏅</span>
+                            <div style={{ textAlign: 'left' }}>
+                                <p style={{ margin: 0, fontSize: '1rem', fontWeight: 700, color: '#2e7d32', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Trusted for over</p>
+                                <p style={{ margin: 0, fontSize: '2rem', fontWeight: 900, color: '#1b5e20', lineHeight: 1.1 }}>25+ Years</p>
+                                <p style={{ margin: 0, fontSize: '0.95rem', color: '#4caf50', fontWeight: 600 }}>by families, teachers &amp; organisations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Testimonials */}
+                    <h3 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '36px', color: 'var(--text-dark)' }}>What Families &amp; Educators Are Saying</h3>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '28px', maxWidth: '900px', margin: '0 auto' }}>
+
+                        {/* Testimonial 1 */}
+                        <div style={{ background: '#f9fbe7', border: '2px solid #aed581', borderRadius: '20px', padding: '30px', position: 'relative' }}>
+                            <span style={{ fontSize: '3rem', lineHeight: 1, color: '#8bc34a', position: 'absolute', top: '16px', left: '20px', opacity: 0.4 }}>&ldquo;</span>
+                            <p style={{ margin: '20px 0 20px 0', fontSize: '1.05rem', color: '#333', lineHeight: 1.6, fontStyle: 'italic' }}>
+                                My daughter now talks about saving and spending like a little expert. These songs made money feel fun and natural — it genuinely changed how our whole family talks about money at home.
+                            </p>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#4caf50', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '1.1rem', flexShrink: 0 }}>S</div>
+                                <div>
+                                    <p style={{ margin: 0, fontWeight: 700, color: '#2e7d32' }}>Sarah M.</p>
+                                    <p style={{ margin: 0, fontSize: '0.85rem', color: '#666' }}>Parent of a 7-year-old</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Testimonial 2 */}
+                        <div style={{ background: '#e8f5e9', border: '2px solid #81c784', borderRadius: '20px', padding: '30px', position: 'relative' }}>
+                            <span style={{ fontSize: '3rem', lineHeight: 1, color: '#4caf50', position: 'absolute', top: '16px', left: '20px', opacity: 0.4 }}>&ldquo;</span>
+                            <p style={{ margin: '20px 0 20px 0', fontSize: '1.05rem', color: '#333', lineHeight: 1.6, fontStyle: 'italic' }}>
+                                I use these songs and story kits in my classroom every week. The kids are engaged, the conversations are rich, and I can see their financial confidence growing. This is exactly what early financial education should look like.
+                            </p>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#1b5e20', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '1.1rem', flexShrink: 0 }}>T</div>
+                                <div>
+                                    <p style={{ margin: 0, fontWeight: 700, color: '#1b5e20' }}>Mr. Thompson</p>
+                                    <p style={{ margin: 0, fontSize: '0.85rem', color: '#666' }}>Primary School Teacher</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
             {/* "Just the Beginning" Blurb */}
             <section style={{ padding: '0px 20px 80px 20px', backgroundColor: 'var(--light-bg)' }}>
                 <div className="container">
