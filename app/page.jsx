@@ -121,9 +121,18 @@ export default function Home() {
                         <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                             <div style={{ background: 'var(--accent-color)', color: 'white', padding: '30px', borderRadius: '24px', textAlign: 'center' }}>
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
-                                <h4 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Story</h4>
-                                <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-sharp" style={{ display: 'inline-block', background: 'white', color: 'var(--accent-color)', marginBottom: '15px', textDecoration: 'none' }}>Open Flipbook</a>
-                                <img src="/assets/images/shortstoryimage.png" alt="Story" style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.2)' }} />
+                                <h4 style={{ fontSize: '1.5rem', marginBottom: '20px', marginTop: 0 }}>Story</h4>
+                                <iframe
+                                    src="https://player.flipsnack.com?hash=N0ZCRDZDQThCN0Erdnhwc3V0b3F3ZA=="
+                                    width="100%"
+                                    height="480"
+                                    seamless="seamless"
+                                    scrolling="no"
+                                    frameBorder="0"
+                                    allowFullScreen
+                                    allow="autoplay; clipboard-read; clipboard-write"
+                                    style={{ borderRadius: '12px', display: 'block' }}
+                                ></iframe>
                             </div>
 
                             {/* Song Kit (Button) */}
