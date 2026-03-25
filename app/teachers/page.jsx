@@ -9,7 +9,7 @@ export default function TeachersPage() {
                         Welcome to the Teacher Resources Section
                     </h3>
                     <p style={{ marginBottom: '20px' }}>
-                        Designed to support you anytime and anywhere, our resources are built to fit your schedule—whether you’re in the classroom, teaching remotely, or planning lessons at home. Each song and story in our collection is paired with a thoughtfully crafted, standards-aligned lesson plan that connects music and storytelling with meaningful learning outcomes.
+                        <mark>Designed to support you anytime and anywhere, our resources are built to fit your schedule, whether you’re in the classroom, teaching remotely, or planning lessons at home.</mark> Each song and story in our collection is paired with a thoughtfully crafted, standards-aligned lesson plan that connects music and storytelling with meaningful learning outcomes.
                     </p>
                     <p style={{ marginBottom: '20px' }}>
                         Our lesson plans are designed to help teachers introduce financial concepts in engaging, age-appropriate ways while reinforcing critical thinking, discussion, and real-world connections.

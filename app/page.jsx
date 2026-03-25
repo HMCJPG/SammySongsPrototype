@@ -95,7 +95,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* How It Works — own green dashed border, outside the song card */}
+                            {/* How It Works, own green dashed border, outside the song card */}
                             <div style={{ border: '3px dashed #4caf50', borderRadius: '16px', padding: '22px 18px', backgroundColor: '#f1f8f1', textAlign: 'center' }}>
                                 <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#2e7d32', marginTop: 0, marginBottom: '14px' }}>
                                     How It Works: Simple, Fun, Done
@@ -224,7 +224,7 @@ export default function Home() {
                                 <div style={{ marginBottom: '15px' }}>
                                     <Link href="/videos/earn-a-dollar" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                                 </div>
-                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that working and earning money feels great—and that spending it wisely means not using it all up before the next payday.</p>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}><mark>Kids learn that working and earning money feels great, and that spending it wisely means not using it all up before the next payday.</mark></p>
                             </div>
                         </div>
 
@@ -311,7 +311,7 @@ export default function Home() {
                         <div style={{ background: '#f9fbe7', border: '2px solid #aed581', borderRadius: '20px', padding: '30px', position: 'relative' }}>
                             <span style={{ fontSize: '3rem', lineHeight: 1, color: '#8bc34a', position: 'absolute', top: '16px', left: '20px', opacity: 0.4 }}>&ldquo;</span>
                             <p style={{ margin: '20px 0 20px 0', fontSize: '1.05rem', color: '#333', lineHeight: 1.6, fontStyle: 'italic' }}>
-                                My daughter now talks about saving and spending like a little expert. These songs made money feel fun and natural — it genuinely changed how our whole family talks about money at home.
+                                My daughter now talks about saving and spending like a little expert. <mark>These songs made money feel fun and natural. It genuinely changed how our whole family talks about money at home.</mark>
                             </p>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#4caf50', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '1.1rem', flexShrink: 0 }}>S</div>
