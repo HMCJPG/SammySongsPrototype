@@ -122,6 +122,32 @@ export default function Home() {
                             <div style={{ background: 'var(--accent-color)', color: 'white', padding: '30px', borderRadius: '24px', textAlign: 'center' }}>
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '20px', marginTop: 0 }}>Story</h4>
+                                {/* PDF storybook link */}
+                                <a
+                                    href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '12px',
+                                        marginTop: '10px',
+                                        padding: '16px 32px',
+                                        backgroundColor: 'white',
+                                        color: 'var(--accent-color)',
+                                        borderRadius: '50px',
+                                        fontWeight: 700,
+                                        fontSize: '1.1rem',
+                                        textDecoration: 'none',
+                                        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                                    }}
+                                >
+                                    <i className="fas fa-book-open" style={{ fontSize: '1.4rem' }}></i>
+                                    Read the Story (PDF)
+                                </a>
+
+                                {/* STORYBOOK IFRAME — uncomment below to swap back in */}
+                                {/*
                                 <iframe
                                     src="https://player.flipsnack.com?hash=N0ZCRDZDQThCN0Erdnhwc3V0b3F3ZA=="
                                     width="100%"
@@ -133,6 +159,7 @@ export default function Home() {
                                     allow="autoplay; clipboard-read; clipboard-write"
                                     style={{ borderRadius: '12px', display: 'block' }}
                                 ></iframe>
+                                */}
                             </div>
 
                             {/* Song Kit (Button) */}
