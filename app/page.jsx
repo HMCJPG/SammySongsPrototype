@@ -122,6 +122,12 @@ export default function Home() {
                             <div style={{ background: 'var(--accent-color)', color: 'white', padding: '30px', borderRadius: '24px', textAlign: 'center' }}>
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '20px', marginTop: 0 }}>Story</h4>
+                                {/* Story cover image */}
+                                <img
+                                    src="/assets/images/shortstoryimage.png"
+                                    alt="Once Upon a Bot story cover"
+                                    style={{ width: '100%', borderRadius: '12px', marginBottom: '16px', display: 'block' }}
+                                />
                                 {/* PDF storybook link */}
                                 <a
                                     href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf"
