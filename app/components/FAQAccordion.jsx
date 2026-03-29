@@ -69,13 +69,13 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(0)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    These resources are designed for parents, teachers, caregivers, and anyone who wants to help children build life-changing money habits early. <mark>Our goal is simple: put kids on a path toward lifelong financial well-being (security, stability, independence, and opportunity) and position them to pursue their dreams and help others do the same.</mark>
+                    These resources are designed for parents, teachers, caregivers, and anyone who wants to help children build life-changing money habits early. Our goal is simple: put kids on a path toward lifelong financial well-being (security, stability, independence, and opportunity) and position them to pursue their dreams and help others do the same.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     The resources are especially well-suited for children in grades K–3, when foundational habits are forming and repetition has its greatest impact.
                 </p>
                 <p style={{ marginBottom: '0' }}>
-                    <mark>And while the collection is called BedtimeMoneyHabits.com, these resources are made to be used anytime, anywhere: at home, in the classroom, in after-school programs, or during family conversations.</mark> Wherever children are learning, strong money habits can take root.
+                    And while the collection is called BedtimeMoneyHabits.com, these resources are made to be used anytime, anywhere: at home, in the classroom, in after-school programs, or during family conversations. Wherever children are learning, strong money habits can take root.
                 </p>
             </FAQItem>
 
@@ -85,13 +85,13 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(1)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>Teaching children about money matters more than most parents realize, because money habits start forming as early as age seven.</mark> In today's consumer-driven world, kids are constantly surrounded by messages that encourage spending, impulsiveness, and instant gratification, often long before they've learned about saving, budgeting, or waiting for something they really want.
+                    Teaching children about money matters more than most parents realize, because money habits start forming as early as age seven. In today's consumer-driven world, kids are constantly surrounded by messages that encourage spending, impulsiveness, and instant gratification, often long before they've learned about saving, budgeting, or waiting for something they really want.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     When parents intentionally build healthy money habits early, they give their children far more than financial knowledge. They give them confidence, independence, less stress, the ability to handle unexpected setbacks, freedom from living paycheck to paycheck, and the capacity to be generous with others.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    Financial literacy isn't about raising little accountants. <mark>It's about building lifelong habits: understanding wants versus needs, saving consistently, spending intentionally, and preparing for the unexpected.</mark> Because most schools still offer limited financial education, these conversations often fall to parents.
+                    Financial literacy isn't about raising little accountants. It's about building lifelong habits: understanding wants versus needs, saving consistently, spending intentionally, and preparing for the unexpected. Because most schools still offer limited financial education, these conversations often fall to parents.
                 </p>
                 <p style={{ marginBottom: '0' }}>
                     The good news? You don't need to be a financial expert. Simply starting open, consistent conversations about money helps shape a healthier, more confident future for your child.
@@ -107,28 +107,28 @@ export default function FAQAccordion() {
                     Because childhood is the most powerful window you'll ever have.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    Research in behavioral science and neuroscience suggests that core money habits and attitudes are largely formed by age seven. During these early years, the brain is highly adaptable. <mark>Patterns repeated consistently, especially those tied to emotion and daily routine, become wired pathways.</mark> What children practice early begins to feel "normal." And what feels normal tends to last.
+                    Research in behavioral science and neuroscience suggests that core money habits and attitudes are largely formed by age seven. During these early years, the brain is highly adaptable. Patterns repeated consistently, especially those tied to emotion and daily routine, become wired pathways. What children practice early begins to feel "normal." And what feels normal tends to last.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    This is why waiting until the teenage years to have serious money conversations often misses the mark. By then, spending impulses, emotional reactions, and behavioral patterns may already be well established. <mark>Early childhood, on the other hand, is still a shaping stage: habits are forming, scripts are being written, and defaults are being set.</mark>
+                    This is why waiting until the teenage years to have serious money conversations often misses the mark. By then, spending impulses, emotional reactions, and behavioral patterns may already be well established. Early childhood, on the other hand, is still a shaping stage: habits are forming, scripts are being written, and defaults are being set.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     That's not a reason to worry. It's a reason to act with confidence.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>If you've ever thought, "Isn't my child too young to learn about money?" the research says the opposite.</mark> Early exposure doesn't mean complex lessons about investing or credit scores. It means simple, repeated experiences: saving a little, waiting before buying, talking calmly about choices, watching money grow toward a goal.
+                    If you've ever thought, "Isn't my child too young to learn about money?" the research says the opposite. Early exposure doesn't mean complex lessons about investing or credit scores. It means simple, repeated experiences: saving a little, waiting before buying, talking calmly about choices, watching money grow toward a goal.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     These small moments add up.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>When children grow up hearing consistent messages about saving, earning, giving, and spending wisely, and when they practice those behaviors in simple, everyday ways, they build automatic patterns that carry into adulthood.</mark>
+                    When children grow up hearing consistent messages about saving, earning, giving, and spending wisely, and when they practice those behaviors in simple, everyday ways, they build automatic patterns that carry into adulthood.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     Starting early isn't about pressure. It's about protection and preparation.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>The earlier strong money habits form, the more time they have to strengthen, and the less likely your child is to struggle later trying to unlearn unhealthy ones.</mark>
+                    The earlier strong money habits form, the more time they have to strengthen, and the less likely your child is to struggle later trying to unlearn unhealthy ones.
                 </p>
                 <p style={{ marginBottom: '0', fontWeight: 'bold', fontStyle: 'italic' }}>
                     It's not too early. In fact, it's exactly the right time.
@@ -141,10 +141,10 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(3)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>Most adults already know what they should do with money: save, avoid debt, spend less than they earn.</mark> Yet many still struggle. The gap isn't knowledge. It's habits.
+                    Most adults already know what they should do with money: save, avoid debt, spend less than they earn. Yet many still struggle. The gap isn't knowledge. It's habits.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    Research and real-life experience show that lasting behavior change doesn't come from information alone. It comes from repetition, emotion, and early exposure. Habits form when actions are practiced consistently, tied to positive feelings, and built during the years when the brain is still developing. <mark>Once a habit is formed, it runs on autopilot with no willpower required.</mark>
+                    Research and real-life experience show that lasting behavior change doesn't come from information alone. It comes from repetition, emotion, and early exposure. Habits form when actions are practiced consistently, tied to positive feelings, and built during the years when the brain is still developing. Once a habit is formed, it runs on autopilot with no willpower required.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     That's why our approach is different.
@@ -153,7 +153,7 @@ export default function FAQAccordion() {
                     We don't just teach money facts. We help children build money habits.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    Through songs and stories, children experience repeated, emotionally positive messages about saving first, spending smart, waiting before buying, planning for the unexpected, and knowing where money goes. <mark>Music is especially powerful here. Rhythm and melody strengthen memory pathways in the brain, and studies show that information paired with music is retained longer and recalled more easily.</mark> Stories add emotional meaning, and emotion is what truly locks habits into place.
+                    Through songs and stories, children experience repeated, emotionally positive messages about saving first, spending smart, waiting before buying, planning for the unexpected, and knowing where money goes. Music is especially powerful here. Rhythm and melody strengthen memory pathways in the brain, and studies show that information paired with music is retained longer and recalled more easily. Stories add emotional meaning, and emotion is what truly locks habits into place.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     When a child sings about saving, hears stories about waiting, and talks about money regularly with the people they love, they aren't just learning concepts. They're wiring patterns.
@@ -162,7 +162,7 @@ export default function FAQAccordion() {
                     Over time, saving becomes automatic. Waiting becomes normal. Planning becomes second nature.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>The goal is not a child who knows about money, but a child who practices strong money habits without needing constant reminders.</mark>
+                    The goal is not a child who knows about money, but a child who practices strong money habits without needing constant reminders.
                 </p>
                 <div style={{ border: '4px dotted var(--accent-color)', padding: '20px', borderRadius: '16px', margin: '30px 0', fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-dark)', textAlign: 'center' }}>
                     Knowledge informs. Habits transform.
@@ -175,7 +175,7 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(4)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    At Bedtime Money Habits, kids have fun being introduced to the language of money through songs, stories, and simple conversations. <mark>Along the way, they begin learning important ideas about everyday money habits, like saving, earning, spending smart, and giving wisely.</mark> These early experiences help children understand that money is something they can think about, talk about, and use in positive ways.
+                    At Bedtime Money Habits, kids have fun being introduced to the language of money through songs, stories, and simple conversations. Along the way, they begin learning important ideas about everyday money habits, like saving, earning, spending smart, and giving wisely. These early experiences help children understand that money is something they can think about, talk about, and use in positive ways.
                 </p>
                 <p style={{ marginBottom: '0' }}>
                     The goal isn’t for children to master every concept right away. Instead, it’s to spark curiosity, build confidence, and introduce the ideas that form the foundation of lifelong financial habits. As kids listen, sing, and talk about money with parents and teachers, they begin developing positive attitudes, healthy feelings, and strong habits that can guide them throughout life.
@@ -188,38 +188,38 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(5)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>Teaching a three-year-old about money isn't about spreadsheets or interest rates. It's about building the right foundations at the right time.</mark> Research shows that core money habits are largely formed by age seven. Our strategy is designed to reach children during this "Golden Window" using the tools they naturally love: music, stories, and play.
+                    Teaching a three-year-old about money isn't about spreadsheets or interest rates. It's about building the right foundations at the right time. Research shows that core money habits are largely formed by age seven. Our strategy is designed to reach children during this "Golden Window" using the tools they naturally love: music, stories, and play.
                 </p>
                 <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
                     We follow a simple, proven four-step cycle: Sing. Read. Discuss. Reinforce.
                 </p>
 
-                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><mark><strong>Step 1. Sing: A Sticky Start</strong></mark></p>
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 1. Sing: A Sticky Start</strong></p>
                 <p style={{ marginBottom: '10px' }}>Music is a habit-building superpower. Unlike a lecture, a song can be repeated dozens of times without losing its magic.</p>
-                <p style={{ marginBottom: '10px' }}><mark><strong>The Goal:</strong> Plant "sticky" financial vocabulary, like Earn, Save, Spend, and Give, into a child's long-term memory.</mark></p>
+                <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Plant "sticky" financial vocabulary, like Earn, Save, Spend, and Give, into a child's long-term memory.</p>
                 <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> When a child hums "Follow the Money Rules," they aren't just singing. They're internalizing a lifelong financial formula.</p>
 
-                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><mark><strong>Step 2. Read: Context and Character</strong></mark></p>
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 2. Read: Context and Character</strong></p>
                 <p style={{ marginBottom: '10px' }}>Stories take abstract ideas and make them human. Through the short stories that accompany each song, children see money as a tool for solving problems, achieving goals, and chasing dreams.</p>
                 <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Build emotional intelligence around money.</p>
-                <p style={{ marginBottom: '20px' }}><mark><strong>The Outcome:</strong> Children stop seeing money as "magic plastic" and start understanding it as the result of effort and a path to something meaningful.</mark></p>
+                <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> Children stop seeing money as "magic plastic" and start understanding it as the result of effort and a path to something meaningful.</p>
 
-                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><mark><strong>Step 3. Discuss: Making Money a Safe Topic</strong></mark></p>
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 3. Discuss: Making Money a Safe Topic</strong></p>
                 <p style={{ marginBottom: '10px' }}>Money is often a taboo topic at home, which can create anxiety that lasts well into adulthood. We give parents and teachers simple prompts and conversation starters to break the ice.</p>
                 <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Make money a safe, curious, and open topic of conversation.</p>
                 <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> When a child answers a question like "What's something you'd like to save for?" they're practicing one of the most important financial skills of all: intentionality.</p>
 
-                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><mark><strong>Step 4. Reinforce: Learning by Doing</strong></mark></p>
+                <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Step 4. Reinforce: Learning by Doing</strong></p>
                 <p style={{ marginBottom: '10px' }}>This is where transformation happens. Our resources are habit-centered by design.</p>
                 <p style={{ marginBottom: '10px' }}><strong>The Goal:</strong> Move from understanding to muscle memory.</p>
-                <p style={{ marginBottom: '20px' }}><mark><strong>The Outcome:</strong> Through small, consistent actions, like dropping a coin in a jar or choosing between two snacks, children build the "waiting muscle" (delayed gratification) that research links to long-term success.</mark></p>
+                <p style={{ marginBottom: '20px' }}><strong>The Outcome:</strong> Through small, consistent actions, like dropping a coin in a jar or choosing between two snacks, children build the "waiting muscle" (delayed gratification) that research links to long-term success.</p>
 
                 <p style={{ marginBottom: '10px', color: 'var(--accent-color)' }}><strong>Why It Works: More Than Money</strong></p>
-                <p style={{ marginBottom: '10px' }}><mark>Our approach isn't just about financial IQ. It's about building executive function skills, feelings, attitudes, and habits that serve children for life.</mark> By working through these four steps, children naturally practice:</p>
+                <p style={{ marginBottom: '10px' }}>Our approach isn't just about financial IQ. It's about building executive function skills, feelings, attitudes, and habits that serve children for life. By working through these four steps, children naturally practice:</p>
                 <ul style={{ marginBottom: '20px', paddingLeft: '20px' }}>
-                    <li style={{ marginBottom: '10px' }}><mark>Impulse control: pausing before acting</mark></li>
-                    <li style={{ marginBottom: '10px' }}><mark>Delayed gratification: valuing their future self</mark></li>
-                    <li style={{ marginBottom: '10px' }}><mark>Critical thinking: distinguishing between wants and needs</mark></li>
+                    <li style={{ marginBottom: '10px' }}>Impulse control: pausing before acting</li>
+                    <li style={{ marginBottom: '10px' }}>Delayed gratification: valuing their future self</li>
+                    <li style={{ marginBottom: '10px' }}>Critical thinking: distinguishing between wants and needs</li>
                 </ul>
                 <p style={{ marginBottom: '0', fontWeight: 'bold' }}>You don't need to be a financial expert to give your child a head start. You just need to press play.</p>
             </FAQItem>
@@ -230,7 +230,7 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(6)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    Parents can use the songs, stories, and activity guides in simple, natural ways that fit into everyday family life. <mark>Many families begin by listening to a song or reading a short story together, often at bedtime or at other convenient moments that work best for them.</mark> Parents can then ask a few of the conversation questions provided in the Parent Guides or any questions they feel are appropriate. These short discussions help children become comfortable hearing and using the language of money while connecting ideas like saving, earning, spending smart, and giving wisely to real life.
+                    Parents can use the songs, stories, and activity guides in simple, natural ways that fit into everyday family life. Many families begin by listening to a song or reading a short story together, often at bedtime or at other convenient moments that work best for them. Parents can then ask a few of the conversation questions provided in the Parent Guides or any questions they feel are appropriate. These short discussions help children become comfortable hearing and using the language of money while connecting ideas like saving, earning, spending smart, and giving wisely to real life.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     Parents can also use the activities as small family experiences that complement the Family Guide. For example, you might create a family “money dictionary,” start a simple saving jar for a goal, or talk about a recent purchase and whether it was a smart spending choice.
@@ -255,7 +255,7 @@ export default function FAQAccordion() {
                     First, kids are naturally curious about money when the subject is introduced in a fun, positive, and age-appropriate way. Songs, stories, and conversations help children feel comfortable with the language of money and open the door for meaningful learning.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    We’ve also learned that habits matter more than complicated concepts. When children are introduced early to ideas like saving, earning, spending smart, and giving wisely, they begin forming attitudes and behaviors that can last a lifetime. <mark>Small ideas, repeated often and connected to everyday experiences, have a powerful influence over time.</mark>
+                    We’ve also learned that habits matter more than complicated concepts. When children are introduced early to ideas like saving, earning, spending smart, and giving wisely, they begin forming attitudes and behaviors that can last a lifetime. Small ideas, repeated often and connected to everyday experiences, have a powerful influence over time.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     Most importantly, we’ve seen that parents, teachers, and community leaders play the most important role. Children learn best when adults talk with them about money in simple ways and model positive habits. These early conversations help build a strong foundation, giving kids the confidence, curiosity, and interest to keep learning about money as they grow.
@@ -308,7 +308,7 @@ export default function FAQAccordion() {
                     After the beta phase, Bedtime Money Habits will grow into a full learning experience designed to help children build strong, positive money habits.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>At launch, we plan to release new bedtime songs, stories, and supporting learning “kits” on a regular basis, giving families and educators fresh resources each week to keep kids engaged and learning.</mark>
+                    At launch, we plan to release new bedtime songs, stories, and supporting learning “kits” on a regular basis, giving families and educators fresh resources each week to keep kids engaged and learning.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                     We also plan to introduce simple, affordable membership options for families, teachers, and organizations that want ongoing access to the growing library of songs, stories, lesson plans, and activity guides.
@@ -337,7 +337,7 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(11)}
             >
                 <p style={{ marginBottom: '20px' }}>
-                    <mark>Here are a few simple ways you can help us build something meaningful, something that can positively impact kids, families, and communities around the world.</mark>
+                    Here are a few simple ways you can help us build something meaningful, something that can positively impact kids, families, and communities around the world.
                 </p>
                 
                 <p style={{ marginBottom: '10px' }}><strong>Join the Beta</strong><br />Be among the first to explore the platform and help us test and improve the experience.</p>

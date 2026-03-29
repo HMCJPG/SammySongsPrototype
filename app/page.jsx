@@ -122,40 +122,9 @@ export default function Home() {
                             <div style={{ background: 'var(--accent-color)', color: 'white', padding: '30px', borderRadius: '24px', textAlign: 'center' }}>
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '20px', marginTop: 0 }}>Story</h4>
-                                {/* Story cover image */}
-                                <img
-                                    src="/assets/images/shortstoryimage.png"
-                                    alt="Once Upon a Bot story cover"
-                                    style={{ width: '100%', borderRadius: '12px', marginBottom: '16px', display: 'block' }}
-                                />
-                                {/* PDF storybook link */}
-                                <a
-                                    href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '12px',
-                                        marginTop: '10px',
-                                        padding: '16px 32px',
-                                        backgroundColor: 'white',
-                                        color: 'var(--accent-color)',
-                                        borderRadius: '50px',
-                                        fontWeight: 700,
-                                        fontSize: '1.1rem',
-                                        textDecoration: 'none',
-                                        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-                                    }}
-                                >
-                                    <i className="fas fa-book-open" style={{ fontSize: '1.4rem' }}></i>
-                                    Read the Story (PDF)
-                                </a>
-
-                                {/* STORYBOOK IFRAME — uncomment below to swap back in */}
-                                {/*
+                                {/* Flipsnack storybook flipbook */}
                                 <iframe
-                                    src="https://player.flipsnack.com?hash=N0ZCRDZDQThCN0Erdnhwc3V0b3F3ZA=="
+                                    src="https://player.flipsnack.com?hash=RTdFRUFFQjU2OUIrdTk1NmY1a2Qxag=="
                                     width="100%"
                                     height="480"
                                     seamless="seamless"
@@ -165,7 +134,6 @@ export default function Home() {
                                     allow="autoplay; clipboard-read; clipboard-write"
                                     style={{ borderRadius: '12px', display: 'block' }}
                                 ></iframe>
-                                */}
                             </div>
 
                             {/* Song Kit (Button) */}
@@ -266,7 +234,7 @@ export default function Home() {
                                 <div style={{ marginBottom: '15px' }}>
                                     <Link href="/videos/earn-a-dollar" className="btn btn-sharp" style={{ width: '100%', display: 'inline-block', textDecoration: 'none' }}><i className="fas fa-play"></i> Watch Video</Link>
                                 </div>
-                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}><mark>Kids learn that working and earning money feels great, and that spending it wisely means not using it all up before the next payday.</mark></p>
+                                <p style={{ color: '#666', fontSize: '0.95rem', margin: 0, lineHeight: '1.5' }}>Kids learn that working and earning money feels great, and that spending it wisely means not using it all up before the next payday.</p>
                             </div>
                         </div>
 
@@ -353,7 +321,7 @@ export default function Home() {
                         <div style={{ background: '#f9fbe7', border: '2px solid #aed581', borderRadius: '20px', padding: '30px', position: 'relative' }}>
                             <span style={{ fontSize: '3rem', lineHeight: 1, color: '#8bc34a', position: 'absolute', top: '16px', left: '20px', opacity: 0.4 }}>&ldquo;</span>
                             <p style={{ margin: '20px 0 20px 0', fontSize: '1.05rem', color: '#333', lineHeight: 1.6, fontStyle: 'italic' }}>
-                                My daughter now talks about saving and spending like a little expert. <mark>These songs made money feel fun and natural. It genuinely changed how our whole family talks about money at home.</mark>
+                                My daughter now talks about saving and spending like a little expert. These songs made money feel fun and natural. It genuinely changed how our whole family talks about money at home.
                             </p>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#4caf50', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '1.1rem', flexShrink: 0 }}>S</div>

@@ -29,7 +29,7 @@ export default function AboutPage() {
                             Sam X Renick is the creator of BedtimeMoneyHabits.com and SammyRabbit.com. An award-winning financial educator and children's author, Sam brings more than 25 years of expertise helping kids and families build essential money habits.
                         </p>
                         <p style={{ marginBottom: '20px' }}>
-                            <mark>His programs weave together storybooks, music, dream-big journaling, games, live events, and more, and they've been embraced by families and organizations worldwide, including the Department of Defense, United Way, the University of Texas at Tyler, Girl Scouts of America, the Wisconsin Bankers Association, Citi, banks, credit unions, and schools across the country.</mark>
+                            His programs weave together storybooks, music, dream-big journaling, games, live events, and more, and they've been embraced by families and organizations worldwide, including the Department of Defense, United Way, the University of Texas at Tyler, Girl Scouts of America, the Wisconsin Bankers Association, Citi, banks, credit unions, and schools across the country.
                         </p>
                         <p style={{ marginBottom: '20px' }}>
                             Sam's insights have been featured in the New York Times, Washington Post, NPR, Kiplinger, Forbes, KNX, and beyond. His sustained impact in the field has earned him numerous honors, including the New Jersey Financial Education Coalition Lifetime Achievement Award, the National Financial Educators Council Educator of the Year Award, and the California Jump$tart Coalition Leaders in Financial Literacy Award.
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1 1 400px' }}>
                         <p style={{ marginBottom: '20px' }}>
-                            <mark>Our work is deeply inspired by, and closely aligned with, Sammy Rabbit, a global leader in early-age financial education.</mark> While we are a distinct enterprise, we share a heart for helping children develop the self-sufficiency and habits that lead to a bright financial future.
+                            Our work is deeply inspired by, and closely aligned with, Sammy Rabbit, a global leader in early-age financial education. While we are a distinct enterprise, we share a heart for helping children develop the self-sufficiency and habits that lead to a bright financial future.
                         </p>
                         <p style={{ marginBottom: '20px' }}>
                             Sammy Rabbit’s decades of experience in creating positive, habit-focused songs and stories provide a powerful foundation for families and educators everywhere. We encourage you to visit SammyRabbit.com to explore their extensive collection of books, activities, and standards-based resources.
