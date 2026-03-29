@@ -7,6 +7,7 @@ import CustomVideoPlayer from './components/CustomVideoPlayer';
 export default function Home() {
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('idle'); // 'idle', 'loading', 'success', 'error'
+    const [showStory, setShowStory] = useState(false);
 
     const handleSubscribe = async (e) => {
         e.preventDefault();
@@ -123,17 +124,47 @@ export default function Home() {
                                 <i className="fas fa-book-open" style={{ fontSize: '3rem', marginBottom: '15px' }}></i>
                                 <h4 style={{ fontSize: '1.5rem', marginBottom: '20px', marginTop: 0 }}>Story</h4>
                                 {/* Flipsnack storybook flipbook */}
-                                <iframe
-                                    src="https://player.flipsnack.com?hash=RTdFRUFFQjU2OUIrdTk1NmY1a2Qxag=="
-                                    width="100%"
-                                    height="480"
-                                    seamless="seamless"
-                                    scrolling="no"
-                                    frameBorder="0"
-                                    allowFullScreen
-                                    allow="autoplay; clipboard-read; clipboard-write"
-                                    style={{ borderRadius: '12px', display: 'block' }}
-                                ></iframe>
+                                {!showStory ? (
+                                    <div 
+                                        onClick={() => setShowStory(true)}
+                                        style={{ 
+                                            position: 'relative', 
+                                            width: '100%', 
+                                            height: '480px', 
+                                            borderRadius: '12px', 
+                                            overflow: 'hidden',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            border: '2px solid rgba(255,255,255,0.2)'
+                                        }}
+                                        className="story-curtain"
+                                    >
+                                        <img 
+                                            src="/assets/images/shortstoryimage.png" 
+                                            style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover' }} 
+                                            alt="Read Story"
+                                        />
+                                        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.5)', transition: 'background-color 0.3s ease' }}>
+                                            <i className="fas fa-play-circle" style={{ fontSize: '4.5rem', color: 'white', marginBottom: '15px', textShadow: '0 4px 15px rgba(0,0,0,0.4)' }}></i>
+                                            <span style={{ color: 'white', fontSize: '1.6rem', fontWeight: 'bold', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>Click to read the story!</span>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <iframe
+                                        src="https://player.flipsnack.com?hash=RTdFRUFFQjU2OUIrdTNzcjBzOTFjaQ=="
+                                        width="100%"
+                                        height="480"
+                                        seamless="seamless"
+                                        scrolling="no"
+                                        frameBorder="0"
+                                        allowFullScreen
+                                        allow="autoplay; clipboard-read; clipboard-write"
+                                        style={{ borderRadius: '12px', display: 'block' }}
+                                    ></iframe>
+                                )}
                             </div>
 
                             {/* Song Kit (Button) */}

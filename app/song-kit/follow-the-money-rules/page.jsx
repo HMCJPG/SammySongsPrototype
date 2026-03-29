@@ -52,7 +52,7 @@ export default function SongKitPage() {
                     </a>
 
                     {/* Story PDF */}
-                    <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents-.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
+                    <a href="/assets/storybooks/OnceUponABot%20-%20The-Night-Money-Made-Scentsationally-Good-Cents--compressed.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '20px', background: 'white', border: '2px solid #ddd', borderRadius: '16px', textDecoration: 'none', color: 'var(--text-dark)' }}>
                         <i className="fas fa-book" style={{ fontSize: '2.5rem', color: '#64b5f6' }}></i>
                         <div>
                             <h4 style={{ margin: 0, fontSize: '1.25rem' }}>Story PDF</h4>
