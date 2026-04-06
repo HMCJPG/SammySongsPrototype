@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Write a Review | Bedtime Money Habits | Share Your Experience',
+    description: 'Share your experience with Bedtime Money Habits. Tell us how our songs, stories, and activities have helped your kids learn about money. Your feedback shapes our program.',
+};
+
 export default function ReviewPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

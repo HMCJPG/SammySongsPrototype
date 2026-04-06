@@ -1,8 +1,13 @@
+export const metadata = {
+    title: 'Special Offers | Bedtime Money Habits | Early Supporter Membership',
+    description: 'Special early-supporter offers from Bedtime Money Habits. Get advance access to songs, stories, and financial education resources for kids. Limited-time Beta membership pricing available.',
+};
+
 export default function SpecialOffersPage() {
     return (
         <main style={{ padding: '80px 20px', minHeight: '100vh', textAlign: 'center', backgroundColor: 'var(--primary-bg)' }}>
             <div className="container" style={{ maxWidth: '800px' }}>
-                <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Special Offers</h2>
+                <h1 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Special Offers from Bedtime Money Habits</h1>
                 <div style={{ fontSize: '1.25rem', color: '#666', marginBottom: '50px', lineHeight: '1.8', textAlign: 'left' }}>
                     <p style={{ marginBottom: '20px' }}>
                         During the Beta phase, we are offering a limited number of Early Supporter memberships for families, teachers, schools, and organizations who would like to subscribe and secure access to BedtimeMoneyHabits.com in advance of the official launch. This initiative, created by Sam X Renick, is designed to help young children build strong money habits through engaging songs, stories, and conversations.

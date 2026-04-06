@@ -1,8 +1,13 @@
+export const metadata = {
+    title: 'Parent Resources | Bedtime Money Habits | Teach Kids Money Skills at Home',
+    description: 'Free parent guides and family activities from Bedtime Money Habits. Teach your children to save, earn, spend smart, give wisely, and invest using bedtime songs, stories, and conversations.',
+};
+
 export default function ParentsPage() {
     return (
         <main style={{ padding: '80px 20px', minHeight: '100vh', textAlign: 'center', backgroundColor: 'var(--primary-bg)' }}>
             <div className="container" style={{ maxWidth: '800px' }}>
-                <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Parents</h2>
+                <h1 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Parent Resources for Teaching Kids Money Habits</h1>
                 <div style={{ fontSize: '1.25rem', color: '#666', marginBottom: '50px', lineHeight: '1.8', textAlign: 'left' }}>
                     <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 800 }}>
                         Welcome to the Parents Section: Simple Habits, Lifelong Impact

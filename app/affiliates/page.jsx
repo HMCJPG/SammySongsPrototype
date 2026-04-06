@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Affiliate Partners | Bedtime Money Habits | Join Our Program',
+    description: 'Join the Bedtime Money Habits affiliate partner program. Help bring engaging financial education songs, stories, and resources to families, classrooms, and communities worldwide.',
+};
+
 export default function AffiliatePartnersPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Partners & Sponsors | Bedtime Money Habits | Support Financial Education',
+    description: 'Partner with Bedtime Money Habits to expand children\'s financial education. We welcome sponsors, foundations, financial institutions, and mission-aligned organizations.',
+};
+
 export default function PartnersPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

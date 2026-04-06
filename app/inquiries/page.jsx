@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Contact Us | Bedtime Money Habits | Sam X Renick',
+    description: 'Contact Bedtime Money Habits creator Sam X Renick. Reach out for questions, feedback, partnership inquiries, or media requests about our children\'s financial education program.',
+};
+
 export default function InquiriesPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

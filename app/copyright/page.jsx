@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Copyright & Educational Use Policy | Bedtime Money Habits',
+    description: 'Copyright and educational use policy for Bedtime Money Habits. Learn how parents, teachers, and organizations may use our songs, stories, and lesson plans for financial literacy education.',
+};
+
 export default function CopyrightPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

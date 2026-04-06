@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Press & Media | Bedtime Money Habits | Sam X Renick Interviews',
+    description: 'Press and media inquiries for Bedtime Money Habits. Sam X Renick is available for interviews, commentary, and media collaborations on children\'s financial education.',
+};
+
 export default function PressPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

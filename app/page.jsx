@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Script from 'next/script';
 import CustomVideoPlayer from './components/CustomVideoPlayer';
 
 export default function Home() {
@@ -62,11 +63,11 @@ export default function Home() {
             <section style={{ backgroundColor: '#1b5e20', padding: '36px 20px', textAlign: 'center' }}>
                 <div className="container" style={{ maxWidth: '820px' }}>
                     <p style={{ margin: '0 0 10px 0', fontSize: '1.1rem', fontWeight: 600, color: '#a5d6a7', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-                        A must-have parenting tool that shapes a child's future
+                        A must-have parenting tool that shapes a child&apos;s future
                     </p>
-                    <h2 style={{ margin: 0, fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.3 }}>
-                        This is where financial education begins.
-                    </h2>
+                    <h1 style={{ margin: 0, fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.3 }}>
+                        The Foundation for Financial Education from Bedtime Money Habits
+                    </h1>
                 </div>
             </section>
 
@@ -392,6 +393,32 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* VideoObject Schema (JSON-LD) for homepage video search ranking */}
+            <Script
+                id="video-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "VideoObject",
+                        "name": "Follow the Money Rules! – Bedtime Money Habits",
+                        "description": "Kids learn that following the basic money rules (save, earn, spend smart, give wisely, and invest) helps them reach their goals and make their dreams come true.",
+                        "thumbnailUrl": "https://bedtimemoneyhabits.com/assets/images/pig_book.png",
+                        "uploadDate": "2025-01-01",
+                        "contentUrl": "https://bedtimemoneyhabits.com/assets/videos/moneyrules.mp4",
+                        "embedUrl": "https://bedtimemoneyhabits.com",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Bedtime Money Habits",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://bedtimemoneyhabits.com/assets/images/logo.png"
+                            }
+                        }
+                    })
+                }}
+            />
         </main>
     );
 }

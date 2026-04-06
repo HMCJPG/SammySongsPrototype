@@ -1,8 +1,13 @@
+export const metadata = {
+    title: 'Teacher Resources | Bedtime Money Habits | Financial Literacy Lesson Plans',
+    description: 'Free standards-aligned lesson plans and teacher guides from Bedtime Money Habits. Engage students with songs, stories, and activities that teach saving, earning, spending smart, and giving wisely.',
+};
+
 export default function TeachersPage() {
     return (
         <main style={{ padding: '80px 20px', minHeight: '100vh', textAlign: 'center', backgroundColor: 'var(--primary-bg)' }}>
             <div className="container" style={{ maxWidth: '800px' }}>
-                <h2 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Teachers</h2>
+                <h1 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '20px', fontWeight: 900 }}>Teacher Resources for Financial Literacy Education</h1>
 
                 <div style={{ fontSize: '1.25rem', color: '#666', marginBottom: '50px', lineHeight: '1.8', textAlign: 'left' }}>
                     <h3 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '15px', fontWeight: 800 }}>

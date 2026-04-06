@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Terms of Service | Bedtime Money Habits',
+    description: 'Terms of Service for Bedtime Money Habits. Review the acceptable use policies, intellectual property guidelines, and Beta platform terms for BedtimeMoneyHabits.com.',
+};
+
 export default function TermsPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>

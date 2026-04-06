@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Privacy Policy | Bedtime Money Habits',
+    description: 'Read the Bedtime Money Habits privacy policy. Learn how we collect, use, and protect your information. We do not sell personal data to third parties.',
+};
+
 export default function PrivacyPage() {
     return (
         <main style={{ padding: '80px 20px', backgroundColor: 'var(--light-bg)', minHeight: '80vh' }}>
