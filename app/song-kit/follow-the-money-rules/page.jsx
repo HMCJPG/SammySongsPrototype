@@ -108,7 +108,14 @@ export default function SongKitPage() {
                             <i className="fas fa-gamepad" style={{ fontSize: '1.8rem' }}></i>
                             Play Games!
                         </Link>
+                    </div>
+                </div>
 
+                {/* Store Button Integration */}
+                <div style={{ marginTop: '30px', background: '#e0f2f1', padding: '40px', borderRadius: '24px', textAlign: 'center', border: '3px dashed #4db6ac' }}>
+                    <h3 style={{ fontSize: '1.8rem', color: 'var(--text-dark)', marginBottom: '15px' }}>Keep Learning at Home!</h3>
+                    <p style={{ color: '#666', fontSize: '1.2rem', marginBottom: '25px' }}>Love the song? Bring the lessons to life with hands-on activities!</p>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
                         <a href="https://sammyrabbit.com/products/sammy-says-series" target="_blank" rel="noopener noreferrer" className="btn btn-pill" style={{
                             display: 'inline-flex',
                             alignItems: 'center',
@@ -122,7 +129,7 @@ export default function SongKitPage() {
                             textAlign: 'center'
                         }}>
                             <i className="fas fa-book-open" style={{ fontSize: '1.8rem' }}></i>
-                            Love the song? Get the Activity Book that inspired it.
+                            Get the Activity Book that inspired it
                         </a>
                     </div>
                 </div>
